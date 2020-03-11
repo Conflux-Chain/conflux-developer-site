@@ -9,8 +9,8 @@
 
 (def git-ignore-cache {})
 
-(defn ->file [file-or-string]
-  (if (string? file-or-string) (io/file file-or-string) file-or-string))
+(defn ->file [& args]
+  (if (string? (first args)) (apply io/file args) (first args)))
 
 (defn ->file-path [file-or-string]
   (if (string? file-or-string) file-or-string (.getAbsolutePath file-or-string)))
@@ -39,6 +39,9 @@
     (if (.isDirectory dir)
       dir
       (exit 1 (str "Invalid directory " dir)))))
+
+(defn get-git-file-updated-at [file]
+  (:out (sh "git" "log" "-1" "--format=\"%ad\"" "--" (-> file ->file (#(.getAbsolutePath %))))))
 
 (defn find-root-dir [file]
   (let [file (->file file)]
