@@ -5,6 +5,7 @@
 
 (load-file "development/cli.clj")
 (load-file "development/fs.clj")
+(load-file "development/md.clj")
 
 (defonce langs [:en])
 
@@ -14,15 +15,13 @@
         jsonf    (io/file
                   (first
                    (sh->vec "fd" "-t" "f" "--regex" "conflux-docs\\.json$" dir)))]
-    (if (.exists jsonf) (do
-                          (println "Found conflux-docs.json under" dir-name)
-                          jsonf)
-        (exit 1 (str "Can't find conflux-docs.json file under " dir)))))
+    (if (.exists jsonf)
+      (do (println "Found conflux-docs.json under" dir-name)
+          jsonf)
+      (exit 1 (str "Can't find conflux-docs.json file under " dir)))))
 
 (defn docs->devdoc-jsons [docs]
   (mapv find-devdoc-json docs))
-
-(for [lang langs] lang)
 
 (defn each-sidebar-item [metadata file-f item]
   (let [[k v] item]
@@ -38,12 +37,8 @@
 
 (defn process-md [[repo-name doc-json-file lang] file-path]
   (let [md (->file (.getParent doc-json-file) file-path)
-        md-path (.getAbsolutePath md)
-        md-lines (-> md-path slurp (#(str/split % #"\n")))
-        _ (when-not
-              (= "---" (first md-lines))
-              (println (str "First line of " md-path " is not ---")))]
-    (prn (first md-lines))))
+        md-headers (md->md-header-edn md)]
+    (prn "md-headers" md-headers)))
 
 (defn process-each-lang-config [metadata [lang conf]]
   (mapv #(each-sidebar-item (conj metadata lang) process-md %) conf))
@@ -69,5 +64,5 @@
         (#(mapv process-config %)))
     (exit 0 "Finished!")))
 
-(println "------")
+(println "-------------------")
 (-main)
