@@ -7,6 +7,12 @@
 
 (def git-ignore-cache {})
 
+(defn ->file [file-or-string]
+  (if (string? file-or-string) (io/file file-or-string) file-or-string))
+
+(defn file? [file]
+  (-> file ->file (#(.isFile %))))
+
 (defn md? [file]
   (when (s/ends-with? (.toString file) ".md") file))
 
@@ -18,13 +24,13 @@
   (member? ".git" (.list dir)))
 
 (defn dir? [dir]
-  (let [dir (if (string? dir) (io/file dir) dir)]
+  (let [dir (->file dir)]
     (if (.isDirectory dir)
       dir
       (exit 1 (str "Invalid directory " dir)))))
 
 (defn find-root-dir [file]
-  (let [file (if (string? file) (io/file file) file)]
+  (let [file (->file file)]
     (if (.isDirectory file)
       (if (root? file) file (find-root-dir (.getParentFile file)))
       (find-root-dir (.getParentFile file)))))
