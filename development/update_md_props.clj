@@ -6,30 +6,23 @@
 (load-file "development/cli.clj")
 (load-file "development/fs.clj")
 
-(defn sh->vec [& args]
-  (-> args
-      (#(apply sh %))
-      :out
-      (#(str/split % #"\n"))))
-
 (defn find-devdoc-json [dir]
   (let [dir (.getAbsolutePath dir)
         jsonf (io/file
               (first
-               (sh->vec "fd" "-t" "f" "--regex" "devdocs\\.json$" dir)))]
+               (sh->vec "fd" "-t" "f" "--regex" "conflux-docs\\.json$" dir)))]
     (if (.exists jsonf) jsonf
-        (exit 1 (str "Can't find devdocs.json file under " dir)))))
+        (exit 1 (str "Can't find conflux-docs.json file under " dir)))))
 
 (defn docs->devdoc-jsons [docs]
   (mapv find-devdoc-json docs))
 
 (defn -main []
   (let [docs
-        (-> "docs"
-            ->file
-            (#(.listFiles %))
-            x-nils
-            (#(remove file? %)))
+        (-> "conflux-docs-index.json"
+            json->edn
+            :docs
+            (#(mapv #(io/file (str "docs/" %)) %)))
         jsons (-> docs docs->devdoc-jsons)]
     jsons))
 

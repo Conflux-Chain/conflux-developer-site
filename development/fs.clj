@@ -1,6 +1,8 @@
 (require
  '[clojure.string :as s]
- '[clojure.java.io :as io])
+ '[clojure.java.io :as io]
+ '[cheshire.core :as json])
+
 
 (load-file "development/cli.clj")
 (load-file "development/util.clj")
@@ -9,6 +11,15 @@
 
 (defn ->file [file-or-string]
   (if (string? file-or-string) (io/file file-or-string) file-or-string))
+
+(defn ->file-path [file-or-string]
+  (if (string? file-or-string) file-or-string (.getAbsolutePath file-or-string)))
+
+(defn json->edn [file]
+  (-> file
+      ->file-path
+      slurp
+      (#(json/parse-string % true))))
 
 (defn file? [file]
   (-> file ->file (#(.isFile %))))

@@ -8,3 +8,9 @@
   "Remove any nil in coll"
   [coll]
   (remove nil? coll))
+
+(defn sh->vec [& args]
+  (-> args
+      (#(apply sh %))
+      :out
+      (#(str/split % #"\n"))))
