@@ -4,7 +4,9 @@
     "en": {
       "Docusaurus": [
         "en/doc1.md",
-        "en/doc2.md",
+        {
+          "level2": ["en/doc2.md"]
+        },
         "en/doc3.md"
       ],
       "Features": ["en/mdx.md"]
