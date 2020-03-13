@@ -3,10 +3,10 @@ module.exports = {
     en: [
       {
         type: "category",
-        label: "Learn About Conflux",
+        label: "Confnlux Overview",
         items: [
-          "en|introduction|welcome",
-          "en|introduction|conflux_introduction",
+          "en|introduction|what_is_conflux",
+          "en|introduction|core_concepts",
           {
             type: "category",
             label: "Concepts",
@@ -18,9 +18,10 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Try Conflux Core",
+        label: "Try Conflux",
         items: [
-          "en|introduction|fullnode-installation"
+          "en|introduction|try_conflux_core",
+          "en|introduction|make_your_first_transaction"
         ]
       }
     ]
