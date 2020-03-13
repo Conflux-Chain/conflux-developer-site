@@ -5,6 +5,7 @@
   "author": "yqrashawn <namy.19@gmail.com>",
   "private": true,
   "scripts": {
+    "postinstall": "node development/gen_each_lang_sidebars_config.js",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
