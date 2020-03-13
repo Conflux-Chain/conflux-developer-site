@@ -1,5 +1,5 @@
 ---
-id: en|introduction|core_concepts
+id: core_concepts
 title: Core concepts
 ---
 

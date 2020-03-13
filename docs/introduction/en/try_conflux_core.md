@@ -1,5 +1,5 @@
 ---
-id: en|introduction|try_conflux_core
+id: try_conflux_core
 title: Try Conflux Core
 ---
 

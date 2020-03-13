@@ -1,5 +1,5 @@
 ---
-id: en|introduction|make_your_first_transaction
+id: make_your_first_transaction
 title: Make Your First Transaction
 ---
 

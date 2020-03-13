@@ -5,14 +5,12 @@ module.exports = {
         type: "category",
         label: "Confnlux Overview",
         items: [
-          "en|introduction|what_is_conflux",
-          "en|introduction|core_concepts",
+          { type: "doc", id: "what_is_conflux", folder: "introduction" },
+          { type: "doc", id: "core_concepts", folder: "introduction" },
           {
             type: "category",
             label: "Concepts",
-            items: [
-              "en|introduction|treegraph"
-            ]
+            items: [{ type: "doc", id: "treegraph", folder: "introduction" }]
           }
         ]
       },
@@ -20,8 +18,12 @@ module.exports = {
         type: "category",
         label: "Try Conflux",
         items: [
-          "en|introduction|try_conflux_core",
-          "en|introduction|make_your_first_transaction"
+          { type: "doc", folder: "introduction", id: "try_conflux_core" },
+          {
+            type: "doc",
+            folder: "introduction",
+            id: "make_your_first_transaction"
+          }
         ]
       }
     ]

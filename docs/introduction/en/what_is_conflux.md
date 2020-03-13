@@ -1,5 +1,5 @@
 ---
-id: en|introduction|waht_is_conflux
+id: what_is_conflux
 title: What Is Conflux
 ---
 
