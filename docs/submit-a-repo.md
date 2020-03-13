@@ -10,8 +10,8 @@
 ❸'s title is defined in `en/fullnode-installation.md` like below.
 ```md
 ---
-id: en/introduction/welcome
-title: Welcome
+id: en/introduction/installation
+title: Installation
 ---
 ```
 

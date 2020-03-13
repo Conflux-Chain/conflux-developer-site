@@ -80,7 +80,7 @@ module.exports = {
         docs: {
           path: 'docs',
           routeBasePath: 'docs',
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve('./sidebars.en.js'),
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
           showLastUpdateTime: true,
