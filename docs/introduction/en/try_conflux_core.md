@@ -1,6 +1,6 @@
 ---
-id: doc3
-title: This is Document Number 3
+id: en|introduction|try_conflux_core
+title: Try Conflux Core
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu

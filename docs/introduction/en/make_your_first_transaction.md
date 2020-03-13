@@ -1,6 +1,6 @@
 ---
-id: mdx
-title: Powered by MDX
+id: en|introduction|make_your_first_transaction
+title: Make Your First Transaction
 ---
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).

@@ -1,7 +1,6 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: en|introduction|waht_is_conflux
+title: What Is Conflux
 ---
 
 You can write content using [GitHub-flavored Markdown
