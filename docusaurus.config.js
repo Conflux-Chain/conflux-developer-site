@@ -18,7 +18,7 @@ module.exports = {
       },
       links: [
         {
-          to: "docs/introduction/en/what_is_conflux",
+          to: "docs/introduction/en/conflux_overview",
           label: "Docs",
           position: "left"
         },

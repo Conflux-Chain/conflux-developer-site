@@ -3,9 +3,9 @@ module.exports = {
     en: [
       {
         type: "category",
-        label: "Confnlux Overview",
+        label: "Learn About Conflux",
         items: [
-          { type: "doc", id: "what_is_conflux", folder: "introduction" },
+          { type: "doc", id: "conflux_overview", folder: "introduction" },
           { type: "doc", id: "core_concepts", folder: "introduction" },
           {
             type: "category",
