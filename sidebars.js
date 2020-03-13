@@ -25,6 +25,11 @@ module.exports = {
             id: "make_your_first_transaction"
           }
         ]
+      },
+      {
+        type: "category",
+        label: "Try Conflux Portal",
+        items: [{ type: "doc", folder: "conflux-portal", id: "quick_start" }]
       }
     ]
   }
