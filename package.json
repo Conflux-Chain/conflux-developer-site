@@ -5,12 +5,12 @@
   "author": "yqrashawn <namy.19@gmail.com>",
   "private": true,
   "scripts": {
+    "postinstall": "node development/gen_each_lang_sidebars_config.js",
     "start": "docusaurus start",
-    "build": "yarn gen-sidebar-conf && docusaurus build",
-    "now-build": "ls -al && git remote -v && git submodule update --init && yarn build",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "gen-sidebar-conf": "node development/gen_each_lang_sidebars_config.js"
+    "now-deploy": "now ./build --static -no-clipboard --token $NOW_TOKEN --public"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.43",

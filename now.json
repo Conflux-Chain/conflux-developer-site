@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "build/**/*", "use": "@now/static" }
+  ],
   "github": {
     "enabled": true,
     "autoAlias": false,
