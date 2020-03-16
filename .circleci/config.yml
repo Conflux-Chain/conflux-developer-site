@@ -7,13 +7,6 @@ workflows:
             branches:
               only:
                 - master
-  release-to-now:
-    jobs:
-      - deploy-to-now:
-          filters:
-            branches:
-              only:
-                - test-ci
 jobs:
   build:
     docker:
@@ -50,22 +43,3 @@ jobs:
               git commit -m "Automated deployment: ${CIRCLE_SHA1} [ci skip]" --allow-empty 1> /dev/null
               git push origin $TARGET_BRANCH
             fi
-
-  deploy-to-now:
-    docker:
-      - image: circleci/node:11
-    environment:
-      - GIT_USER: ConfluxBot
-      - USE_SSH: true
-    steps:
-      - checkout
-      - run:
-          name: Deploy to now.sh
-          command: |
-                git config --global user.email $GH_EMAIL
-                git config --global user.name $GH_NAME
-                git clone --recursive $CIRCLE_REPOSITORY_URL project
-                cd project
-                yarn --frozen-lockfile
-                yarn build
-                npx now --no-clipboard --token=$NOW_TOKEN --public deploy ./build
