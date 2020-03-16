@@ -45,9 +45,15 @@ function processSidebarDoc(mdMetadatas) {
     const md = mdMetadatas.find(
       metadata => metadata.baseId === id && metadata.folder === folder
     );
+
+    if (!md) {
+      console.error(new Error(`Can't find markdown file with the id: ${id} under ${folder}`))
+      process.exit(1);
+    }
+
     return {
       type,
-      id: md.id,
+      id: md.id
     };
   };
 }

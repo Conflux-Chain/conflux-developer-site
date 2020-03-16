@@ -1,3 +1,4 @@
+.skip-ci
 sidebars.*.js
 # Production
 /build
