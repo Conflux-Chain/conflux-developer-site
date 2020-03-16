@@ -5,9 +5,9 @@
   "author": "yqrashawn <namy.19@gmail.com>",
   "private": true,
   "scripts": {
-    "postinstall": "node development/gen_each_lang_sidebars_config.js",
+    "genconf": "node development/gen_each_lang_sidebars_config.js",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "yarn genconf && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "now-deploy": "now ./build --static -no-clipboard --token $NOW_TOKEN --public"
