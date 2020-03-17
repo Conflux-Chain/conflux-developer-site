@@ -1,6 +1,7 @@
 ---
 id: try_conflux_core
 title: Try Conflux Core
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/blob/master/docs/introduction/en/try_conflux_core.md
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu

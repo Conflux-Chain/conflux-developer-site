@@ -1,6 +1,7 @@
 ---
 id: make_your_first_transaction
 title: Make Your First Transaction
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/blob/master/docs/introduction/en/make_your_first_transaction.md
 ---
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
