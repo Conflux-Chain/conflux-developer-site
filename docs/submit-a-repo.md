@@ -13,6 +13,9 @@ You need to add metadata use syntax below at the beginning of your markdown file
 You only need to add metadata to those files that you want to publish to
 develoepr site.
 
+The `custom_edit_url` is the github url for editing text files.
+`https://github.com/Conflux-Chain/{repo_name}/edit/{branch_name}/{path_to_md}`
+
 ```md
 ---
 id: quick_start
