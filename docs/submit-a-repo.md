@@ -1,26 +1,23 @@
 # How To Submit A Repo
 
 - add metadata to your markdown doc file
-- create a pr to add your markdown file id to the sidebar file and your repo as
-  submodule under docs folder
-- add a ci config to trigger the build workflow of this repo
+- create a pr to add your markdown file id to the [sidebars
+  config](../sidebars.js) file and add your repo as git submodule under
+  [docs](./docs) folder   
+- add a ci config to trigger the build workflow of this repo in your repo's ci
+  config 
 
 ## Add Metadata To Your Markdown File
 
-❸'s title is defined in `en/fullnode-installation.md` like below.
-```md
----
-id: en/introduction/installation
-title: Installation
----
-```
-
-Other headers can be
+You need to add metadata use syntax below at the beginning of your markdown file.
+You only need to add metadata to those files that you want to publish to
+develoepr site.
 
 ```md
 ---
-id: en/js-conflux-sdk/send-a-transaction
-title: Markdown Features
+id: quick_start
+title: Quick Start
+custom_edit_url: https://github.com/Conflux-Chain/conflux-portal-docs/edit/master/01_Examples/00_Low_Level_CFX_Transfer.md
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: Markdown :)
@@ -32,15 +29,28 @@ keywords:
 image: https://i.imgur.com/mErPwqL.png
 ---
 ```
-The `id`, `title` and `custom_edit_url` is required.
 
-The specs can be found
+You can find the documentation and spec for each metadata
 [here](https://v2.docusaurus.io/docs/markdown-features#markdown-headers
 "docusaurus markdown-headers documentation").  
 
-## Create A PR To Add Your Doc To `sidebar.js` File
+The `id`, `title` and `custom_edit_url` is required.
 
-A `sidebar.js` is like the below one
+## Create A PR To Add Your Documentation
+
+### Add Your Repo To `docs`
+
+Use `git submodule add https://<your-repo-url>.git docs/<your-repo-folder-name>`
+to add your repo under [docs](./docs).
+
+### Add Your Markdown File To `sidebar.js`
+
+A `sidebar.js` is like the below one. Each markdown can be added as `{ type:
+"doc", folder: "conflux-portal", id: "quick_start" }`. `id` is the id in
+markdown metadata, `folder` is the git submodule folder in [docs](./docs)
+folder, `type` is `doc`. 
+
+You create your own document structure with `category`.
 
 ```js
 module.exports = {
@@ -48,49 +58,48 @@ module.exports = {
     en: [
       {
         type: "category",
-        label: "Learn About Conflux",  // sidebar category name ❶
+        label: "Learn About Conflux",
         items: [
-          "en|introduction|welcome",   // md file id <language>|<repo_name>|<markdown_id>
-          "en|introduction|introduction",
+          { type: "doc", id: "conflux_overview", folder: "introduction" },
+          { type: "doc", id: "core_concepts", folder: "introduction" },
           {
             type: "category",
-            label: "Concepts",         // 2nd level sidebar category name ❷
-            items: [
-              "en|introduction|treegraph"
-            ]
+            label: "Concepts",
+            items: [{ type: "doc", id: "treegraph", folder: "introduction" }]
           }
         ]
       },
       {
         type: "category",
-        label: "Try Conflux Core",
+        label: "Try Conflux",
         items: [
-          "en|introduction|fullnode-installation" // md file id ❸
+          { type: "doc", folder: "introduction", id: "try_conflux_core" },
+          {
+            type: "doc",
+            folder: "introduction",
+            id: "make_your_first_transaction"
+          }
         ]
+      },
+      {
+        type: "category",
+        label: "Try Conflux Portal",
+        items: [{ type: "doc", folder: "conflux-portal", id: "quick_start" }]
       }
     ]
   }
 };
 ```
 
-Will generate the site like this.
-
-<div class="HTML">
-<p align="center"><img src="sidebar-demo.png" /></p>
-</div>
-
 ## Add A CI Config To Trigger The Build Workflow of This Repo
 
-Create a PR for this repo, add your repo as a git submodule in [docs](./) folder
-like the `conflux-portal` one. 
-
-I'll check your repo and submit a PR to add the CI config.
+Once your create your PR, we'll check your repo and submit a PR to add the CI
+config. 
 
 ## Why It Works
 
 The CI config in your repo will trigger the build workflow of this repo.
 
-The workflow will pull your repo down, check if any doc files being updated in
-the latest commits to your **master** branch depending on the
-`conflux-docs.json` file, use docusaurus build the doc and update
-developer.conflux-chain.org.
+The workflow will pull your repo down, check if any doc files being updated
+between old submodule revision and your **master** branch, use docusaurus build
+the doc and update developer.conflux-chain.org. 
