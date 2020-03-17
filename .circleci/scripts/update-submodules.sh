@@ -6,10 +6,12 @@ set -u
 git submodule update --init
 
 # exit code 0 -> found changed markdown files
-changed=$(git submodule foreach git diff --no-color \
-              origin/master \
+changed=$(git submodule foreach git diff --no-color origin/master \
             | grep -E '^(---|\+\+\+)\ (a|b).*\.md[x]?$'\
-            || git diff --no-color HEAD~ | grep -E '.*' || true)
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.md[x]?$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.sidebars\.js$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.docusaurus\.config\.js$' \
+            || true)
 
 # git config --global user.email $GH_EMAIL
 # git config --global user.name $GH_NAME
