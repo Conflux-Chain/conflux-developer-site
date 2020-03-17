@@ -1,6 +1,7 @@
 ---
 id: what_is_conflux
 title: What Is Conflux
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/blob/master/docs/introduction/en/what_is_conflux.md
 ---
 
 You can write content using [GitHub-flavored Markdown
