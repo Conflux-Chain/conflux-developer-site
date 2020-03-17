@@ -22,9 +22,9 @@ module.exports = {
           label: "Docs",
           position: "left"
         },
-        { to: "blog", label: "Blog", position: "left" },
+        // { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/Conflux-Chain/conflux-developer-site",
           label: "GitHub",
           position: "right"
         }
@@ -37,12 +37,8 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
-              to: "docs/doc1"
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2"
+              label: "Conflux Overview",
+              to: "docs/introduction/en/conflux_overview"
             }
           ]
         },
@@ -50,22 +46,22 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus"
+              label: "Bounty",
+              href: "https://bounty.conflux-chain.org"
             },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            }
+            // {
+            //   label: "Discord",
+            //   href: "https://discordapp.com/invite/docusaurus"
+            // }
           ]
         },
         {
           title: "Social",
           items: [
-            {
-              label: "Blog",
-              to: "blog"
-            },
+            // {
+            //   label: "Blog",
+            //   to: "blog"
+            // },
             {
               label: "GitHub",
               href: "https://github.com/Conflux-Chain"
