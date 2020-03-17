@@ -6,11 +6,10 @@ module.exports = {
         label: "Learn About Conflux",
         items: [
           { type: "doc", id: "conflux_overview", folder: "introduction" },
-          { type: "doc", id: "core_concepts", folder: "introduction" },
           {
             type: "category",
-            label: "Concepts",
-            items: [{ type: "doc", id: "treegraph", folder: "introduction" }]
+            label: "Technical Papers",
+            items: []
           }
         ]
       },
@@ -28,7 +27,23 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Try Conflux Portal",
+        label: "Fullnode Interaction",
+        items: [
+          {
+            type: "category",
+            label: "Fullnode CLI",
+            items: []
+          }
+        ]
+      },
+      {
+        type: "category",
+        label: "SDK",
+        items: []
+      },
+      {
+        type: "category",
+        label: "Conflux Portal",
         items: [{ type: "doc", folder: "conflux-portal", id: "quick_start" }]
       }
     ]

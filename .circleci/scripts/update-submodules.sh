@@ -9,8 +9,11 @@ git submodule update --init
 changed=$(git submodule foreach git diff --no-color origin/master \
             | grep -E '^(---|\+\+\+)\ (a|b).*\.md[x]?$'\
             || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.md[x]?$' \
-            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.sidebars\.js$' \
-            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*\.docusaurus\.config\.js$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*sidebars\.js$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*docusaurus\.config\.js$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/src.*$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/static.*$' \
+            || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/development.*$' \
             || true)
 
 # git config --global user.email $GH_EMAIL

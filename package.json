@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "genconf": "node development/gen_each_lang_sidebars_config.js",
-    "start": "docusaurus start",
+    "start": "yarn genconf && docusaurus start",
     "build": "yarn genconf && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
