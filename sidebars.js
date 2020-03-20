@@ -43,8 +43,14 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Conflux Portal",
-        items: [{ type: "doc", folder: "conflux-portal", id: "quick_start" }]
+        label: "Use Conflux In Browser",
+        items: [
+          { type: "doc", folder: "conflux-portal", id: "introduction" },
+          { type: "doc", folder: "conflux-portal", id: "getting_started" },
+          { type: "doc", folder: "conflux-portal", id: "accessing_accounts" },
+          { type: "doc", folder: "conflux-portal", id: "sending_transactions" },
+          { type: "doc", folder: "conflux-portal", id: "provider_api" },
+        ]
       }
     ]
   }
