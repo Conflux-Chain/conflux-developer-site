@@ -6,6 +6,7 @@ keywords:
   - conflux
   - overview
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Conflux is a new secure and reliable public blockchain with very high
 performance and scalability. It can achieve the same level of decentralization
@@ -21,7 +22,7 @@ blocks linked with parent edges, the ledger appears to be a tree structure
 acyclic graph. This is also the reason that we call the ledger structure of
 Conflux as TreeGraph. 
 
-![TreeGraph](images/tree_graph.jpg) 
+<img alt="TreeGraph " src={useBaseUrl('img/tree_graph.jpg')} />
 
 The consensus algorithm of Conflux, which is called
 **Greedy-Heaviest-Adaptive-SubTree** (GHAST), enables all the nodes in the
