@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Use Conflux In Browser",
+        label: "Use Conflux In Browser With Portal",
         items: [
           { type: "doc", folder: "conflux-portal", id: "introduction" },
           { type: "doc", folder: "conflux-portal", id: "getting_started" },
