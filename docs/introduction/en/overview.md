@@ -10,7 +10,7 @@ keywords:
 Conflux is a new secure and reliable public blockchain with very high
 performance and scalability. It can achieve the same level of decentralization
 and security as Bitcoin and Ethereum but provide more than two orders of
-magnitude improvement on transaction throughput (TPS) and finality.  
+magnitude improvement on transaction throughput (TPS) and finality latency.  
 
 The major superiority of Conflux hinges on its novel design of consensus
 protocol, authenticated storage, and transaction relay protocol. In Conflux
@@ -19,7 +19,9 @@ other blocks with one of them being its parent block. By only looking at the
 blocks linked with parent edges, the ledger appears to be a tree structure
 (parental tree), while by looking at all the blocks, it appears to be a directed
 acyclic graph. This is also the reason that we call the ledger structure of
-Conflux as TreeGraph.  
+Conflux as TreeGraph. 
+
+![TreeGraph](images/tree_graph.jpg) 
 
 The consensus algorithm of Conflux, which is called
 **Greedy-Heaviest-Adaptive-SubTree** (GHAST), enables all the nodes in the
