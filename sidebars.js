@@ -51,6 +51,13 @@ module.exports = {
           { type: "doc", folder: "conflux-portal", id: "sending_transactions" },
           { type: "doc", folder: "conflux-portal", id: "provider_api" },
         ]
+      },
+      {
+        type: "category",
+        label: "Conflux DEX SDK",
+        items: [
+          { type: "doc", folder: "conflux-dex-sdk", id: "boomflow_backend_sdk" },
+        ]
       }
     ]
   }
