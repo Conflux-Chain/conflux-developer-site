@@ -89,7 +89,7 @@ module.exports = {
           routeBasePath: "docs",
           sidebarPath: resolve(__dirname, "sidebars.en.js"),
           editUrl:
-            "https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs",
+            "https://github.com/Conflux-Chain/conflux-developer-site/edit/master",
           showLastUpdateTime: true,
           showLastUpdateAuthor: true
         },

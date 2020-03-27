@@ -50,6 +50,7 @@ module.exports = {
           { type: "doc", folder: "conflux-portal", id: "accessing_accounts" },
           { type: "doc", folder: "conflux-portal", id: "sending_transactions" },
           { type: "doc", folder: "conflux-portal", id: "provider_api" },
+          { type: "doc", folder: "conflux-portal", id: "signing_data_with_portal" },
         ]
       },
       {
