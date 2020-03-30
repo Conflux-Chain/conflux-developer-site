@@ -4,3 +4,6 @@
 [submodule "docs/conflux-dex-sdk"]
 	path = docs/conflux-dex-sdk
 	url = https://github.com/Conflux-Dev/conflux-dex-sdk.git
+[submodule "docs/conflux-dex"]
+	path = docs/conflux-dex
+	url = https://github.com/Conflux-Dev/conflux-dex.git
