@@ -9,8 +9,13 @@ To submit a repository, please read the doc [here](./docs/submit-a-repo.md).
 ### Installation
 
 ```
+$ yarn REINIT
 $ yarn
 ```
+
+**Note: the `yarn REINIT` command will clear any uncommitted changes under this
+directory including all submodules in `docs` folder. It will set everything to
+the same state as your `origin/master`.**
 
 ### Local Development
 

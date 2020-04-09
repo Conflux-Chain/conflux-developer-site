@@ -5,6 +5,7 @@
   "author": "yqrashawn <namy.19@gmail.com>",
   "private": true,
   "scripts": {
+    "REINIT": "sh development/reinit.sh",
     "genconf": "node development/gen_each_lang_sidebars_config.js",
     "start": "yarn genconf && docusaurus start",
     "build": "yarn genconf && docusaurus build",
