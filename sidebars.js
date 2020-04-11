@@ -20,8 +20,8 @@ module.exports = {
           { type: "doc", folder: "introduction", id: "try_conflux_core" },
           {
             type: "doc",
-            folder: "introduction",
-            id: "make_your_first_transaction"
+            folder: "conflux-doc",
+            id: "send_transaction"
           }
         ]
       },
