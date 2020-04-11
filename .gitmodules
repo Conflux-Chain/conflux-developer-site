@@ -1,3 +1,6 @@
 [submodule "docs/conflux-portal"]
 	path = docs/conflux-portal
 	url = https://github.com/Conflux-Chain/conflux-portal-docs.git
+[submodule "docs/conflux-doc"]
+	path = docs/conflux-doc
+	url = https://github.com/Conflux-Chain/conflux-doc.git
