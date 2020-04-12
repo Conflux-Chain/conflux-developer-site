@@ -1,4 +1,7 @@
 const { resolve } = require("path");
+const remarkHtml = require('remark-html')
+const rehypeTruncate = require('rehype-truncate')
+const rehypeSanitize = require('rehype-sanitize')
 
 module.exports = {
   title: "Conflux",
@@ -91,7 +94,9 @@ module.exports = {
           editUrl:
             "https://github.com/Conflux-Chain/conflux-developer-site/edit/master",
           showLastUpdateTime: true,
-          showLastUpdateAuthor: true
+          showLastUpdateAuthor: true,
+          remarkPlugins: [remarkHtml],
+          rehypePlugins: [rehypeTruncate, rehypeSanitize],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
