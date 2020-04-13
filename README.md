@@ -13,9 +13,9 @@ $ yarn REINIT
 $ yarn
 ```
 
-**Note: the `yarn REINIT` command will clear any uncommitted changes under this
-directory including all submodules in `docs` folder. It will set everything to
-the same state as your `origin/master`.**
+**Note: the `yarn REINIT` command will run a shell script that clears any
+uncommitted changes under this directory including all submodules in `docs`
+folder. It will set everything to the same state as your `origin/master`.** 
 
 ### Local Development
 
