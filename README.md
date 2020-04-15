@@ -41,6 +41,6 @@ Want to contribute to Conflux developer site? Awesome! You can find information 
 contributing to this project in
 [issues](https://github.com/Conflux-Chain/conflux-developer-site/issues)
 
-If you don't know howto do your first contributing, please reference here: [First
+If you don't know how to do your first contributing, please reference here: [First
 Contributions](https://github.com/firstcontributions/first-contributions)
 
