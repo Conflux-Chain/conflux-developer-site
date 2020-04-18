@@ -18,6 +18,7 @@ module.exports = {
         label: "Try Conflux",
         items: [
           { type: "doc", folder: "conflux-doc", id: "installation" },
+          { type: "doc", folder: "conflux-doc", id: "get_started" },
           {
             type: "doc",
             folder: "conflux-doc",
