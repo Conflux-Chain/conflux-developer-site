@@ -11,7 +11,7 @@ workflows:
 jobs:
   build-and-deploy:
     docker:
-      - image: circleci/node:13
+      - image: circleci/node:10.16
     environment:
       - GIT_USER: ConfluxBot
       - USE_SSH: true
@@ -29,8 +29,7 @@ jobs:
           name: Build
           no_output_timeout: 5m
           command: |
-            yarn --frozen-lockfile
-            yarn build
+            yarn && yarn build
 
       - run:
           name: Deploy to github pages
