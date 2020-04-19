@@ -29,8 +29,7 @@ jobs:
           name: Build
           no_output_timeout: 5m
           command: |
-            yarn --frozen-lockfile
-            yarn build
+            yarn && yarn build
 
       - run:
           name: Deploy to github pages
