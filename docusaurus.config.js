@@ -1,7 +1,5 @@
 const { resolve } = require("path");
-const remarkHtml = require('remark-html')
-const rehypeTruncate = require('rehype-truncate')
-const rehypeSanitize = require('rehype-sanitize')
+const stipStyle = require("./development/rehype-strip-styles-in-md");
 
 module.exports = {
   title: "Conflux",
@@ -17,7 +15,7 @@ module.exports = {
       title: "Conflux Developer",
       logo: {
         alt: "Conflux Logo",
-        src: "img/logo.svg"
+        src: "img/logo.svg",
       },
       links: [
         // {
@@ -29,9 +27,9 @@ module.exports = {
         {
           href: "https://github.com/Conflux-Chain/conflux-developer-site",
           label: "GitHub",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       style: "dark",
@@ -41,26 +39,26 @@ module.exports = {
           items: [
             {
               label: "Overview",
-              to: "docs/introduction/en/conflux_overview"
+              to: "docs/introduction/en/conflux_overview",
             },
             {
               label: "Portal",
-              to: "docs/conflux-portal/docs/en/portal/introduction"
-            }
-          ]
+              to: "docs/conflux-portal/docs/en/portal/introduction",
+            },
+          ],
         },
         {
           title: "Community",
           items: [
             {
               label: "Bounty",
-              href: "https://bounty.conflux-chain.org"
-            }
+              href: "https://bounty.conflux-chain.org",
+            },
             // {
             //   label: "Discord",
             //   href: "https://discordapp.com/invite/docusaurus"
             // }
-          ]
+          ],
         },
         {
           title: "Social",
@@ -71,17 +69,17 @@ module.exports = {
             // },
             {
               label: "GitHub",
-              href: "https://github.com/Conflux-Chain"
+              href: "https://github.com/Conflux-Chain",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/Conflux_Network"
-            }
-          ]
-        }
+              href: "https://twitter.com/Conflux_Network",
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Conflux Chain, Inc. Built with Docusaurus.`
-    }
+      copyright: `Copyright © ${new Date().getFullYear()} Conflux Chain, Inc. Built with Docusaurus.`,
+    },
   },
   presets: [
     [
@@ -95,13 +93,12 @@ module.exports = {
             "https://github.com/Conflux-Chain/conflux-developer-site/edit/master",
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
-          remarkPlugins: [remarkHtml],
-          rehypePlugins: [rehypeTruncate, rehypeSanitize],
+          rehypePlugins: [stipStyle],
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
 };

@@ -18,10 +18,7 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.48",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "rehype-sanitize": "^3.0.1",
-    "rehype-truncate": "^1.1.0",
-    "remark-html": "^11.0.1"
+    "react-dom": "^16.8.4"
   },
   "browserslist": {
     "production": [
