@@ -34,7 +34,9 @@
   },
   "devDependencies": {
     "globby": "^11.0.0",
+    "html-to-react": "^1.4.2",
     "mustache": "^4.0.0",
+    "react-element-to-jsx-string": "^14.3.1",
     "simple-git": "^1.132.0"
   }
 }
