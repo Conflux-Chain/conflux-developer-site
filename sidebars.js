@@ -26,7 +26,7 @@ module.exports = {
           },
           {
             type: "doc",
-            folder: "placeholder",
+            folder: "conflux-doc",
             id: "independent_chain",
           },
         ],
