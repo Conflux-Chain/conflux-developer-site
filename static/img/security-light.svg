@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="140px" viewBox="0 0 320 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>security</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-1">
+            <stop stop-color="#223854" offset="0%"></stop>
+            <stop stop-color="#181C3F" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="50" cy="50" r="50"></circle>
+        <filter x="-17.0%" y="-16.0%" width="134.0%" height="134.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Regular" transform="translate(-1216.000000, -398.000000)">
+            <g id="Technical" transform="translate(0.000000, 341.000000)">
+                <g id="security" transform="translate(1216.000000, 57.000000)">
+                    <g transform="translate(108.000000, 24.000000)">
+                        <circle id="Oval-14" stroke="#1F2E4D" opacity="0.5" cx="80.5" cy="57.5" r="39.5"></circle>
+                        <circle id="Oval-14" stroke="#1F314F" stroke-width="0.3" fill="#1D2949" opacity="0.799553571" cx="113.5" cy="79.5" r="6.5"></circle>
+                        <g id="Oval-13-Copy-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <ellipse id="Oval-15" fill="#FFFFFF" opacity="0.3" cx="49.2647919" cy="52.0924629" rx="1.7647919" ry="1.79246285"></ellipse>
+                        <polygon id="Triangle-2" stroke="#FFFFFF" points="49.4337349 26 71.8674699 64 27 64"></polygon>
+                        <g id="Group-4" transform="translate(49.415064, 26.415064) rotate(-330.000000) translate(-49.415064, -26.415064) translate(46.915064, 23.915064)" fill="#FFFFFF">
+                            <ellipse id="Oval-15" cx="2.22727273" cy="2.26219512" rx="2.22727273" ry="2.26219512"></ellipse>
+                        </g>
+                        <line x1="49.25" y1="25" x2="49.25" y2="63.6189024" id="Line-2" stroke="#FFFFFF" stroke-width="0.64" opacity="0.3" stroke-linecap="square"></line>
+                        <line x1="60.5" y1="46.5" x2="27.5" y2="63.5" id="Line-2" stroke="#FFFFFF" stroke-width="0.64" opacity="0.3" stroke-linecap="square"></line>
+                        <line x1="71.5" y1="63.6189024" x2="38.5" y2="46.5" id="Line-2" stroke="#FFFFFF" stroke-width="0.64" opacity="0.3" stroke-linecap="square"></line>
+                        <g id="Group-4-Copy" transform="translate(27.415064, 63.415064) rotate(-330.000000) translate(-27.415064, -63.415064) translate(24.915064, 60.915064)" fill="#FFFFFF">
+                            <ellipse id="Oval-15" cx="2.22727273" cy="2.26219512" rx="2.22727273" ry="2.26219512"></ellipse>
+                        </g>
+                        <g id="Group-4-Copy-2" transform="translate(71.415064, 63.415064) rotate(-330.000000) translate(-71.415064, -63.415064) translate(68.915064, 60.915064)" fill="#FFFFFF">
+                            <ellipse id="Oval-15" cx="2.22727273" cy="2.26219512" rx="2.22727273" ry="2.26219512"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

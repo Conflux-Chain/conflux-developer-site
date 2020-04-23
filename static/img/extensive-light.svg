@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="140px" viewBox="0 0 320 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>extensive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" id="radialGradient-1">
+            <stop stop-color="#223854" offset="0%"></stop>
+            <stop stop-color="#181C3F" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="50" cy="72" r="50"></circle>
+        <filter x="-17.0%" y="-16.0%" width="134.0%" height="134.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Regular" transform="translate(-800.000000, -398.000000)">
+            <g id="Technical" transform="translate(0.000000, 341.000000)">
+                <g id="extensive" transform="translate(800.000000, 57.000000)">
+                    <g transform="translate(110.000000, 2.000000)">
+                        <circle id="Oval-14" stroke="#1B2445" opacity="0.5" cx="83.5" cy="39.5" r="39.5"></circle>
+                        <g id="Oval-13-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Group-4" transform="translate(58.415064, 53.415064) rotate(-330.000000) translate(-58.415064, -53.415064) translate(55.915064, 50.915064)" fill="#FFFFFF">
+                            <ellipse id="Oval-15" cx="2.22727273" cy="2.26219512" rx="2.22727273" ry="2.26219512"></ellipse>
+                        </g>
+                        <circle id="Oval-16" stroke="#FFFFFF" cx="50.5" cy="70.5" r="28.5"></circle>
+                        <g id="Group-4" opacity="0.3" transform="translate(37.415064, 89.415064) rotate(-330.000000) translate(-37.415064, -89.415064) translate(34.915064, 86.915064)" fill="#FFFFFF">
+                            <ellipse id="Oval-15" cx="2.22727273" cy="2.26219512" rx="2.22727273" ry="2.26219512"></ellipse>
+                        </g>
+                        <circle id="Oval-16" stroke="#FFFFFF" opacity="0.3" cx="47.5" cy="73.5" r="23.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
