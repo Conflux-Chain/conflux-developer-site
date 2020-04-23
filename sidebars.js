@@ -27,7 +27,7 @@ module.exports = {
           {
             type: "doc",
             folder: "placeholder",
-            id: "run_an_independent_chain",
+            id: "independent_chain",
           },
         ],
       },
