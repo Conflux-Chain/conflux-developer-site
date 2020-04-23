@@ -35,9 +35,9 @@ module.exports = {
         type: "category",
         label: "SDK",
         items: [
-          { type: "doc", folder: "placeholder", id: "json_rpc" },
-          { type: "doc", folder: "placeholder", id: "cli_sub_commands" },
-          { type: "doc", folder: "placeholder", id: "javascript_sdk" },
+          { type: "doc", folder: "conflux-doc", id: "json_rpc" },
+          { type: "doc", folder: "conflux-doc", id: "cli_sub_commands" },
+          { type: "doc", folder: "js-conflux-sdk", id: "javascript_sdk" },
         ],
       },
       {
@@ -64,7 +64,7 @@ module.exports = {
       //     { type: "doc", folder: "conflux-dex-sdk", id: "shuttleflow_backend_sdk" },
       //     { type: "doc", folder: "conflux-dex", id: "matchflow" },
       //   ]
-      // }
+      //}
     ],
   },
 };
