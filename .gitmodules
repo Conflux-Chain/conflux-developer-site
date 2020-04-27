@@ -7,3 +7,6 @@
 [submodule "docs/js-conflux-sdk"]
 	path = docs/js-conflux-sdk
 	url = https://github.com/Conflux-Chain/js-conflux-sdk.git
+[submodule "docs/conflux-rust"]
+	path = docs/conflux-rust
+	url = https://github.com/Conflux-Chain/conflux-rust.git
