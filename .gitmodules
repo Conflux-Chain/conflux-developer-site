@@ -10,3 +10,6 @@
 [submodule "docs/conflux-rust"]
 	path = docs/conflux-rust
 	url = https://github.com/Conflux-Chain/conflux-rust.git
+[submodule "docs/go-conflux-sdk"]
+	path = docs/go-conflux-sdk
+	url = https://github.com/Conflux-Chain/go-conflux-sdk
