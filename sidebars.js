@@ -29,6 +29,11 @@ module.exports = {
             folder: "conflux-doc",
             id: "independent_chain",
           },
+          {
+            type: "doc",
+            folder: "conflux-rust",
+            id: "internal_contract",
+          },
         ],
       },
       {
@@ -38,6 +43,7 @@ module.exports = {
           { type: "doc", folder: "conflux-doc", id: "json_rpc" },
           { type: "doc", folder: "conflux-doc", id: "cli_sub_commands" },
           { type: "doc", folder: "js-conflux-sdk", id: "javascript_sdk" },
+          { type: "doc", folder: "go-conflux-sdk", id: "go_sdk" },
         ],
       },
       {
