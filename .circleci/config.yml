@@ -11,7 +11,7 @@ workflows:
 jobs:
   build-and-deploy:
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node@sha256:90e57990e54d3b1cbfbad5a2f2828530cbe9f92bd8dac128487f3067ae966f24
     environment:
       - GIT_USER: ConfluxBot
       - USE_SSH: true
