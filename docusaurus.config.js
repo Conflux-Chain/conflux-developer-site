@@ -4,7 +4,7 @@ const stipStyle = require("./development/rehype-strip-styles-in-md");
 module.exports = {
   title: "Conflux",
   tagline: "Where Valuable Bits are Exchanged and Validated",
-  url: "https://devdoctest.conflux-chain.org",
+  url: "https://developer.conflux-chain.org",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "Conflux-Chain", // Usually your GitHub org/user name.
