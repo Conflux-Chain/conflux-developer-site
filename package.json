@@ -1,42 +1,15 @@
 {
-  "name": "conflux-devdoc",
-  "version": "0.0.0",
-  "repository": "https://github.com/yqrashawn/conflux-devdoc.git",
-  "author": "yqrashawn <namy.19@gmail.com>",
-  "private": true,
+  "name": "cds",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Conflux-Chain/conflux-developer-site.git",
   "scripts": {
-    "REINIT": "sh development/reinit.sh",
-    "genconf": "node development/gen_each_lang_sidebars_config.js",
-    "start": "yarn genconf && docusaurus start",
-    "build": "yarn genconf && docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "now-deploy": "now ./build --static -no-clipboard --token $NOW_TOKEN --public"
+    "start": "cfxdoc start",
+    "build": "cfxdoc build"
   },
+  "author": "yqrashawn <namy.19@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.48",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.48",
-    "classnames": "^2.2.6",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "globby": "^11.0.0",
-    "html-to-react": "^1.4.2",
-    "mustache": "^4.0.0",
-    "react-element-to-jsx-string": "^14.3.1",
-    "simple-git": "^1.132.0"
+    "@conflux/docusaurus-config": "../conflux-docusaurus-config"
   }
 }
