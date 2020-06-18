@@ -61,14 +61,5 @@ module.exports = {
         },
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Conflux DEX SDK",
-    //   items: [
-    //     { type: "doc", folder: "conflux-dex-sdk", id: "boomflow_backend_sdk" },
-    //     { type: "doc", folder: "conflux-dex-sdk", id: "shuttleflow_backend_sdk" },
-    //     { type: "doc", folder: "conflux-dex", id: "matchflow" },
-    //   ]
-    //}
   ],
 };
