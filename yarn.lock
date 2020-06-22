@@ -2780,15 +2780,17 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-conflux-docusaurus-config@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/conflux-docusaurus-config/-/conflux-docusaurus-config-0.0.9.tgz#38189dc1599653bf23b90502a9fb10bbde546fee"
-  integrity sha512-NI+8nTvGPSebfINDBJeDJ0h8ZRZ5qh6g2i5q3QyAeiN4D7rlpBs3opbDe2UdTdJ9aMm0LyNICWsASpNWyJJucA==
+conflux-docusaurus-config@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/conflux-docusaurus-config/-/conflux-docusaurus-config-0.0.13.tgz#df00a10122ff14b6a94148f8d302579f20a83abc"
+  integrity sha512-oIH+lG8KSPr1uooEVROsEwdn+99dW634EWJttsinJZp4sBQXUN9Cvfce7t8fUmRSnJujE/iHm5A+9AntM7Cm1Q==
   dependencies:
     "@docusaurus/core" "^2.0.0-alpha.56"
     "@docusaurus/preset-classic" "^2.0.0-alpha.56"
+    chokidar "^3.4.0"
     classnames "^2.2.6"
     cpx2 "^2.0.0"
+    docusaurus2-dotenv "^1.4.0"
     globby "^11.0.1"
     html-to-react "^1.4.3"
     mustache "^4.0.1"
@@ -3446,6 +3448,13 @@ docsearch.js@^2.6.3:
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
+docusaurus2-dotenv@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/docusaurus2-dotenv/-/docusaurus2-dotenv-1.4.0.tgz#9ab900e29de9081f9f1f28f7224ff63760385641"
+  integrity sha512-iWqem5fnBAyeBBtX75Fxp71uUAnwFaXzOmade8zAhN4vL3RG9m27sLSRwjJGVVgIkEo3esjGyCcTGTiCjfi+sg==
+  dependencies:
+    dotenv-webpack "1.7.0"
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -3542,6 +3551,25 @@ dot-prop@^5.2.0:
   integrity sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv-defaults@^1.0.2:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dotenv-defaults/-/dotenv-defaults-1.1.1.tgz#032c024f4b5906d9990eb06d722dc74cc60ec1bd"
+  integrity sha512-6fPRo9o/3MxKvmRZBD3oNFdxODdhJtIy1zcJeUSCs6HCy4tarUpd+G67UTU9tF6OWXeSPqsm4fPAB+2eY9Rt9Q==
+  dependencies:
+    dotenv "^6.2.0"
+
+dotenv-webpack@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/dotenv-webpack/-/dotenv-webpack-1.7.0.tgz#4384d8c57ee6f405c296278c14a9f9167856d3a1"
+  integrity sha512-wwNtOBW/6gLQSkb8p43y0Wts970A3xtNiG/mpwj9MLUhtPCQG6i+/DSXXoNN7fbPCU/vQ7JjwGmgOeGZSSZnsw==
+  dependencies:
+    dotenv-defaults "^1.0.2"
+
+dotenv@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
+  integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
 
 duplexer@^0.1.1:
   version "0.1.1"
