@@ -13,6 +13,7 @@ changed=$(git submodule foreach git diff --no-color origin/master | grep -E '^(-
     || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/src.*$' \
     || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/static.*$' \
     || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b)\/development.*$' \
+    || git diff --no-color HEAD~ | grep -E '^(---|\+\+\+)\ (a|b).*package.json.*$' \
     || true)
 
 git config --global user.email $GH_EMAIL
