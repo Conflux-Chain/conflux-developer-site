@@ -42,7 +42,7 @@ latency.
 
 Conflux employs account model and supports the smart contract. Its smart
 contract is compatible with Solidity, which is Turing complete, as used in
-Ethereum. Conlux uses merkle patricia tree as the major structure for its
+Ethereum. Conflux uses merkle patricia tree as the major structure for its
 authenticated storage used for the states of the accounts and the smart
 contracts. Instead of using a single multi-version merkle tree, Conflux uses
 multiple merkle trees for each version of the states. High-level speaking, it
