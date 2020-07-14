@@ -40,6 +40,7 @@ module.exports = {
       label: "SDK",
       items: [
         { type: "doc", folder: "conflux-doc", id: "json_rpc" },
+        { type: "doc", folder: "conflux-doc", id: "pubsub" },
         { type: "doc", folder: "conflux-doc", id: "cli_sub_commands" },
         { type: "doc", folder: "js-conflux-sdk", id: "javascript_sdk" },
         { type: "doc", folder: "go-conflux-sdk", id: "go_sdk" },
