@@ -8,8 +8,9 @@ To submit a repository, please read the doc [here](./docs/submit-a-repo.md).
 
 ### Installation
 
-```
-$ yarn REINIT
+```shell
+$ git clone --recurse-submodules https://github.com/Conflux-Chain/conflux-developer-site
+$ cd conflux-developer-site
 $ yarn
 ```
 

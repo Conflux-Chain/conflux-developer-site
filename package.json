@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/Conflux-Chain/conflux-developer-site.git",
   "scripts": {
+    "postinstall": "cfxdoc build",
     "start": "cfxdoc start",
     "build": "cfxdoc build"
   },

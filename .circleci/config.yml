@@ -29,7 +29,7 @@ jobs:
           name: Build
           no_output_timeout: 5m
           command: |
-            yarn && yarn build && yarn build
+            yarn && yarn build
 
       - run:
           name: Deploy to github pages
