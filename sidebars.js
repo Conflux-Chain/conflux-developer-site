@@ -33,6 +33,11 @@ module.exports = {
           folder: "conflux-rust",
           id: "internal_contract",
         },
+        {
+          type: "doc",
+          folder: "conflux-doc",
+          id: "light_node",
+        },
       ],
     },
     {
