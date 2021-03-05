@@ -11,6 +11,6 @@
   "author": "yqrashawn <namy.19@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "conflux-docusaurus-config": "^0.0.17"
+    "conflux-docusaurus-config": "^0.0.19"
   }
 }
