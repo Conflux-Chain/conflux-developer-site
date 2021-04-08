@@ -6,11 +6,11 @@
   "scripts": {
     "postinstall": "cfxdoc build",
     "start": "cfxdoc start",
-    "build": "cfxdoc build"
+    "build": "ALGOLIA_INDEX_NAME=conflux-chain cfxdoc build"
   },
   "author": "yqrashawn <namy.19@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "conflux-docusaurus-config": "^0.0.21"
+    "conflux-docusaurus-config": "^0.1.0"
   }
 }
