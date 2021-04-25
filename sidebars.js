@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Run Conflux client",
+      label: "Run Conflux Client",
       items: [
         { type: "doc", folder: "conflux-doc", id: "installation", label: "How to get" },
         { type: "doc", folder: "conflux-doc", id: "get_started", label: "Run mainnet/testnet node" },
