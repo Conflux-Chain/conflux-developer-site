@@ -6,10 +6,10 @@ keywords:
   - conflux
   - basics
 ---
-In an overview, the Conflux world-state consists of a list of accounts and the associated account states, and the global state is updated via transactions. The Conflux blockchain stores all processed transactions in blocks, together with necessary information in block headers which enables a total ordering of all blocks. Below are some concepts you should to know.
+In an overview, the Conflux world-state consists of a list of accounts and the associated account states, and the global state is updated via transactions. The Conflux blockchain stores all processed transactions in blocks, together with necessary information in block headers which enables a total ordering of all blocks. Below are some concepts you should know.
 
 ## CFX
-To incentivize the maintenance of the Conflux network and charge users for consumption of resources, Conflux has an intrinsic currency called Conflux Coin or simply Conflux, denoted by CFX for short. The smallest subdenomination is denoted by Drip, in which all values processed in Conflux are integers. One Conflux is defined as 10^18 Drip. Frequently used subdenominations of Conflux are list as follows:
+To incentivize the maintenance of the Conflux network and charge users for consumption of resources, Conflux has an intrinsic currency called Conflux coin, simply denoted by CFX for short. The smallest subdenomination is denoted by Drip, in which all values processed in Conflux are integers. One Conflux is defined as 10^18 Drip. Frequently used subdenominations of Conflux are list as follows:
 
 | Multiplier (in Drip) | Name   |
 | ------------- |:-------------:|
@@ -19,7 +19,7 @@ To incentivize the maintenance of the Conflux network and charge users for consu
 | 10^18         | Conflux(CFX)  |
 
 ## chainId & networkId
-`chainId` is a binary id indicating where T is intended to be executed. Which is used to prevent transaction replay attack.
+`chainId` is a binary indicating where a transaction is intended to be executed. It is used to prevent transaction replay attack.
 chainId of Conflux is a constant, currently:
 
 * mainnet: `1029`
@@ -71,7 +71,7 @@ limit, sponsor balance for gas and sponsor balance for collateral.
 
 
 ## Transactions
-A Conflux transaction `T` is a single instruction composed by an external actor with a Conflux account α, and this instruction is cryptographically signed under the associated private key of the sending account α. The authentication key, i.e. the sending account’s associated public key, is also included in the transaction for verification.
+A Conflux transaction is a single instruction composed by an external actor with a Conflux account α, and this instruction is cryptographically signed under the associated private key of the sending account α. The authentication key, i.e. the sending account’s associated public key, is also included in the transaction for verification.
 
 ### Transaction Types
 There are two types of transactions depending on the “destinations”:
@@ -85,18 +85,18 @@ Both types of transactions share the following common fields:
 * `to`: A address indicating the transaction receiver.
 * `nonce`: A scalar value equal to the number of previously sent transactions.
 * `gasPrice`: A scalar value indicating the number of Drip to be paid per unit of gas that is consumed as a result of the
-execution of T.
-* `gas`: A scalar value indicating the total amount of gas paid for the cost of the execution of T. This is paid up-front,
+execution of transaction.
+* `gas`: A scalar value indicating the total amount of gas paid for the cost of the execution of transaction. This is paid up-front,
 before any actual computation is done, and may not be increased or refunded later. It is
 the transaction sender’s responsibility to avoid any extravagance caused by an unnecessarily high gasLimit.
 * `value`: A scalar value equal to the amount of Drip that the transactions sender wants to transfer to the recipient, i.e. the
-account specified in T or the newly created contract. 
-* `storageLimit`: A scalar value indicating the maximum increment of storage used in the execution of T, measured in
+account specified in transaction or the newly created contract. 
+* `storageLimit`: A scalar value indicating the maximum increment of storage used in the execution of transaction, measured in
 bytes.
-* `epochHeight`: A scalar value specifying the range of epochs where T can be executed. Such that T can only be executed between the epochs of [Te − 100000, Te + 100000].
-* `chainId`: A binary chain id indicating where T is intended to be executed. 
+* `epochHeight`: A scalar value specifying the range of epochs where transaction can be executed. Such that transaction can only be executed between the epochs of [Te − 100000, Te + 100000].
+* `chainId`: A binary chain id indicating where transaction is intended to be executed. 
 * `data`: A byte array specifying the input data of the message call to an existing contract. 
-* `v`, `r`, `s`: Corresponding fields of the recoverable ECDSA signature of T.
+* `v`, `r`, `s`: Corresponding fields of the recoverable ECDSA signature of transaction.
 
 
 ### Transaction's stage
