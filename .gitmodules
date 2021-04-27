@@ -1,15 +1,3 @@
-[submodule "docs/conflux-portal"]
-	path = docs/conflux-portal
-	url = https://github.com/Conflux-Chain/conflux-portal-docs.git
 [submodule "docs/conflux-doc"]
 	path = docs/conflux-doc
 	url = https://github.com/Conflux-Chain/conflux-doc.git
-[submodule "docs/js-conflux-sdk"]
-	path = docs/js-conflux-sdk
-	url = https://github.com/Conflux-Chain/js-conflux-sdk.git
-[submodule "docs/conflux-rust"]
-	path = docs/conflux-rust
-	url = https://github.com/Conflux-Chain/conflux-rust.git
-[submodule "docs/go-conflux-sdk"]
-	path = docs/go-conflux-sdk
-	url = https://github.com/Conflux-Chain/go-conflux-sdk
