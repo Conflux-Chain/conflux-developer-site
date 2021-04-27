@@ -5,7 +5,7 @@ custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/ma
 keywords:
   - SDK
 ---
-Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to SDKs, for detailed usage info, check their respective documentation.
+Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to the SDKs, for detailed usage info, check their respective documentation.
 
 ## [js-conflux-sdk](https://github.com/conflux-chain/js-conflux-sdk)
 If you are familiar with JavaScript or Node.js, or if you want to build a web site to interact with your contract, `js-conflux-sdk` is right for you. It has a lot of useful features.
@@ -19,7 +19,7 @@ async function main() {
     networkId: 1,
   });
 
-  let balance = await cfx.getBalance("cfx:aakkfzezns4h8ymx1cgmcnd4x3aev6e2hexz250ym5");
+  let balance = await cfx.getBalance("cfxtest:aakkfzezns4h8ymx1cgmcnd4x3aev6e2he38nnu8sv");
   console.log("balance: ", balance);
 }
 
@@ -68,7 +68,9 @@ import conflux.web3j.Cfx;
 public class App {
 	
   public static void main(String[] args) throws Exception {
-		Cfx cfx = Cfx.create("https://test.confluxrpc.org/v2", 3, 1000);
+    int retry = 3;
+    int intervalMills = 1000;  // interval(milliseconds) between retry
+		Cfx cfx = Cfx.create("https://test.confluxrpc.com", retry, intervalMills);
 		BigInteger epoch = cfx.getEpochNumber().sendAndGet();
 		System.out.println("Current epoch: " + epoch);
 	}
@@ -77,7 +79,7 @@ public class App {
 ```
 
 ## [python-conflux-sdk](https://github.com/conflux-chain/python-conflux-sdk)
-Python is also a lot of developers first choice, we also have `python-conflux-sdk` for you.
+Python is the first choice for a lot of developers, we also have `python-conflux-sdk` for you.
 
 ```python
 from conflux import (

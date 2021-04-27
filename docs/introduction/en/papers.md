@@ -7,10 +7,10 @@ keywords:
   - papers
 ---
 
-The Conflux Protocol has solid researches to support 
+The Conflux Protocol is defined and analyzed in a number of research papers.
 
 ## [Conﬂux Protocol Specification (Yellow paper)](https://confluxnetwork.org/files/Conflux_Protocol_Specification_20201020.pdf)
-The [Protocol Specification](https://confluxnetwork.org/files/Conflux_Protocol_Specification_20201020.pdf) details described every aspect of Conflux implementation, including ledger structure, consensus, proof of work, incentive mechanism, and many others.
+The [Protocol Specification](https://confluxnetwork.org/files/Conflux_Protocol_Specification_20201020.pdf) serves as a reference of the Conflux protocol. It describes the ledger structure, the consensus mechanism, Proof of Work, the incentive mechanism, and many others aspects of the system.
 
 ## [A Decentralized Blockchain with High Throughput and Fast Confirmation](https://www.usenix.org/conference/atc20/presentation/li-chenxing)
 This paper presents Conflux, a scalable and decentralized blockchain system that provides high throughput and fast confirmation. Conflux operates on a novel consensus protocol which optimistically processes concurrent blocks without discarding any forks and adaptively assigns weights to blocks based on their topology in the Conflux ledger structure (called Tree-Graph). The adaptive weight mechanism enables Conflux to detect and thwart liveness attack by automatically switching between an optimistic strategy for fast confirmation in normal scenarios and a conservative strategy to ensure consensus progress during liveness attacks. 

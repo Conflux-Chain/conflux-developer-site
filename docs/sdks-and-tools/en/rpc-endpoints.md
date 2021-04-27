@@ -6,9 +6,9 @@ keywords:
   - endpoints
 ---
 
-Conflux foundation provided several public RPCs, developer can directly use them interact with Conflux network.
+The Conflux Foundation provides several public RPC endpoints. Developers can use these endpoints directly to interact with the Conflux network.
 
-## Conflux-rust latest version (support CIP37 address)
+## Conflux-rust latest version (supports CIP37 address format)
 
 ### Conflux-RPC with smart DNS (Recommended)
 
@@ -44,7 +44,7 @@ Conflux foundation provided several public RPCs, developer can directly use them
 * https://services.tokenview.com/cn/product/infura
 
 
-## Conflux-rust v1.1.0 (Support hex40 address)
+## Conflux-rust v1.1.0 (supports the legacy hex40 address format)
 
 ### Conflux Official
 * mainnet: https://main.confluxrpc.org
