@@ -66,15 +66,13 @@ import java.math.BigInteger;
 import conflux.web3j.Cfx;
 
 public class App {
-	
   public static void main(String[] args) throws Exception {
     int retry = 3;
     int intervalMills = 1000;  // interval(milliseconds) between retry
-		Cfx cfx = Cfx.create("https://test.confluxrpc.com", retry, intervalMills);
-		BigInteger epoch = cfx.getEpochNumber().sendAndGet();
-		System.out.println("Current epoch: " + epoch);
-	}
-
+    Cfx cfx = Cfx.create("https://test.confluxrpc.com", retry, intervalMills);
+    BigInteger epoch = cfx.getEpochNumber().sendAndGet();
+    System.out.println("Current epoch: " + epoch);
+  }
 }
 ```
 
