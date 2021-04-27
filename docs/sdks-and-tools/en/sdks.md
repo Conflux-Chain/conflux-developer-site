@@ -5,15 +5,10 @@ custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/ma
 keywords:
   - SDK
 ---
-Conflux have SDKs for main stream programming language, Including `JavaScript`, `Golang`, `Java`, `Python`. This is just an short introduction of SDKs, for detail usage info, check their respective documentation.
+Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to SDKs, for detailed usage info, check their respective documentation.
 
 ## [js-conflux-sdk](https://github.com/conflux-chain/js-conflux-sdk)
-If you are familiar with JavaScript or Node.js; if you want to build an web page to interact with your contract, `js-conflux-sdk` is right for you. It has a lot useful feature.
-
-* Provider HttpProvider, WebsocketProvider
-* Support all Conflux RPC methods
-* Account management
-* Easy contract interaction
+If you are familiar with JavaScript or Node.js, or if you want to build a web site to interact with your contract, `js-conflux-sdk` is right for you. It has a lot of useful features.
 
 ```js
 const {Conflux} = require('js-conflux-sdk');
@@ -32,7 +27,7 @@ main().catch(console.log);
 ```
 
 ## [go-conflux-sdk](https://github.com/conflux-chain/go-conflux-sdk)
-Golang is a great language: fast, easy to use, stable. In blockchain world a lot projects is developing with Go. If you want to develop a backend service which need to communicate with Conflux network, `go-conflux-sdk` suit for you.
+Golang is a great language: fast, easy to use, and stable. In blockchain world a lot projects are developing with Go. If you want to develop a backend service which needs to communicate with Conflux network, `go-conflux-sdk` suits for you.
 
 ```go
 package main
@@ -63,7 +58,7 @@ func main() {
 ```
 
 ## [java-conflux-sdk](https://github.com/conflux-chain/java-conflux-sdk)
-Java is really an long live programming language. `java-conflux-sdk` can used to talk with an Conflux node. It is evolved from the [web3j](https://docs.web3j.io/) library. Some of web3j's utilities function also work on Conflux network.
+Java is really a long live programming language. `java-conflux-sdk` can be used to talk to a Conflux node. It is evolved from the [web3j](https://docs.web3j.io/) library. Some of web3j's utility functions also work on the Conflux network.
 
 ```java
 package conflux.sdk.examples;
@@ -82,7 +77,7 @@ public class App {
 ```
 
 ## [python-conflux-sdk](https://github.com/conflux-chain/python-conflux-sdk)
-Python is also a lot developers first choice, we also have `python-conflux-sdk` for you.
+Python is also a lot of developers first choice, we also have `python-conflux-sdk` for you.
 
 ```python
 from conflux import (
