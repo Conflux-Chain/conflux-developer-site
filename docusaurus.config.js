@@ -17,12 +17,12 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'guides/en/how_to_use_cfx_faucet',
-          position: 'left',
-          label: 'Guides',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'guides/en/how_to_use_cfx_faucet',
+        //   position: 'left',
+        //   label: 'Guides',
+        // },
         {
           type: 'doc',
           docId: 'introduction/en/conflux_overview',
