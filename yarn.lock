@@ -972,10 +972,10 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
   integrity sha512-4Th98KlMHr5+JkxfcoDT//6vY8vM+iSPrLNpHhRyLx2CFYi8e2RfqPLdpbnpo0Q5lQC5hNB79yes07zb02fvCw==
 
-"@cfxjs/docusaurus-config@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@cfxjs/docusaurus-config/-/docusaurus-config-0.1.0.tgz#1511d9fed174586892e23b2aca42db163c086432"
-  integrity sha512-4O9xYbe9R8Tkc34P2jJ4HmcgJj7Rr/i3+UHXijdGZVGhZIBl8rIWUPBJ9fciDQ5vEbFT/yGA9o6ANu2WcLnGxQ==
+"@cfxjs/docusaurus-config@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@cfxjs/docusaurus-config/-/docusaurus-config-0.1.6.tgz#202cc4f3314457a65b6460f818d6e9e1ee9ac4c8"
+  integrity sha512-2qJ6yUSkJ0nK/4Au0FfPDOBB0Zk6nvkljR1eYw0GW17l3Ovqaok25M+njhvT0hghk91cisOOMelW/isq6jYiyA==
   dependencies:
     "@docusaurus/core" "^2.0.0-alpha.56"
     "@docusaurus/preset-classic" "^2.0.0-alpha.56"
