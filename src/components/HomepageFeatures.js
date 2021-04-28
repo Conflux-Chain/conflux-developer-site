@@ -1,41 +1,45 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import trans from '../i18n';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: trans['en']['LearnAboutConflux'],
+    Svg: require('../../static/img/security-dark.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        {trans['en']['homepage/LearnDescription']}
       </>
     ),
+    link: '/docs/introduction/en/conflux_overview',
+    buttonText: 'Learn'
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: trans['en']['RunANode'],
+    Svg: require('../../static/img/extensive-dark.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        {trans['en']['homepage/RunDescription']}
       </>
     ),
+    link: '/docs/conflux-doc/docs/get_started',
+    buttonText: 'Run'
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: trans['en']['StartBuild'],
+    Svg: require('../../static/img/scalability-dark.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        {trans['en']['homepage/BuildDescription']}
       </>
     ),
+    link: '/docs/conflux-doc/docs/send_transaction',
+    buttonText: 'Build'
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, buttonText, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -44,6 +48,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        <p><a className={clsx('button button--secondary')} href={link}>{buttonText}</a></p>
       </div>
     </div>
   );
