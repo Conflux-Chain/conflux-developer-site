@@ -1,6 +1,5 @@
 ---
 id: how_to_use_cfx_faucet
-title: How to Use CFX Faucet
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/guides/en/how-to-use-cfx-faucet.md
 keywords:
   - faucet

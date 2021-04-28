@@ -1,6 +1,5 @@
 ---
 id: how_to_use_cfx_faucet
-title: 如何使用 CFX 水龙头
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/guides/zh/how-to-use-cfx-faucet.md
 keywords:
   - faucet

@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'Where Valuable Bits are Exchanged and Validated',
   url: 'https://developer.conflux-chain.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Conflux-Chain', // Usually your GitHub org/user name.
