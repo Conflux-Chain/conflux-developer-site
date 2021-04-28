@@ -36,7 +36,7 @@ Currently there are three types of `type indicator`:
 * [1000] for (Solidity) contracts
 * [0000] for internal contracts (a.k.a. “precompiled contracts”)
 
-If hex encodes the `type indicator`, they will become:
+Hex-encoded, the type indicator becomes::
 
 * `1` normal address
 * `8` contract address
