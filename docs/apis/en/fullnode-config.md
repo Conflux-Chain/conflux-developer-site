@@ -6,8 +6,7 @@ keywords:
   - config
 ---
 
-Below is an mainnet node config file, you can find all supported options and comment in it. You can also find a newest version in [conflux-rust Github repository's run folder](https://github.com/Conflux-Chain/conflux-rust/tree/master/run).
-The file name is `tethys.toml` or `testnet.toml`.
+Below is a mainnet node configuration file, it contains all the supported options along with some explanations in the comments. You can also find the latest version at [conflux-rust Github repository's run folder](https://github.com/Conflux-Chain/conflux-rust/tree/master/run). The file name is `tethys.toml` or `testnet.toml`.
 
 ```yaml
 # bootnodes is a list of nodes that a conflux node trusts, and will be used to sync the blockchain when a node starts. 
