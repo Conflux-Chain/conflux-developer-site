@@ -700,6 +700,3 @@ MigrationBackup/
 
 # End of https://www.gitignore.io/api/node,rust,linux,macos,emacs,windows,webstorm,visualstudio,visualstudiocode
 .now
-
-docs-v2
-tmp

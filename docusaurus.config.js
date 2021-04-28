@@ -1,5 +1,11 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+
+const algolia = {
+  apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
+  indexName: process.env.ALGOLIA_INDEX_NAME,
+}
+
+const docusaurusConfig = {
   title: 'Conflux',
   tagline: 'Where Valuable Bits are Exchanged and Validated',
   url: 'https://developer.conflux-chain.org',
@@ -116,3 +122,9 @@ module.exports = {
     ],
   ],
 };
+
+if (process.env.ALGOLIA_SEARCH_API_KEY) {
+  docusaurusConfig.themeConfig.algolia = algolia
+}
+
+module.exports = docusaurusConfig;
