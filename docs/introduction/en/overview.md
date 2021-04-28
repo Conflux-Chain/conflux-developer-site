@@ -1,6 +1,6 @@
 ---
 id: conflux_overview
-title: Conflux Overview
+title: Overview
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/introduction/en/overview.md
 keywords:
   - conflux
