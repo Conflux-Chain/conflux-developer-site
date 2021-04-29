@@ -1,6 +1,6 @@
 {
-  "name": "cfx-developer",
-  "version": "0.0.0",
+  "name": "conflux-developer-site",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
