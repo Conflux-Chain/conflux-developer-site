@@ -1,16 +1,36 @@
 {
   "name": "conflux-developer-site",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Conflux-Chain/conflux-developer-site.git",
+  "private": true,
   "scripts": {
-    "postinstall": "cfxdoc build",
-    "start": "cfxdoc start",
-    "build": "ALGOLIA_INDEX_NAME=conflux-chain cfxdoc build"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "ALGOLIA_INDEX_NAME=conflux-chain docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
-  "author": "yqrashawn <namy.19@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "@cfxjs/docusaurus-config": "^0.1.6"
+    "@docusaurus/core": "2.0.0-alpha.73",
+    "@docusaurus/preset-classic": "2.0.0-alpha.73",
+    "@mdx-js/react": "^1.6.21",
+    "clsx": "^1.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
