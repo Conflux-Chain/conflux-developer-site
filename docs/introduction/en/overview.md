@@ -2,6 +2,7 @@
 id: conflux_overview
 title: Overview
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/introduction/en/overview.md
+slug: /
 keywords:
   - conflux
   - overview
@@ -15,14 +16,14 @@ magnitude improvement on transaction throughput (TPS) and finality latency.
 
 The major superiority of Conflux hinges on its novel design of consensus
 protocol, authenticated storage, and transaction relay protocol. In Conflux
-ledger, blocks are organized as **TreeGraph** where each block references some
+ledger, blocks are organized as **Tree-Graph** where each block references some
 other blocks with one of them being its parent block. By only looking at the
 blocks linked with parent edges, the ledger appears to be a tree structure
 (parental tree), while by looking at all the blocks, it appears to be a directed
 acyclic graph. This is also the reason that we call the ledger structure of
-Conflux as TreeGraph. 
+Conflux as Tree-Graph. 
 
-<img alt="TreeGraph " src={useBaseUrl('img/tree_graph.jpg')} />
+<img alt="Tree-Graph " src={useBaseUrl('img/tree_graph.jpg')} />
 
 The consensus algorithm of Conflux, which is called
 **Greedy-Heaviest-Adaptive-SubTree** (GHAST), enables all the nodes in the
@@ -34,7 +35,7 @@ attack that tries to generate two balanced subtrees) that may hurt the liveness,
 i.e., the ability to confirm transactions, and thwart these attacks by
 adaptively adjusting the weights of the blocks.  
 
-The TreeGraph ledger and the GHAST consensus algorithm make Conflux nodes be
+The Tree-Graph ledger and the GHAST consensus algorithm make Conflux nodes be
 able to quickly generate new blocks without worrying about that the existence of
 forks in the ledger may harm the security of the network, and hence enable the
 system to achieve both the high throughput and the low transaction confirmation
