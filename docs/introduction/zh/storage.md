@@ -2,7 +2,6 @@
 id: conflux_storage
 title: Storage
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/introduction/en/storage.md
-slug: /
 keywords:
   - storage
 ---
