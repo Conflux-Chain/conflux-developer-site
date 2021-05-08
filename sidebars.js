@@ -34,10 +34,6 @@ module.exports = {
           // type: 'link',
           // href: 'https://github.com/Conflux-Chain/conflux-rust/tree/master/internal_contract#readme'
         },
-        // {
-        //   type: "doc",
-        //   id: "internal_contract",
-        // },
         {
           type: "doc",
           id: 'introduction/en/conflux_papers',
@@ -48,6 +44,7 @@ module.exports = {
       type: "category",
       label: "Run Conflux Node",
       items: [
+        { type: 'doc', id: 'run-a-node/en/how_to_get' },
         { type: "doc", id: "conflux-doc/docs/installation" },
         { type: "doc", id: "conflux-doc/docs/get_started" },
         {
@@ -58,6 +55,11 @@ module.exports = {
           type: "doc",
           id: "conflux-doc/docs/light_node",
         },
+        {
+          type: 'link',
+          label: 'Run a Miner',
+          href: 'https://forum.conflux.fun/t/conflux-tethys-gpu-mining-instruction-v1-1-3/3775'
+        }
       ],
     },
     {
