@@ -6,11 +6,11 @@ keywords:
   - node
 ---
 
-[Conflux-rust](https://github.com/conflux-chain/conflux-rust) is a Conflux protocol high-performance implementation developed by the foundation with the Rust language. It is an Conflux Client program that runs Conflux network nodes and provides RPC service to the public. It is also a command-line tool that manages local accounts and conducts PRC interaction with nodes. You can download the release package through any of the ways listed: 
+[Conflux-rust](https://github.com/conflux-chain/conflux-rust) is a high-performance implementation of the Conflux protocol developed by the foundation with the Rust language. Conflux-rust is a Conflux node that connects to other nodes on the Conflux network and provides an RPC interface that you can use to query and interact with the blockchain. It is also a command-line tool that manages local accounts and conducts PRC interaction with nodes. You can download the released package through any of the ways listed: 
 
-## Directly download the nodes program
+## Download pre-built binaries
 
-Conflux-rust on Github [Release](https://github.com/Conflux-Chain/conflux-rust/releases) page provides a compiled node program that can be directly downloaded and run. There are two versions for the main-net and the test-net: the main-net version is Conflux `vx.x.x`, while the version for test-net is `Conflux vx.x.x-testnet` (which has a suffix of `testnet`). Each program will be provided for Linux, Windows10, and macOS.
+The [release](https://github.com/Conflux-Chain/conflux-rust/releases) page on the conflux-rust GitHub repository providers pre-built binaries that you can download and run directly. There are two versions for the mainnet and the testnet: the mainnet version is Conflux `vx.x.x`, while the version for testnet is `Conflux vx.x.x-testnet` (which has a suffix of `testnet`). Each program will be provided for Linux, Windows10, and macOS.
 
 On the Release page, each version will have a version update description and `Assets` that you can download. After selecting the corresponding platform, you can click the link to download the zip package. For example, when unzipping the `conflux_linux_v1.1.2.zip` file, a `run` folder that contains node programs, configuration files, and startup scripts will appear. The specific documents include:
 
@@ -32,6 +32,8 @@ On the Release page, each version will have a version update description and `As
 * `throttling.toml` Internet speed flow limit configuration file (used for development and testing) 
 * `start.sh` Linux system startup script
 * `start.bat` Windows system startup script
+
+**Make sure you only run binaries downloaded from the official Conflux-Chain/conflux-rust GitHub repository.**
 
 ## Docker
 Conflux provides an official [Docker image of conflux-rust](https://hub.docker.com/r/confluxchain/conflux-rust). You can use it to quickly start a node. You can start a node within two steps:  Download image and  Run container.
