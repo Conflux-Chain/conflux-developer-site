@@ -79,7 +79,7 @@ contract VendingMachine {
 
 - ABI: ABI全称Application Binary Interface，即应用二进制接口说明。ABI用JSON格式描述了合约中公开函数的函数名、修饰符、可见性、参数名称及其类型、返回值名称及其类型，以及Event的描述。目的是为了我们在外部调用合约函数时可以根据ABI中该函数的描述按照特定的方法进行编码从而得到一个EVM可以识别的值，以16进制格式显示；使用该值就可以与合约交互。
 
-编译智能合约可以使用`solc`, [conflux-truffle](https://github.com/Conflux-Chain/conflux-truffle), [conflux-studio](https://github.com/ObsidianLabs/ConfluxStudio) 等进行。
+编译智能合约可以使用`solc`, [conflux-truffle](https://github.com/Conflux-Chain/conflux-truffle)等进行。
 
 这里以solc为例说明。
 
@@ -232,7 +232,7 @@ rpc method 为`cfx_call`， data为`函数选择器 + 参数列表`编码方式�
 - [Solidity](https://docs.soliditylang.org/en/v0.8.4/)
 - [Vyper](https://vyper.readthedocs.io/en/stable/)
 
-Conflux智能合约有丰富的开发工具供开发者使用，提高开发效率
+Conflux有更友好的智能开发工具供开发者使用，提高开发效率
 - [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
 
 其它
