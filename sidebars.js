@@ -35,6 +35,10 @@ module.exports = {
           // href: 'https://github.com/Conflux-Chain/conflux-rust/tree/master/internal_contract#readme'
         },
         {
+          type: 'doc',
+          id: 'introduction/en/conflux_storage'
+        },
+        {
           type: "doc",
           id: 'introduction/en/conflux_papers',
         }
