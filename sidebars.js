@@ -15,7 +15,7 @@ module.exports = {
 
   guides: [
     "guides/en/how_to_use_cfx_faucet",
-    // "guides/zh/how_to_deploy_erc20_token"
+    "guides/en/how_to_deploy_erc20_token"
   ],
 
   docs: [
