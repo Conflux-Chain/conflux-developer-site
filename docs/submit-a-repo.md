@@ -105,4 +105,4 @@ The CI config in your repo will trigger the build workflow of this repo.
 
 The workflow will pull your repo down, check if any doc files being updated
 between old submodule revision and your **master** branch, use docusaurus build
-the doc and update developer.confluxnetwork.org. 
+the doc and update developer.conflux-chain.org. 

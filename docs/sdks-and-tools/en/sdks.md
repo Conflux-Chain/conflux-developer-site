@@ -7,7 +7,7 @@ keywords:
 ---
 Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to the SDKs, for detailed usage info, check their respective documentation.
 
-## [js-conflux-sdk](https://confluxnetwork.gitbook.io/js-conflux-sdk/)
+## [js-conflux-sdk](https://github.com/conflux-chain/js-conflux-sdk)
 If you are familiar with JavaScript or Node.js, or if you want to build a web site to interact with your contract, `js-conflux-sdk` is right for you. It has a lot of useful features.
 
 ```js
