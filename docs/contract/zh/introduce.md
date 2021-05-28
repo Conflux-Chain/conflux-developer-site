@@ -1,3 +1,9 @@
+---
+id: contract_introduce
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/contract/zh/introduce.md
+keywords:
+  - faucet
+---
 # 智能合约介绍
 ## 什么是智能合约
 智能合约概念于1995年由Nick Szabo首次提出。智能合约（Smart contract ）是一种旨在以信息化方式传播、验证或执行合同的计算机协议。智能合约允许在没有第三方的情况下进行可信交易，这些交易可追踪且不可逆转。

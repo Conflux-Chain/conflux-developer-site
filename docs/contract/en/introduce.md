@@ -1,3 +1,9 @@
+---
+id: contract_introduce
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/contract/en/introduce.md
+keywords:
+  - faucet
+---
 # Introduction of Smart Contract
 
 ## What is Smart Contract?
