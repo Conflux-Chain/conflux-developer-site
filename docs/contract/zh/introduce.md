@@ -143,7 +143,7 @@ solcjs ./VendingMachine.sol --bin --abi
 ```
 
 ### 部署
-合约部署就是在conflux区块链上创建一个合约实例，通过发送一笔`data`为`bytecode`，`to`为空地址的[交易](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions)即可实现合约部署。
+合约部署就是在conflux区块链上创建一个合约实例，通过发送一笔`data`为`bytecode`，`to`为空的[交易](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions)即可实现合约部署。
 
 > 如果构造函数带参数，则`data`应为`bytecode`与对`构造参数`ABI编码后组合而成的值
 
