@@ -13,11 +13,3 @@ Truffle is a world class development environment, testing framework and asset pi
 To find out how to use it, you can read [Truffle's documentation](https://www.trufflesuite.com/docs/truffle/overview).
 And `conflux-truffle`'s [setup guide](https://github.com/Conflux-Chain/conflux-truffle/blob/conflux/ultimate-guide.md)
 
-## [Conflux Studio](https://github.com/ObsidianLabs/ConfluxStudio)
-Conflux Studio is an integrated development environment (IDE), making developing Conflux smart contracts faster and easier, developed by [ObsidianLabs](https://www.obsidians.io/). 
-
-![](https://github.com/ObsidianLabs/ConfluxStudio/raw/master/screenshots/compile.png)
-
-You can download it from its [Github release page](https://github.com/ObsidianLabs/ConfluxStudio/releases). Windows, Mac, and Linux systems are supported.
-
-You can find its documentation in [readme](https://github.com/ObsidianLabs/ConfluxStudio), and there is also a [tutorial](https://github.com/ObsidianLabs/conflux-dapp-tutorial) about how to use it to develop a Dapp.
