@@ -247,11 +247,11 @@ const { Conflux } = require("js-conflux-sdk");
   duration: 33
 }
 ```
-rpc method 为`cfx_call`， data为`函数选择器 + 参数列表`编码方式的结果，前4字节`0xe18a7b92`为函数`balanceOf`的函数选择器，计算方法为对`balanceOf`的签名`balanceOf(address)`做keccak运算`keccak256("balanceOf(address)")`后取前4字节。后面的字节`00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`为参数 `address` 类型, 值 `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302` 的编码结果。
+rpc method 为`cfx_call`， data为`函数选择器 + 对参数列表ABI编码`的结果，前4字节`0xe18a7b92`为函数`balanceOf`的函数选择器，计算方法为对`balanceOf`的签名`balanceOf(address)`做keccak运算`keccak256("balanceOf(address)")`后取前4字节。后面的字节`00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`为参数 `address` 类型, 值 `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302` 的ABI编码结果。
 
 返回值`0x0000000000000000000000000000000000000000000000000000000000000000`是 类型  `uint`, 值 `0` 的编码结果。
 
-而`purchase`的 rpc method 为`cfx_sendRawTransaction`，即发送一笔[交易](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions)，这会改变合约状态。可以通过 `getTransactionByHash` 看到该交易的 `data` 也是同样的 `函数选择器 + 参数列表` 编码方式。
+而`purchase`的 rpc method 为`cfx_sendRawTransaction`，即发送一笔[交易](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions)，这会改变合约状态。可以通过 `getTransactionByHash` 看到该交易的 `data` 也是同样的 `函数选择器 + 对参数列表ABI编码`。
 ```json
 {
   "jsonrpc": "2.0",
@@ -296,6 +296,11 @@ purchase event: {
     amount: 2n
   }
 }
+```
+表示发生了一个`Purchase`事件，customer为`cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`，数量为2
+
+`purchase`完成后，`cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` 由 0 变为 2。状态发生改变。
+```js
 {
   data: {
     jsonrpc: '2.0',
@@ -303,13 +308,10 @@ purchase event: {
     method: 'cfx_call',
     params: [ [Object], undefined ]
   },
-  result: '0x0000000000000000000000000000000000000000000000000000000000000006',
+  result: '0x0000000000000000000000000000000000000000000000000000000000000002',
   duration: 30
 }
 ```
-表示发生了一个`Purchase`事件，customer为`cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`，数量为2
-
-`purchase`完成后，`cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` 由 0 变为 2。状态发生改变。
 
 > 需要注意的是，Conflux链上在部署合约和调用合约的时候，如果在合约中新增存储空间占用时，需要为占用的存储空间抵押一部分cfx；该部分费用会在存储释放后返还，详情参见[Conflux的存储抵押机制](https://juejin.cn/post/6855551378123653127)
 

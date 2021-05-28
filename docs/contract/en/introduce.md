@@ -159,7 +159,7 @@ The contract deployment is creating a contract instance on the Conflux blockchai
 
 > If the constructor contains parameters, `data` should be a combination of `bytecode` and the ABI encoding of the `constructor`.
 
-We take `js-conflux-sdk` to example here. 
+We will use `js-conflux-sdk` to demonstrate.
 
 ```js
 const { Conflux } = require("js-conflux-sdk");
@@ -246,7 +246,7 @@ const { Conflux } = require("js-conflux-sdk");
     console.log("after purchase, my cupcake balance :", myBalance)
 })()
 ```
-From the log, we can see that the corresponding rpc information is  `contract.cupcakeBalances(me.address)`.
+From the log, we can see that the corresponding rpc information of `contract.cupcakeBalances(me.address)` is follow.
 
 ```js
 {
@@ -266,11 +266,11 @@ From the log, we can see that the corresponding rpc information is  `contract.cu
   duration: 33
 }
 ```
-rpc method is `cfx_call`, data is the result of `function selector + parameter` list encoding method. The first 4 bytes `0xe18a7b92` is the function selector of function `balanceOf`. The calculation takes keccak operation `keccak256("balanceOf(address)")` on the signature `balanceOf(address)` of `balanceOf` and then takes the first 4 bytes.  `00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`is  address type of parameter, after encoding value  `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302`
+rpc method is `cfx_call`, data is the result of `function selector + ABI-encoded result of parameter list`. The first 4 bytes `0xe18a7b92` is the function selector of function `balanceOf`. The calculation takes keccak operation `keccak256("balanceOf(address)")` on the signature `balanceOf(address)` of `balanceOf` and then takes the first 4 bytes.  `00000000000000000000000019f4bcf113e0b896d9b34294fd3da86b4adf0302`is the ABI-encoded value of paramter `0x19f4bcf113e0b896d9b34294fd3da86b4adf0302`
 
 The returned value is `0x0000000000000000000000000000000000000000000000000000000000000000`, which is the result of ABI-encoded value 0 with `uint`type
 
-The rpc method for `purchase` is `cfx_sendRawTransaction`, which is sending [transaction](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions). This will change the state of the contract. The encoding method for the transaction's data is also function `selector + parameter list`. You can check this through getTransactionByHash 
+The rpc method for `purchase` is `cfx_sendRawTransaction`, which is sending [transaction](https://developer.conflux-chain.org/introduction/en/conflux_basics#transactions). This will change the state of the contract. The encoding method for the transaction's data is also `function selector + ABI-encoded reulst of parameter list`. You can check this through getTransactionByHash 
 
 ```json
 {
@@ -319,6 +319,11 @@ purchase event: {
     amount: 2n
   }
 }
+```
+This indicates that one `Purchase` event happened, customer is  `cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`, quantity is 2. 
+
+After `purchase` is complete,  `cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` changed from 0 to 2. State has changed. 
+```js
 {
   data: {
     jsonrpc: '2.0',
@@ -326,13 +331,10 @@ purchase event: {
     method: 'cfx_call',
     params: [ [Object], undefined ]
   },
-  result: '0x0000000000000000000000000000000000000000000000000000000000000006',
+  result: '0x0000000000000000000000000000000000000000000000000000000000000002',
   duration: 30
 }
 ```
-This indicates that one `Purchase` event happened, customer is  `cfxtest:aap9kthvctunvf030rbkk9k7zbzyz12dajp1u3sp4g`, quantity is 2. 
-
-After `purchase` is complete,  `cupcakeBalances[0x19f4bcf113e0b896d9b34294fd3da86b4adf0302]` changed from 0 to 2. State has changed. 
 
 > Attention: When deploying or calling contracts on the Conflux chain, if new sotrage space is occupied in the contract, some CFX will be collateralized for the occupied space; this will be refunded after the storage is released. For more information, please visit [storage collateral mechanism of Conflux](https://juejin.cn/post/6855551378123653127). 
 
