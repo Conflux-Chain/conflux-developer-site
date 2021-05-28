@@ -87,7 +87,7 @@ module.exports = {
       items: [
         {
           type: "doc",
-          id: "contract/en/contract_introduce",
+          id: "contract/en/contract_introduction",
         },
       ],
     },
