@@ -8,7 +8,7 @@ keywords:
 
 ## What is a Smart Contract?
 
-The concept of smart contracts was first proposed by Nick Szabo in 1995. A Smart contract is a computer protocol designed to disseminate, verify or execute contracts a contract in an informational manner. Smart contracts allow transactions to be executed without a trusted third party, and the transactions are traceable and irreversible. 
+The concept of smart contracts was first proposed by Nick Szabo in 1995. A Smart contract is a computer protocol designed to disseminate, verify or execute contracts in an informational manner. Smart contracts allow transactions to be executed without a trusted third party, and the transactions are traceable and irreversible. 
 
 Its purpose is to provide a secure method that outperforms traditional contracts and reduces other transaction costs associated with contracts. 
 
@@ -85,7 +85,7 @@ After writing the contract, you need to first compile the contract and then depl
 
 Once the contract is deployed, anyone can call it. However, the state of the contract will be changed only when a certain condition is satisfied. 
 
-For further instructions on the solidity language, please refer to [the official Solidity Documentation](https://docs.soliditylang.org/en/v0.8.4/)
+For further instructions on the Solidity language, please refer to [the official Solidity Documentation](https://docs.soliditylang.org/en/v0.8.4/)
 
 Next, we will introduce the process of compilation, deployment, invocation, and contract execution. 
 
