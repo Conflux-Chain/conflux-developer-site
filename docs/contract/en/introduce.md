@@ -212,7 +212,7 @@ deploy tx receipt: {
 
 The example directly sending [transaction](https://developer.confluxnetwork.org/introduction/en/conflux_basics#transactions) for demostration purpose. If the contract constructor contains parameters, a better way is to use contract development tools like [`js-conflux-sdk` `contract`](https://github.com/Conflux-Chain/js-conflux-sdk/blob/master/docs/interact_with_contract.md) and [`conflux-truffle`](https://github.com/Conflux-Chain/conflux-truffle) to deploy.
 
-### Calling smart contracts"
+### Calling smart contracts
 
 After the contract is deployed, you can interact with the contract. There are two ways: 
 
