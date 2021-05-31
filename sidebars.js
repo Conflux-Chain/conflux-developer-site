@@ -83,6 +83,16 @@ module.exports = {
     },
     {
       type: "category",
+      label: "Smart Contract",
+      items: [
+        {
+          type: "doc",
+          id: "contract/en/contract_introduction",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "SDKs and Tools",
       items: [
         {
