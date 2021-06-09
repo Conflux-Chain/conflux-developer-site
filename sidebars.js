@@ -116,6 +116,11 @@ module.exports = {
     },
     {
       type: 'link',
+      label: 'Shuttleflow Docs',
+      href: 'https://conflux-dev.github.io/conflux-dex-docs/shuttleflow/'
+    },
+    {
+      type: 'link',
       label: 'Changelog',
       href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/changelogs/CHANGELOG-1.1.x.md'
     }
