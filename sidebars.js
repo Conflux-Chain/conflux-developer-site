@@ -153,6 +153,10 @@ module.exports = {
       ]
     },
     {
+      type: "doc",
+      id: "introduction/en/conflux_refs",
+    },
+    {
       type: 'link',
       label: 'CIPs',
       href: 'https://github.com/conflux-chain/cips'
