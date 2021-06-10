@@ -29,7 +29,7 @@ keywords:
 * builtin
 * null
 
-## Internal contracts address
+## Internal contract addresses
 
 ### hex address
 * AdminControl: 0x0888000000000000000000000000000000000000
