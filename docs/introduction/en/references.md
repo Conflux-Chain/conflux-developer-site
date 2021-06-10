@@ -61,10 +61,6 @@ keywords:
 * CIP37 mainnet: cfx:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0sfbnjm2
 * CIP37 testnet: cfxtest:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6f0vrcsw
 
-## Balance batch checker
-* hex: 0x8f35930629fce5b5cf4cd762e71006045bfeb24d
-* CIP37 mainnet: cfx:achxne2gfh8snrstkxn0f32ua2cf19zwky2y66hj2d
-* CIP37 testnet: cfxtest:achxne2gfh8snrstkxn0f32ua2cf19zwkyw9tpbc6k
 
 ## Concrete Protocol Implementation
 
@@ -72,12 +68,10 @@ keywords:
 | ---------------------------- | ------------------ |
 | Block time                   | 0.5 s              |
 | Maximum block size bound     | 200 KB             |
-| Starting coinbase award      | 7 CFX              |
+| Starting coinbase award      | 2 CFX              |
 | Starting difficulty (d0)     | 3 × 104 = 30000    |
 | Starting block gas limit     | 3 × 107 = 30000000 |
 | Anti-cone penalty factor (γ) | 100                |
 | Deferred execution           | 5 epochs           |
 | Mining reward freezing time  | 12 epochs          |
 | Snapshot period              | 100000 epochs      |
-
-Note: Coinbase award reduced to `2 CFX` from conflux-rust `v1.1.0`
