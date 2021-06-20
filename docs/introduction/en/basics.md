@@ -31,7 +31,7 @@ For miners who participate in mining, a certain amount of CFX for each block min
 
 Finally, CFX will be used for the decentralized governance of the Conflux network. Users who meet certain criteria can initiate a vote, and CFX holders can participate in the vote through staking and locking CFX. For further details, please refer to the [Economics white paper](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf). 
 
-For more information on the genesis creation, distribution, and release of CFX, please refer to the [Economics white paper](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf).
+For more information on the genesis creation, distribution, and release of CFX, please refer to the [Economics white paper](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf) or [The Role of the CFX token in the Conflux Network](https://medium.com/conflux-network/the-role-of-the-cfx-token-in-the-conflux-network-5a56c2b43bb0). 
 
 ## chainId & networkId
 `chainId` is a number indicating where a transaction is intended to be executed. It is used to prevent transaction replay attacks.
