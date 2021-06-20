@@ -15,7 +15,12 @@ module.exports = {
 
   guides: [
     "guides/en/how_to_use_cfx_faucet",
-    "guides/en/how_to_deploy_erc20_token"
+    "guides/en/how_to_deploy_erc20_token",
+    {
+      type: 'link',
+      label: 'Easy-to-understanding introduction of Tree-Graph',
+      href: 'https://medium.com/conflux-network/understanding-the-conflux-tree-graph-consensus-algorithm-e1b57d5c3da9'
+    }
   ],
 
   docs: [
