@@ -35,3 +35,6 @@ After clicking the `Get CFX` button, your address will be used to call the fauce
 ![image.png](/img/portal/success.png)
 
 **Currently, each account can only apply for `100` testnet CFX once `per hour`.**
+
+## Faucet Dapp
+We also developed a [Faucet Dapp](http://faucet.confluxnetwork.org/), which not only can be used to claim `CFX` but also tokens, currently includes `FC`, `cUSDT`.
