@@ -133,6 +133,11 @@ module.exports = {
 
   api: [
     { type: "doc", id: "conflux-doc/docs/json_rpc" },
+    { 
+      type: "link", 
+      label: "Conflux OPEN-RPC",
+      href: "https://playground.open-rpc.org/?uiSchema[appBar][ui:title]=Conflux%20RPC&uiSchema[appBar][ui:logoUrl]=https://avatars.githubusercontent.com/u/46887720&uiSchema[appBar][ui:examplesDropdown]=false&uiSchema[appBar][ui:splitView]=false&schemaUrl=https://raw.githubusercontent.com/darwintree/conflux-openrpc/main/static/conflux-openrpc.json"
+    },
     { type: "doc", id: "conflux-doc/docs/pubsub" },
     { type: "doc", id: "conflux-doc/docs/cli_sub_commands" },
     { type: "doc", id: "apis/en/node_config_example" },
