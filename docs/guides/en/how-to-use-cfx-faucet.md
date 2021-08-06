@@ -13,7 +13,7 @@ Are you a new user of Conflux blockchain? Or are you a developer planning to dev
 ### Use [ConfluxPortal](https://portal.conflux-chain.org/) to create an account
 To apply for the testnet CFX, you first need a Conflux account. Usually accounts are created and managed through the ConfluxPortal wallet. ConfluxPortal is a browser plug-in wallet, similar to Ethereum's MetaMask wallet. It is currently supported by Chrome and Firefox. Users can directly search for `Conflux Portal` in the browser plug-in market, select and install it. Or find it in [Portal official website](https://portal.conflux-chain.org/)
 
-![](https://lh3.googleusercontent.com/kcl-S_yUEKx7OROMiaFuxl6Stx6weQarlhBqh0z_sqRkPW00gEX2hI5Tph6hSf0c_vCQsadRPIiME-xZE8RNyA5pJA=w640-h400-e365-rj-sc0x00ffffff)
+![](https://lh3.googleusercontent.com/PmOhJFn93Q5EGTpd2evBgO6YsPc4x2CEoLE6iMqQgV991H4h_RoVcOVPvYsUKx7fAbj2wEiP7IuzXwHSOFCPUd8Cw8o=w640-h400-e365-rj-sc0x00ffffff)
 
 After the ConfluxPortal wallet is installed, the first step is to create or import an account seed phrase. The account seed phrase can be used to generate or restore an account, so it is very important and needs to be kept properly.
 
