@@ -57,7 +57,7 @@ const docusaurusConfig = {
           items: [
             {
               label: "Overview",
-              to: "docs/introduction/en/conflux_overview"
+              to: "/"
             },
             {
               label: "Portal",

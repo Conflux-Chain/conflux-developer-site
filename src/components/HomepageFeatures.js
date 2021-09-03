@@ -12,7 +12,7 @@ const FeatureList = [
         {trans['en']['homepage/LearnDescription']}
       </>
     ),
-    link: '/docs/introduction/en/conflux_overview',
+    link: '/docs/introduction/en/conflux_overview/',
     buttonText: 'Learn'
   },
   {
