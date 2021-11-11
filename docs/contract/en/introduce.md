@@ -20,7 +20,7 @@ Nick Szabo used the example of a vending machine to describe how real-world cont
 
 ## Example
 
-LLet's look at one of the simplest smart contract implementations of a vending machine.
+Let's look at one of the simplest smart contract implementations of a vending machine.
 
 ```js
 pragma solidity ^0.8.0;
