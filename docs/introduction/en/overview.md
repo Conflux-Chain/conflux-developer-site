@@ -23,7 +23,7 @@ blocks linked with parent edges, the ledger appears to be a tree structure
 acyclic graph. This is also the reason that we call the ledger structure of
 Conflux as Tree-Graph. 
 
-<img alt="Tree-Graph " src={useBaseUrl('img/tree_graph.jpg')} />
+<img alt="Tree-Graph" src={useBaseUrl('img/tree_graph.jpg')} />
 
 The consensus algorithm of Conflux, which is called
 **Greedy-Heaviest-Adaptive-SubTree** (GHAST), enables all the nodes in the

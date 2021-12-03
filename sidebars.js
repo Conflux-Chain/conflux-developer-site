@@ -115,6 +115,32 @@ module.exports = {
       ],
     },
     {
+      type: "category",
+      label: "Yara hardfork",
+      items: [
+        {
+          type: 'doc',
+          id: 'v2-hardfork/upgrade_list'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/pos_overview'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/why_pos'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/pos_faqs'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/new_introduced_contracts'
+        }
+      ]
+    },
+    {
       type: 'link',
       label: 'ConfluxPortal Docs',
       href: 'https://conflux-portal-docs.conflux-chain.org/docs/portal/introduction/'
@@ -132,11 +158,31 @@ module.exports = {
   ],
 
   api: [
-    { type: "doc", id: "conflux-doc/docs/json_rpc" },
-    { 
-      type: "link", 
-      label: "Conflux OPEN-RPC",
-      href: "https://playground.open-rpc.org/?uiSchema[appBar][ui:title]=Conflux%20RPC&uiSchema[appBar][ui:logoUrl]=https://avatars.githubusercontent.com/u/46887720&uiSchema[appBar][ui:examplesDropdown]=false&uiSchema[appBar][ui:splitView]=false&schemaUrl=https://raw.githubusercontent.com/darwintree/conflux-openrpc/main/static/conflux-openrpc.json"
+    {
+      type: "category",
+      label: "Fullnode RPC",
+      items: [
+        { type: "doc", id: "conflux-doc/docs/json_rpc" },    
+        { type: "doc", id: "conflux-doc/docs/RPCs/txpool_rpc" },
+        { type: "doc", id: "conflux-doc/docs/RPCs/pos_rpc" },
+        { type: "doc", id: "conflux-doc/docs/RPCs/debug_rpc" },
+        { type: "doc", id: "conflux-doc/docs/RPCs/trace_rpc" },
+      ]
+    },{
+      type: "category",
+      label: "Conflux OPEN-RPCs",
+      items: [
+        { 
+          type: "link", 
+          label: "cfx RPC",
+          href: "https://playground.open-rpc.org/?uiSchema[appBar][ui:title]=Conflux%20RPC&uiSchema[appBar][ui:logoUrl]=https://avatars.githubusercontent.com/u/46887720&uiSchema[appBar][ui:examplesDropdown]=false&uiSchema[appBar][ui:splitView]=false&schemaUrl=https://raw.githubusercontent.com/darwintree/conflux-openrpc/main/static/conflux-openrpc.json"
+        },
+        { 
+          type: "link", 
+          label: "pos RPC",
+          href: "https://playground.open-rpc.org/?uiSchema[appBar][ui:title]=Conflux%20RPC&uiSchema[appBar][ui:logoUrl]=https://avatars.githubusercontent.com/u/46887720&uiSchema[appBar][ui:examplesDropdown]=false&uiSchema[appBar][ui:splitView]=false&schemaUrl=https://raw.githubusercontent.com/darwintree/conflux-openrpc/main/static/pos-openrpc.json"
+        }    
+      ]
     },
     { type: "doc", id: "conflux-doc/docs/pubsub" },
     { type: "doc", id: "conflux-doc/docs/cli_sub_commands" },
