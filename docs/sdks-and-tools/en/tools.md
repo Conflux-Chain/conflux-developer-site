@@ -22,7 +22,13 @@ A Cloud-Based Multi-Chain IDE, provides debugging, testing and deployment one-st
 
 ## [Conflux studio](https://github.com/ObsidianLabs/ConfluxStudio/blob/master/README-EN.md)
 
-Conflux Studio is an integrated development environment (IDE), making developing Conflux smart contracts faster and easier.
+Conflux Studio is an integrated development environment (IDE), making developing Conflux smart contracts faster and easier, developed by [ObsidianLabs](https://www.obsidians.io/). 
+
+![](https://github.com/ObsidianLabs/ConfluxStudio/raw/master/screenshots/compile.png)
+
+You can download it from its [Github release page](https://github.com/ObsidianLabs/ConfluxStudio/releases). Windows, Mac, and Linux systems are supported.
+
+You can find its documentation in [readme](https://github.com/ObsidianLabs/ConfluxStudio), and there is also a [tutorial](https://github.com/ObsidianLabs/conflux-dapp-tutorial) about how to use it to develop a Dapp.
 
 ![](https://github.com/ObsidianLabs/ConfluxStudio/raw/master/screenshots/compile.png)
 
