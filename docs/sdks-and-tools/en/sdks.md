@@ -7,7 +7,10 @@ keywords:
 ---
 Conflux has SDKs for mainstream programming languages, including `JavaScript`, `Golang`, `Java` and `Python`. This is just a short introduction to the SDKs, for detailed usage info, check their respective documentation.
 
-## [js-conflux-sdk](https://confluxnetwork.gitbook.io/js-conflux-sdk/)
+## Official SDKs
+
+### [js-conflux-sdk](https://confluxnetwork.gitbook.io/js-conflux-sdk/)
+
 If you are familiar with JavaScript or Node.js, or if you want to build a web site to interact with your contract, `js-conflux-sdk` is right for you. It has a lot of useful features.
 
 ```js
@@ -26,7 +29,8 @@ async function main() {
 main().catch(console.log);
 ```
 
-## [go-conflux-sdk](https://github.com/conflux-chain/go-conflux-sdk)
+### [go-conflux-sdk](https://github.com/conflux-chain/go-conflux-sdk)
+
 Golang is a great language: fast, easy to use, and stable. In blockchain world a lot projects are developing with Go. If you want to develop a backend service which needs to communicate with Conflux network, `go-conflux-sdk` suits for you.
 
 ```go
@@ -57,7 +61,8 @@ func main() {
 
 ```
 
-## [java-conflux-sdk](https://github.com/conflux-chain/java-conflux-sdk)
+### [java-conflux-sdk](https://github.com/conflux-chain/java-conflux-sdk)
+
 Java is really a long live programming language. `java-conflux-sdk` can be used to talk to a Conflux node. It is evolved from the [web3j](https://docs.web3j.io/) library. Some of web3j's utility functions also work on the Conflux network.
 
 ```java
@@ -76,7 +81,8 @@ public class App {
 }
 ```
 
-## [python-conflux-sdk](https://github.com/conflux-chain/python-conflux-sdk)
+### [python-conflux-sdk](https://github.com/conflux-chain/python-conflux-sdk)
+
 Python is the first choice for a lot of developers, we also have `python-conflux-sdk` for you.
 
 ```python
@@ -95,3 +101,32 @@ balance = c.cfx.getBalance(test_address)
 print(balance)
 ```
 
+## Solidity SDKs
+
+### [Conflux-contracts](https://github.com/conflux-fans/conflux-contracts)
+
+This is a Solidity package including common useful contracts in Conflux DAPP developments. Which is kindly like OpenZeppelin. Currenlty most used is `Conflux InternalContracts`.
+
+### [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/)
+
+This is the famous library for secure smart contract development. Build on a solid foundation of community-vetted code.
+
+* Implementations of standards like ERC20 and ERC721.
+* Flexible role-based permissioning scheme.
+* Reusable Solidity components to build custom contracts and complex decentralized systems.
+
+## Community developed SDKs
+
+### [cpp-conflux-sdk](https://csyangbinbin.github.io/cpp-conflux-sdk/)
+
+The Conflux C++ API allows any C++ client to interact with a local or remote Conflux node based on JSON-RPC 2.0 protocol. With Conflux C++ API, user can easily manage accounts, send transactions, deploy smart contracts and query blockchain information.
+
+![](/img/CPP-SDK-shot.png)
+
+### [.NET SDK](https://github.com/Nconflux/Conflux.net.SDK)
+
+Nconflux is the .Net integration library for Conflux, simplifying the access and smart contract interaction with Conflux nodes.
+
+Nconflux is developed targeting netcore 3.1 and .net 5, hence it is compatible with all the operating systems (Windows, Linux, MacOS, Android and OSX) and has been tested on cloud, mobile, desktop, Xbox, hololens and windows IoT.
+
+### [Swift SDK](https://github.com/Conflux-Chain/swift-conflux-wallet-sdk)

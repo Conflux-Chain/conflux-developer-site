@@ -197,8 +197,13 @@ You can check the specific reason for the transaction failure in the `txExecErro
 5. `VmError(BadInstruction xxxx)` Contract deployment failed
 6. `Vm reverted, xxxx` The contract execution failed with no details provided.
 
-
 ## Differences between Conflux and Ethereum
-Compared to Ethereum, transactions through Conflux have three more fields: `chainId`, `storageLimit`, and `epochNumber`. The rlp encoding assembly method of the transaction is different. In addition, the v value signed by ecdsaSign will not be specifically modified in Conflux; while In Ethereum, there will be some special treatments to the v value.
 
-Finally, while Ethereum nodes directly reject transactions if the sender has insufficient balance, Conflux nodes accept such transactions but only pack them info blocks once the user's balance can cover it.
+Compared to Ethereum `155 transaction`, transactions through Conflux have several differences:
+
+* Two more fields: `storageLimit`, and `epochNumber`.
+* The RLP encoding assembly method of the transaction is different. 
+  1. When compute transaction hash the RLP structure is `[nonce, gasPrice, gas, to, value, storageLimit, epochHeight, chainId, data]`
+  2. When assemble rawTx the RLP structure is `[[nonce, gasPrice, gas, to, value, storageLimit, epochHeight, chainId, data], v, r, s]`
+* The `v` value signed by ecdsaSign will not be specifically modified in Conflux; while In Ethereum, there will be some special treatments to the v value.
+* Finally, while Ethereum nodes directly reject transactions if the sender has insufficient balance, Conflux nodes accept such transactions but only pack them info blocks once the user's balance can cover it
