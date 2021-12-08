@@ -101,6 +101,20 @@ balance = c.cfx.getBalance(test_address)
 print(balance)
 ```
 
+## Solidity SDKs
+
+### [Conflux-contracts](https://github.com/conflux-fans/conflux-contracts)
+
+This is a Solidity package including common useful contracts in Conflux DAPP developments. Which is kindly like OpenZeppelin. Currenlty most used is `Conflux InternalContracts`.
+
+### [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/)
+
+This is the famous library for secure smart contract development. Build on a solid foundation of community-vetted code.
+
+* Implementations of standards like ERC20 and ERC721.
+* Flexible role-based permissioning scheme.
+* Reusable Solidity components to build custom contracts and complex decentralized systems.
+
 ## Community developed SDKs
 
 ### [cpp-conflux-sdk](https://csyangbinbin.github.io/cpp-conflux-sdk/)

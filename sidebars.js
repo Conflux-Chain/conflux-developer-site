@@ -116,7 +116,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Yara hardfork",
+      label: "v2 hardfork",
       items: [
         {
           type: 'doc',
@@ -167,6 +167,8 @@ module.exports = {
         { type: "doc", id: "conflux-doc/docs/RPCs/pos_rpc" },
         { type: "doc", id: "conflux-doc/docs/RPCs/debug_rpc" },
         { type: "doc", id: "conflux-doc/docs/RPCs/trace_rpc" },
+        { type: "doc", id: "conflux-doc/docs/RPCs/common_rpc_error" },
+        { type: "doc", id: "conflux-doc/docs/RPCs/send_tx_error" },
       ]
     },{
       type: "category",

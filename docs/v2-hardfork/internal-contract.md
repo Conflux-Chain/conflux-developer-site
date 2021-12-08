@@ -1,12 +1,12 @@
 ---
 id: new_introduced_contracts
-title: Yara Internal Contracts
+title: v2 Internal Contracts
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/internal-contract.md
 keywords:
   - internal contracts
 ---
 
-Conflux Yara hardfork has introduced two new internal contracts: `ConfluxContext`, `PoSRegister`
+Conflux v2 hardfork has introduced two new internal contracts: `ConfluxContext`, `PoSRegister`
 
 ## ConfluxContext
 
