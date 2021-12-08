@@ -58,3 +58,5 @@ Reduce the period of difficulty adjustment and apply the simple moving average m
 2. The PoS registration will start at `Block Number 68845000` (around Dec.9th at 10:00)
 3. The PoS registration will close at `Block Number 69245000` (around Dec.11 at 18:00)
 4. The deadline for adding pos_config is before `Epoch Number reaches 55665000` (around Dec.13th 15:00). Hardfork upgrade will be completed at this time.
+
+For detail infomation check [Conflux v2.0.0-testnet Hardfork Upgrade Announcement](https://forum.conflux.fun/t/conflux-v2-0-0-testnet-hardfork-upgrade-announcement/12556)
