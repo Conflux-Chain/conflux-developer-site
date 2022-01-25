@@ -1,51 +1,52 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
 const algolia = {
+  appId: process.env.ALGOLIA_APP_ID,
   apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
   indexName: process.env.ALGOLIA_INDEX_NAME,
 }
 
 const docusaurusConfig = {
-  title: 'Conflux',
-  tagline: 'Where Valuable Bits are Exchanged and Validated',
-  url: 'https://developer.conflux-chain.org',
-  baseUrl: '/',
-  onBrokenLinks: 'log',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'Conflux-Chain', // Usually your GitHub org/user name.
-  projectName: 'conflux-developer-site', // Usually your repo name.
+  title: "Conflux",
+  tagline: "Where Valuable Bits are Exchanged and Validated",
+  url: "https://developer.conflux-chain.org",
+  baseUrl: "/",
+  onBrokenLinks: "log",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "Conflux-Chain", // Usually your GitHub org/user name.
+  projectName: "conflux-developer-site", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Conflux Developer',
+      title: "Conflux Developer",
       logo: {
-        alt: 'Conflux Logo',
-        src: 'img/logo.svg',
+        alt: "Conflux Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'guides/en/how_to_use_cfx_faucet',
-          position: 'left',
-          label: 'Guides',
+          type: "doc",
+          docId: "guides/en/how_to_use_cfx_faucet",
+          position: "left",
+          label: "Guides",
         },
         {
-          type: 'doc',
-          docId: 'introduction/en/conflux_overview',
-          position: 'left',
-          label: 'Docs',
+          type: "doc",
+          docId: "introduction/en/conflux_overview",
+          position: "left",
+          label: "Docs",
         },
         {
-          type: 'doc',
-          docId: 'conflux-doc/docs/json_rpc',
-          position: 'left',
-          label: 'APIs',
+          type: "doc",
+          docId: "conflux-doc/docs/json_rpc",
+          position: "left",
+          label: "APIs",
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/conflux-chain/conflux-rust',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/conflux-chain/conflux-rust",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
@@ -53,11 +54,11 @@ const docusaurusConfig = {
       style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
               label: "Overview",
-              to: "/"
+              to: "/",
             },
             {
               label: "Portal",
@@ -66,7 +67,7 @@ const docusaurusConfig = {
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
               label: "Bounty",
@@ -74,12 +75,12 @@ const docusaurusConfig = {
             },
             {
               label: "Forum",
-              href: "https://forum.conflux.fun/"
-            }
+              href: "https://forum.conflux.fun/",
+            },
           ],
         },
         {
-          title: 'Social',
+          title: "Social",
           items: [
             // {
             //   label: "Blog",
@@ -101,31 +102,31 @@ const docusaurusConfig = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-};
+}
 
 if (process.env.ALGOLIA_SEARCH_API_KEY) {
   docusaurusConfig.themeConfig.algolia = algolia
 }
 
-module.exports = docusaurusConfig;
+module.exports = docusaurusConfig
