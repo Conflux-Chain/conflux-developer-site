@@ -10,9 +10,9 @@
 
 ### Installing Fluent
 
-Fluent is a Conflux-compatible wallet that supports multiple chains, such as Bitcoin, Ethereu, and Binance SmartChain.
+Fluent is a new wallet for Conflux.
 
-1. Go to http://fluentwallet.org and download and install the Fluent wallet.
+1. Go to http://fluentwallet.com and download and install the Fluent wallet.
 2. Create a new wallet from Fluent. This wallet will be your **Conflux wallet**.
 
 ### Installing MetaMask
@@ -73,15 +73,15 @@ In this section, you'll learn how to connect different wallets to different spac
 * To connect to the Conflux Space, you can use both Fluent and Portal.
 * To connect to the EVM Space, you can use Fluent, MetaMask, or any other Ethereum-compatible wallet.
 
-### Connecting Fluent to the Conflux Space through a local RPC endpoint
+### Connecting Fluent to the Conflux Native Space through a local RPC endpoint
 
-In this section, you'll learn how to connect MetaMask to your local development node that supports the EVM Space.
+In this section, you'll learn how to connect Fluent to your local development node that supports the EVM Space.
 
 1. Go to **Fluent** > **Settings** > **Network Management**.
 2. In **Network Management**, click **Add**.
 3. In **Add**:
-    a. Type "Conflux Local EVM Space" as the network name.
-    b. Enter `http://127.0.0.1:12537` as the new RPC URL.
+    a. Type "Conflux Local Native Space" as the network name.
+    b. Enter `http://127.0.0.1:8545` as the new RPC URL.
     c. Enter `1029` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
@@ -89,25 +89,23 @@ In this section, you'll learn how to connect MetaMask to your local development 
 
 In this section, you'll learn how to connect Fluent to you a remote RPC endpoint that supports the Conflux Space.
 
-In this section, you'll learn how to connect MetaMask to your local development node that supports the EVM Space.
-
 1. Go to **Fluent** > **Settings** > **Network Management**.
 2. In **Network Management**, click **Add**.
 3. In **Add**:
-    a. Type "Conflux Local EVM Space" as the network name.
+    a. Type "Conflux Remote Native Space" as the network name.
     b. Enter `http://net12000cfx.confluxrpc.com` as the new RPC URL.
     c. Enter `12000` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
 ### Connecting MetaMask to the EVM Space through a local RPC endpoint
 
-In this section, you'll learn how to connect Fluent to you a remote RPC endpoint that supports the Conflux Space.
+In this section, you'll learn how to connect MetaMask to you a remote RPC endpoint that supports the Conflux Space.
 
 1. Open the MetaMask settings.
 2. Go to **Networks** > **Add Network**.
 3. In **Add a Network**:
-    a. Type "Conflux Remote EVM Space" as the network name.
-    b. Enter `http://127.0.0.1:12537` as the new RPC URL.
+    a. Type "Conflux Local EVM Space" as the network name.
+    b. Enter `http://127.0.0.1:8545` as the new RPC URL.
     c. Enter `1030` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
@@ -127,7 +125,7 @@ In this section, you'll learn how to connect MetaMask to you a remote RPC endpoi
 
 **Note:** Currently you can only transfer funds across spaces using the Fluent cross-space bridge. However, you can transfer funds from any wallet (e.g. Fluent to MetaMask) if they're both connected to the same space.
 
-### Transferring funds from Tethys to the Conflux EVM Space
+### Transferring funds from the Conflux Native Space to the Conflux EVM Space
 
 1. Open Fluent.
 2. Click the **Cross-Space** icon.
