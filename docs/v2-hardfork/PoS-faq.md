@@ -13,7 +13,7 @@ The PoS chain is an overlay chain that works alongside the PoW chain. The PoS ch
 
 ## How is PoS in Conflux different from other PoS-based chains? 
 
-Conflux will use a hybrid PoW-PoS chain. There is currently no plan to do a full migration to a PoS	chain. 
+Conflux will use a hybrid PoW-PoS chain. There is currently no plan to do a full migration to a PoS chain. 
 
 ## When will the PoS upgrade be released? 
 
