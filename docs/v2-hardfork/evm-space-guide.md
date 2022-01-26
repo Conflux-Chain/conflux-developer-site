@@ -1,8 +1,15 @@
-# Conflux EVM Space Guide
+---
+id: evm_space_guide
+title: Conflux EVM Space Guide
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/evm-space-guide.md
+keywords:
+  - evm
+---
 
 ## Installation and Setup
 
 ### Installing the Conflux client
+
 1. Clone the `conflux-rust` project.
 2. Switch to the `evm_space_test` branch.
 3. Follow the instructions on how to build the Conflux client from source. 
@@ -20,15 +27,16 @@ Fluent is a new wallet for Conflux.
 1. Go to http://metamask.org and download and install the MetaMask wallet.
 2. Create a new wallet from MetaMask. This wallet will be your **Conflux EVM Space wallet**.
 
-
 ## Configuring the Conflux EVM Space
 
 ### Connecting to a local node
+
 1. Go to the `conflux-rust` directory.
 2. In the `run` directory, make a copy of the `tethys.toml` to `development.toml`.
 3. Open the `development.toml` file and do the following:
    a. Comment or delete the `bootnodes` parameter (line 6).
    b. Set the node to dev mode.
+
 ```
 mode = "dev"
 ```
@@ -38,10 +46,10 @@ dev_block_interval_ms = 1000
 ```
    d. Set your Conflux wallet address as the `mining_author`.
    e. Enable the JSON RPC TCP port, JSON RPC HTTP port, and JSON RPC local HTTP port.
-   f. Set the `chain_id` parameter to `1030`.
+   f. Set the `chain_id` parameter to `10301`.
    g. Add the following line to set the EVM Chain ID:
     ```
-    evm_chain_id = 1030
+    evm_chain_id = 10301
     ```
    h. Set a genesis account to fund your Conflux wallet by adding the following line:
    ```
@@ -106,7 +114,7 @@ In this section, you'll learn how to connect MetaMask to you a remote RPC endpoi
 3. In **Add a Network**:
     a. Type "Conflux Local EVM Space" as the network name.
     b. Enter `http://127.0.0.1:8545` as the new RPC URL.
-    c. Enter `1030` as the chain ID.
+    c. Enter `10301` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
 ### Connecting MetaMask to the EVM Space through a remote RPC endpoint
