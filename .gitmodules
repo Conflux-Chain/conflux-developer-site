@@ -1,6 +1,0 @@
-[submodule "docs/conflux-doc"]
-	path = docs/conflux-doc
-	url = https://github.com/Conflux-Chain/conflux-doc.git
-[submodule "docs/conflux-rust"]
-	path = docs/conflux-rust
-	url = https://github.com/Conflux-Chain/conflux-rust.git
