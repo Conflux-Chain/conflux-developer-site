@@ -7,6 +7,40 @@ keywords:
   - faq
 ---
 
+## What is the new Proof-of-Stake chain for Conflux? 
+
+The PoS chain is an overlay chain that works alongside the PoW chain. The PoS chain will bring 	added security to the PoW chain and provide finality to trasactions. 
+
+## How is PoS in Conflux different from other PoS-based chains? 
+
+Conflux will use a hybrid PoW-PoS chain. There is currently no plan to do a full migration to a PoS chain. 
+
+## When will the PoS upgrade be released? 
+
+The PoS upgrade will be deployed in February. You can join the tests here. 
+
+## Will the PoS upgrade break compatibility? 
+
+Yes. Users running Conflux nodes will need to update their clients to be able to run the PoS chain. 
+
+## How can I become a validator in the PoS chain? 
+
+For instructions on how to join the PoS public tests, check the Mining section of the forum or [click here](https://forum.conflux.fun/c/English/mining). 
+
+## What are the main advantages of the PoS chain? 
+
+There are two main advantages to the PoS chain: increased security and transaction finality.
+
+With the upgrade, the network can sustain a 51% attack without risking the integrity of the pivot chain.
+
+In a scenario where an attacker successfully takes over 17% of the committee members, the PoW chain will continue to operate as usual, but it transactions won't be finalized until the attacker disappears.
+
+To conduct a successful attack where the pivot chain can diverge, an attacker will need to to control at least 84% of the committee members.
+
+## I'm a developer, how will the PoS upgrade affect me?  
+
+The PoS upgrade won't affect the execution environment of smart contracts. 
+
 ## What is CIP-43 doing?
 
 CIP-43 introduces a PoS chain as the witness chain to prevent 51% attacks.
