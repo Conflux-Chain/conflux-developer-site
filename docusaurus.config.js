@@ -38,6 +38,12 @@ const docusaurusConfig = {
         },
         {
           type: "doc",
+          docId: "conflux-doc/docs/EVM-Space/intro_of_evm_space",
+          position: "left",
+          label: "EVM Space",
+        },
+        {
+          type: "doc",
           docId: "conflux-doc/docs/json_rpc",
           position: "left",
           label: "APIs",
@@ -61,8 +67,33 @@ const docusaurusConfig = {
               to: "/",
             },
             {
-              label: "Portal",
-              to: "https://conflux-portal-docs.conflux-chain.org/docs/portal/introduction/",
+              label: "Fluent Wallet",
+              to: "https://fluentwallet.com/",
+            },
+            {
+              label: "Conflux Scan",
+              to: "https://confluxscan.io/",
+            },
+            {
+              label: "Testnet Faucet",
+              to: "http://faucet.confluxnetwork.org/",
+            },
+            {
+              label: "Space Bridge",
+              to: "https://evm.fluentwallet.com/",
+            },
+          ],
+        },
+        {
+          title: "Tools",
+          items: [
+            {
+              label: "Conflux studio",
+              to: "https://www.obsidians.io/",
+            },
+            {
+              label: "ChainIDE",
+              to: "https://chainide.com/",
             },
           ],
         },
@@ -71,11 +102,15 @@ const docusaurusConfig = {
           items: [
             {
               label: "Bounty",
-              href: "https://bounty.conflux-chain.org",
+              href: "https://bountyv2.confluxnetwork.org",
             },
             {
               label: "Forum",
               href: "https://forum.conflux.fun/",
+            },
+            {
+              label: "Discord",
+              href: "https://discord.com/invite/aCZkf2C",
             },
           ],
         },
@@ -93,6 +128,10 @@ const docusaurusConfig = {
             {
               label: "Twitter",
               href: "https://twitter.com/Conflux_Network",
+            },
+            {
+              label: "Medium",
+              href: "https://medium.com/@ConfluxNetwork",
             },
           ],
         },
