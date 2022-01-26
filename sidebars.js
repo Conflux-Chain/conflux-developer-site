@@ -172,6 +172,11 @@ module.exports = {
       collapsed: false,
       items: [
         { type: 'doc', id: 'conflux-doc/docs/EVM-Space/evm_space_networks' },
+        { 
+          type: 'doc', 
+          id: 'v2-hardfork/evm_space_guide',
+          label: 'EVM Space Guide'
+        },
       ]
     },
     {
