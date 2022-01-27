@@ -93,18 +93,6 @@ In this section, you'll learn how to connect Fluent to your local development no
     c. Enter `1029` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
-### Connecting Fluent to the Conflux Space through a remote RPC endpoint
-
-In this section, you'll learn how to connect Fluent to you a remote RPC endpoint that supports the Conflux Space.
-
-1. Go to **Fluent** > **Settings** > **Network Management**.
-2. In **Network Management**, click **Add**.
-3. In **Add**:
-    a. Type "Conflux Remote Native Space" as the network name.
-    b. Enter `http://net12000cfx.confluxrpc.com` as the new RPC URL.
-    c. Enter `12000` as the chain ID.
-    d. Type "CFX" as the currency symbol.
-
 ### Connecting MetaMask to the EVM Space through a local RPC endpoint
 
 In this section, you'll learn how to connect MetaMask to you a remote RPC endpoint that supports the Conflux Space.
@@ -125,8 +113,8 @@ In this section, you'll learn how to connect MetaMask to you a remote RPC endpoi
 2. Go to **Networks** > **Add Network**.
 3. In **Add a Network**:
     a. Type "Conflux Remote EVM Space" as the network name.
-    b. Enter `http://net12001eth.confluxrpc.com` as the new RPC URL.
-    c. Enter `12001` as the chain ID.
+    b. Enter `https://evmtest.confluxrpc.com` as the new RPC URL.
+    c. Enter `71` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
 ## Transferring funds
