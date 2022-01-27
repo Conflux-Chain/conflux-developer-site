@@ -181,16 +181,34 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Interact',
+      label: 'Tutorials',
       collapsed: false,
-      items: []
+      items: [
+        { 
+          type: 'doc', 
+          id: 'guides/en/user_metamask_interact_evmspace',
+          label: 'MetaMask'
+        }, { 
+          type: "link", 
+          label: "Block Explorer",
+          href: "https://evmtestnet.confluxscan.io/"
+        }, { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/evm_space_faucet',
+          label: 'Testnet Faucet'
+        }
+      ]
     },
     {
       type: 'category',
       label: 'Bridges',
       collapsed: false,
       items: [
-
+        { 
+          type: "link", 
+          label: "Space Bridge",
+          href: "https://evm.fluentwallet.com/"
+        },
       ]
     },
     {
