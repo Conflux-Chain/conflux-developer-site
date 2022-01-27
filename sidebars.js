@@ -181,6 +181,18 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Tutorials',
+      collapsed: false,
+      items: [
+        { 
+          type: 'doc', 
+          id: 'guides/en/user_metamask_interact_evmspace',
+          label: 'MetaMask'
+        },
+      ]
+    },
+    {
+      type: 'category',
       label: 'Interact',
       collapsed: false,
       items: []
