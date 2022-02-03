@@ -43,6 +43,7 @@ To install Fluent:
 
 ### Installing & Setting Up MetaMask
 
+
 #### Installing MetaMask
 
 1. Go to http://metamask.org and download and install the MetaMask wallet.

@@ -27,6 +27,7 @@ module.exports = {
     {
       type: "category",
       label: "Learn About Conflux",
+      collapsed: false,
       items: [
         { type: "doc", id: "introduction/en/conflux_overview" },
         {
@@ -53,6 +54,7 @@ module.exports = {
     {
       type: "category",
       label: "Run Conflux Node",
+      collapsed: false,
       items: [
         { type: 'doc', id: 'run-a-node/en/how_to_get' },
         { type: "doc", id: "conflux-doc/docs/installation" },
@@ -75,6 +77,7 @@ module.exports = {
     {
       type: "category",
       label: "Sending Transaction",
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -89,6 +92,7 @@ module.exports = {
     {
       type: "category",
       label: "Smart Contract",
+      collapsed: false,
       items: [
         {
           type: "doc",
@@ -99,10 +103,12 @@ module.exports = {
     {
       type: "category",
       label: "SDKs and Tools",
+      collapsed: false,
       items: [
         {
           type: "doc",
           id: "sdks-and-tools/en/conflux_rpcs",
+          label: "RPC Endpoints"
         },
         {
           type: "doc",
@@ -116,7 +122,8 @@ module.exports = {
     },
     {
       type: "category",
-      label: "v2 hardfork",
+      label: "V2 Upgrades",
+      collapsed: false,
       items: [
         {
           type: 'doc',
@@ -142,8 +149,8 @@ module.exports = {
     },
     {
       type: 'link',
-      label: 'ConfluxPortal Docs',
-      href: 'https://conflux-portal-docs.conflux-chain.org/docs/portal/introduction/'
+      label: 'Fluent Wallet Docs',
+      href: 'https://fluent-wallet.zendesk.com/hc/en-001'
     },
     {
       type: 'link',
@@ -154,6 +161,80 @@ module.exports = {
       type: 'link',
       label: 'Changelog',
       href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/changelogs/CHANGELOG-1.1.x.md'
+    }
+  ],
+
+  evmSpace: [
+    { type: 'doc', id: 'conflux-doc/docs/EVM-Space/intro_of_evm_space' },
+    {
+      type: 'category',
+      label: 'Getting Started',
+      collapsed: false,
+      items: [
+        { type: 'doc', id: 'conflux-doc/docs/EVM-Space/evm_space_networks' },
+        { 
+          type: 'doc', 
+          id: 'v2-hardfork/evm_space_guide',
+          label: 'EVM Space Guide'
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Tutorials',
+      collapsed: false,
+      items: [
+        { 
+          type: 'doc', 
+          id: 'guides/en/user_metamask_interact_evmspace',
+          label: 'MetaMask'
+        }, { 
+          type: "link", 
+          label: "Block Explorer",
+          href: "https://evmtestnet.confluxscan.io/"
+        }, { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/evm_space_faucet',
+          label: 'Testnet Faucet'
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Bridges',
+      collapsed: false,
+      items: [
+        { 
+          type: "link", 
+          label: "Space Bridge",
+          href: "https://evm.fluentwallet.com/"
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Compatibility',
+      collapsed: false,
+      items: [
+        { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/evm_space_rpc_compatibility',
+          label: 'JSON-RPC'
+        },
+        { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/evm_space_vm_compatibility',
+          label: 'EVM'
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Other',
+      collapsed: false,
+      items: [
+        
+      ]
     }
   ],
 
