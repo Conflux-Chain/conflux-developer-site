@@ -1,146 +1,92 @@
-# Conflux EVM Space Guide
+# Conflux Spaces User Guide
+
+This guide covers basic usage of Fluent and MetaMask to transfer funds between Conflux Core Space and Conflux eSpace.
 
 ## Installation and Setup
 
-### Installing the Conflux client
-1. Clone the `conflux-rust` project.
-2. Switch to the `evm_space_test` branch.
-3. Follow the instructions on how to build the Conflux client from source. 
-4. Ensure that you can run the `conflux-rust` client.
+In this section, we'll guide you through the process of installing and configuring the wallets to connect to the Conflux Core Space eSpace spaces. 
 
-### Installing Fluent
+To connect to Conflux Core Space, you'll need a Conflux-compatible wallet, such as Portal and Fluent. To connect to Conflux eSpace, you'll need an Ethereum-compatible wallet, such as MetaMask.
 
-Fluent is a new wallet for Conflux.
+### Installing & Setting Up Fluent
 
-1. Go to http://fluentwallet.com and download and install the Fluent wallet.
-2. Create a new wallet from Fluent. This wallet will be your **Conflux wallet**.
+#### Installing Fluent
 
-### Installing MetaMask
+Fluent is a Conflux-based wallet. A key feature of Fluent is that it includes a cross-space bridge that allows you to transfer funds between Conflux Core Space and eSpace.
+
+To install Fluent:
+
+1. Go to http://fluentwallet.com and click **Add to Chrome**. **Note**: Fluent is currently only supported by Google Chrome and Brave browsers.
+2. In the Chrome Web Store, click again **Add to Chrome** and then confirm in the installation by click **Add extension** in the dialog.
+
+#### Creating a new wallet in Fluent
+1. Open Fluent and click the **Create** button.
+2. Set your password, confirm it, and click **Create**.
+3. In Create Account, click **New Seed Phrase** to create a new wallet address and click **Next**.
+4. In Seed Phrase Group Name, enter a alias to identify your wallet (e.g. "Core Space Wallet").
+5. In Backup Seed Phrase, copy the seed words in order, store in a secure and offline place, and click **Next**.
+6. In Check Seed Phrase, confirm the seed words that you backed up in the previous step and click **Create**.
+
+#### Connecting Fluent to Conflux Core Space
+
+**Note**: Conflux Spaces are currently only supported in the testnet.
+
+1. In Fluent, switch networks from Conflux Tethys (Mainnet) to Conflux Testnet (Testnet).
+
+### Installing & Setting Up MetaMask
+
+#### Installing MetaMask
 
 1. Go to http://metamask.org and download and install the MetaMask wallet.
-2. Create a new wallet from MetaMask. This wallet will be your **Conflux EVM Space wallet**.
 
+#### Creating a new wallet in MetaMask
 
-## Configuring the Conflux EVM Space
+1. Create a new wallet from MetaMask. This wallet will be your **Conflux eSpace Wallet**.
 
-### Connecting to a local node
-1. Go to the `conflux-rust` directory.
-2. In the `run` directory, make a copy of the `tethys.toml` to `development.toml`.
-3. Open the `development.toml` file and do the following:
-   a. Comment or delete the `bootnodes` parameter (line 6).
-   b. Set the node to dev mode.
-```
-mode = "dev"
-```
-   c. Set the `dev_block_interval_ms` to `1000` (you can increase or decrease the block time if you prefer).
-```
-dev_block_interval_ms = 1000
-```
-   d. Set your Conflux wallet address as the `mining_author`.
-   e. Enable the JSON RPC TCP port, JSON RPC HTTP port, and JSON RPC local HTTP port.
-   f. Set the `chain_id` parameter to `1030`.
-   g. Add the following line to set the EVM Chain ID:
-    ```
-    evm_chain_id = 1030
-    ```
-   h. Set a genesis account to fund your Conflux wallet by adding the following line:
-   ```
-   genesis_secrets = "account.txt"
-   ```
-4. Save and close the `development.toml` file.
-5. In the `run` directory, create a file called `account.txt`.
-6. Go to Fluent.
-7. Copy the private key of your Conflux wallet.
-8. Paste the private key of your Conflux wallet into the `account.txt` file. 
-9. Save and close the `account.txt` file.
+#### Connecting MetaMask to Conflux eSpace
 
-### Running the Conflux EVM Space
+In this section, you'll learn how to connect MetaMask to Conflux eSpace using a remote RPC endpoint.
 
-To run the Conflux EVM space, you just need to run the `conflux-rust` client.
-
-1. Go to the `run` directory.
-2. Run the `conflux-rust` client:
-```
-../target/release/conflux --config development.toml
-```
-3. Go to Fluent.
-4. Make sure you received 1000 CFX.
-
-## Connecting Wallets to the Conflux and EVM Spaces
-
-In this section, you'll learn how to connect different wallets to different spaces.
-
-* To connect to the Conflux Space, you can use both Fluent and Portal.
-* To connect to the EVM Space, you can use Fluent, MetaMask, or any other Ethereum-compatible wallet.
-
-### Connecting Fluent to the Conflux Native Space through a local RPC endpoint
-
-In this section, you'll learn how to connect Fluent to your local development node that supports the EVM Space.
-
-1. Go to **Fluent** > **Settings** > **Network Management**.
-2. In **Network Management**, click **Add**.
-3. In **Add**:
-    a. Type "Conflux Local Native Space" as the network name.
-    b. Enter `http://127.0.0.1:8545` as the new RPC URL.
-    c. Enter `1029` as the chain ID.
+1. In MetaMask, go to Settings.
+2. In Settings, go to **Networks** and click **Add a network**.
+3. In **Add a network**:
+    a. Type "Conflux eSpace Testnet" as the network name.
+    b. Enter `https://evmtest.confluxrpc.com` as the new RPC URL.
+    c. Enter `71` as the chain ID.
     d. Type "CFX" as the currency symbol.
 
-### Connecting Fluent to the Conflux Space through a remote RPC endpoint
+## Transferring Funds Across Spaces
 
-In this section, you'll learn how to connect Fluent to you a remote RPC endpoint that supports the Conflux Space.
+### Requesting funds from the testnet faucet in Conflux Core Space
 
-1. Go to **Fluent** > **Settings** > **Network Management**.
-2. In **Network Management**, click **Add**.
-3. In **Add**:
-    a. Type "Conflux Remote Native Space" as the network name.
-    b. Enter `http://net12000cfx.confluxrpc.com` as the new RPC URL.
-    c. Enter `12000` as the chain ID.
-    d. Type "CFX" as the currency symbol.
+**Note**: Conflux Spaces are currently only supported in the testnet.
 
-### Connecting MetaMask to the EVM Space through a local RPC endpoint
+1. In Fluent, verify that you're connected to the Conflux testnet.
+2. Go to http://faucet.confluxnetwork.org.
+3. In the Conflux Testnet Faucet, click **Connect Wallet** to connect your Fluent wallet.
+4. In the Fluent dialog, click **Connect** to confirm connecting Fluent to the Conflux Testnet Fauce site.
+5. In the Token selection drop down menu, select **CFX** and click **Receive**.
+6. In the Sign Transaction dialog, click **Confirm** to sign the transaction and receive funds from the testnet faucet.
+7. Once you receive the confirmation message, go to Fluent and ensure that you have received 1000 CFX.
 
-In this section, you'll learn how to connect MetaMask to you a remote RPC endpoint that supports the Conflux Space.
+### Transferring funds from Core Space to eSpace
 
-1. Open the MetaMask settings.
-2. Go to **Networks** > **Add Network**.
-3. In **Add a Network**:
-    a. Type "Conflux Local EVM Space" as the network name.
-    b. Enter `http://127.0.0.1:8545` as the new RPC URL.
-    c. Enter `1030` as the chain ID.
-    d. Type "CFX" as the currency symbol.
+1. In Fluent, click the **Cross-Space** icon or go to https://evm.fluentwallet.com.
+2. Verify that your Conflux wallet is connected to the site.
+3. In the Transfer Assets section, verify that your Conflux wallet is selected as the **From** wallet.
+4. Go to MetaMask and verify that you are connected to the Conflux eSpace Testnet network.
+5. Copy your Conflux eSpace wallet address.
+6. Go to the EVM Subspace Destination Address field and enter (or paste) your Conflux eSpace wallet address.
+7. In the Amount field, enter the amount that you want to transfer to your Conflux eSpace wallet and click **Transfer**.
+8. In the Sign Transaction dialog, click **Confirm** to confirm the transaction.
+9. After the transaction has been confirmed, go to MetaMask and verify that you received the funds from your Conflux Core Space wallet.
 
-### Connecting MetaMask to the EVM Space through a remote RPC endpoint
+### Transferring funds from Conflux eSpace to Core Space
 
-In this section, you'll learn how to connect MetaMask to you a remote RPC endpoint that supports the EVM Space.
-
-1. Open the MetaMask settings.
-2. Go to **Networks** > **Add Network**.
-3. In **Add a Network**:
-    a. Type "Conflux Remote EVM Space" as the network name.
-    b. Enter `http://net12001eth.confluxrpc.com` as the new RPC URL.
-    c. Enter `12001` as the chain ID.
-    d. Type "CFX" as the currency symbol.
-
-## Transferring funds
-
-**Note:** Currently you can only transfer funds across spaces using the Fluent cross-space bridge. However, you can transfer funds from any wallet (e.g. Fluent to MetaMask) if they're both connected to the same space.
-
-### Transferring funds from the Conflux Native Space to the Conflux EVM Space
-
-1. Open Fluent.
-2. Click the **Cross-Space** icon.
-3. Connect your Fluent wallet to the bridge application.
-4. In the **Destination** field, enter your Conflux EVM Space address.
-5. In **Amount**, enter the amount of CFX that you wish to transfer.
-6. Click **Transfer** to transfer CFX from your Conflux Native wallet to your Conflux EVM Space wallet.
-7. Go to MetaMask to verify that you received the funds.
-
-### Transferring funds from the Conflux EVM Space to the Conflux Native Space.
-
-1. Open Fluent.
-2. Click the **Cross-Space** icon.
-3. Connect your MetaMask wallet to the bridge application.
-4. In the **Destination** field, enter you Conflux Native Space address.
-5. In **Amount**, enter the amount of CFX that you wish to transfer.
-6. Click **Transfer** to transfer CFX from your Conflux EVM Space wallet to your Conflux Native Space wallet.
-7. Go to Fluent to verify that you received the funds.
+1. Go to https://evm.fluentwallet.com.
+2. Click the arrow to transfer from Conflux eSpace to  Core Space.
+3. Copy the transfer address listed in Step 1.
+4. Go to MetaMask and transfer funds to the transfer address you copied in the previous step.
+5. Go back to the Fluent cross-space bridge and verify in Step 2 that you have a withdrawable amount.
+6. Click **Withdraw** and confirm the transaction in the Sign Transaction dialog.
+7. Go to Fluent and verify that you received the correct amount of CFX.
