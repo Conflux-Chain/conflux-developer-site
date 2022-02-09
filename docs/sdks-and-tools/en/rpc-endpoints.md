@@ -8,26 +8,12 @@ keywords:
 
 Public available Conflux network RPC endpoints
 
-Mainnet chainId `1029`, testnet chainId `1`
+| Network | Chain ID | Explorer | Endpoint | 
+| -------- | -------- | --------| -------- |
+| Mainnet | 1029 | https://confluxscan.io | https://main.confluxrpc.com <br/> wss://main.confluxrpc.com/ws |
+| Testnet | 1 | https://testnet.confluxscan.io |https://test.confluxrpc.com <br/> wss://test.confluxrpc.com/ws |
 
-## Conflux-rust latest version
+## Notes
 
-### Conflux-RPC with smart DNS (Recommended)
-
-The `cfx_getLogs` method's `max epoch gap` is configured to `1000`.
-
-#### HTTP
-
-To ensure the service availability, we have set it's rate limit to [`rate=100r/s burst=80 nodelay`](https://www.nginx.com/blog/rate-limiting-nginx/). If the request ratio succeed the limit, the service will return `503`. If you have requirement to send a lot transaction, one solution is send transaction in batch.
-
-* `mainnet`: https://main.confluxrpc.com
-* `testnet`: https://test.confluxrpc.com
-
-#### WebSocket
-
-* ws(s)://main.confluxrpc.com/ws
-* ws(s)://test.confluxrpc.com/ws
-
-### TokenView's Infura service
-
-* https://services.tokenview.com/cn/product/infura
+* The `cfx_getLogs` method's `max epoch gap` is configured to `1000`.
+* To ensure the service availability, we have set http's rate limit to [`rate=100r/s burst=80 nodelay`](https://www.nginx.com/blog/rate-limiting-nginx/). If the request ratio succeed the limit, the service will return `503`. If you have requirement to send a lot transaction, one solution is send transaction in batch.

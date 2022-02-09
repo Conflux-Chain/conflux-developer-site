@@ -1,12 +1,10 @@
 ---
 id: evm_space_guide
-title: Conflux EVM Space Guide
+title: Conflux eSpace Guide
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/evm-space-guide.md
 keywords:
   - evm
 ---
-
-# Conflux Spaces User Guide
 
 This guide covers basic usage of Fluent and MetaMask to transfer funds between Conflux Core Space and Conflux eSpace.
 
@@ -28,6 +26,7 @@ To install Fluent:
 2. In the Chrome Web Store, click again **Add to Chrome** and then confirm in the installation by click **Add extension** in the dialog.
 
 #### Creating a new wallet in Fluent
+
 1. Open Fluent and click the **Create** button.
 2. Set your password, confirm it, and click **Create**.
 3. In Create Account, click **New Seed Phrase** to create a new wallet address and click **Next**.
@@ -42,7 +41,6 @@ To install Fluent:
 1. In Fluent, switch networks from Conflux Tethys (Mainnet) to Conflux Testnet (Testnet).
 
 ### Installing & Setting Up MetaMask
-
 
 #### Installing MetaMask
 
@@ -60,7 +58,7 @@ In this section, you'll learn how to connect MetaMask to Conflux eSpace using a 
 2. In Settings, go to **Networks** and click **Add a network**.
 3. In **Add a network**:
     a. Type "Conflux eSpace Testnet" as the network name.
-    b. Enter `https://evmtest.confluxrpc.com` as the new RPC URL.
+    b. Enter `https://evmtestnet.confluxrpc.com` as the new RPC URL.
     c. Enter `71` as the chain ID.
     d. Type "CFX" as the currency symbol.
 

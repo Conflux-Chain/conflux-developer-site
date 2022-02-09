@@ -40,7 +40,7 @@ const docusaurusConfig = {
           type: "doc",
           docId: "conflux-doc/docs/EVM-Space/intro_of_evm_space",
           position: "left",
-          label: "EVM Space",
+          label: "eSpace",
         },
         {
           type: "doc",

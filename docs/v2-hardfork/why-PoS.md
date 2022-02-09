@@ -1,6 +1,6 @@
 ---
 id: why_pos
-title: Why introducing PoS
+title: Why Introducing PoS
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/why-PoS.md
 keywords:
   - pos

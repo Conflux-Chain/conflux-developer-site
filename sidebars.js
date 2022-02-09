@@ -26,7 +26,7 @@ module.exports = {
   docs: [
     {
       type: "category",
-      label: "Learn About Conflux",
+      label: "Getting started",
       collapsed: false,
       items: [
         { type: "doc", id: "introduction/en/conflux_overview" },
@@ -38,8 +38,6 @@ module.exports = {
           type: 'doc',
           label: 'Internal Contracts',
           id: "conflux-rust/internal_contract/internal_contract",
-          // type: 'link',
-          // href: 'https://github.com/Conflux-Chain/conflux-rust/tree/master/internal_contract#readme'
         },
         {
           type: 'doc',
@@ -48,8 +46,45 @@ module.exports = {
         {
           type: "doc",
           id: 'introduction/en/conflux_papers',
+        }, 
+        {
+          type: "doc",
+          id: "sdks-and-tools/en/conflux_rpcs",
+          label: "Network Endpoints"
+        },
+        {
+          type: 'link',
+          label: 'Testnet Faucet',
+          href: 'http://faucet.confluxnetwork.org/'
         }
       ],
+    },
+    {
+      type: "category",
+      label: "Hydra(v2.0) Hardfork",
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'v2-hardfork/hydra_overview'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/pos_overview'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/why_pos'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/pos_faqs'
+        },
+        {
+          type: 'doc',
+          id: 'v2-hardfork/new_introduced_contracts'
+        }
+      ]
     },
     {
       type: "category",
@@ -67,10 +102,16 @@ module.exports = {
           type: "doc",
           id: "conflux-doc/docs/light_node",
         },
+        { type: "doc", id: "apis/en/node_config_example" },
         {
           type: 'link',
           label: 'Run a Miner',
           href: 'https://forum.conflux.fun/t/conflux-tethys-gpu-mining-instruction-v1-1-3/3775'
+        },
+        {
+          type: 'link',
+          label: 'Archivenode snapshot',
+          href: 'https://github.com/conflux-fans/archive-tool'
         }
       ],
     },
@@ -107,11 +148,6 @@ module.exports = {
       items: [
         {
           type: "doc",
-          id: "sdks-and-tools/en/conflux_rpcs",
-          label: "RPC Endpoints"
-        },
-        {
-          type: "doc",
           id: "sdks-and-tools/en/conflux_sdks",
         },
         {
@@ -119,33 +155,6 @@ module.exports = {
           id: "sdks-and-tools/en/conflux_tools",
         },
       ],
-    },
-    {
-      type: "category",
-      label: "V2 Upgrades",
-      collapsed: false,
-      items: [
-        {
-          type: 'doc',
-          id: 'v2-hardfork/upgrade_list'
-        },
-        {
-          type: 'doc',
-          id: 'v2-hardfork/pos_overview'
-        },
-        {
-          type: 'doc',
-          id: 'v2-hardfork/why_pos'
-        },
-        {
-          type: 'doc',
-          id: 'v2-hardfork/pos_faqs'
-        },
-        {
-          type: 'doc',
-          id: 'v2-hardfork/new_introduced_contracts'
-        }
-      ]
     },
     {
       type: 'link',
@@ -159,7 +168,7 @@ module.exports = {
     },
     {
       type: 'link',
-      label: 'Changelog',
+      label: 'Conflux-rust Changelog',
       href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/changelogs/CHANGELOG-1.1.x.md'
     }
   ],
@@ -175,7 +184,7 @@ module.exports = {
         { 
           type: 'doc', 
           id: 'v2-hardfork/evm_space_guide',
-          label: 'EVM Space Guide'
+          label: 'eSpace Guide'
         },
       ]
     },
@@ -189,10 +198,6 @@ module.exports = {
           id: 'guides/en/user_metamask_interact_evmspace',
           label: 'MetaMask'
         }, { 
-          type: "link", 
-          label: "Block Explorer",
-          href: "https://evmtestnet.confluxscan.io/"
-        }, { 
           type: 'doc', 
           id: 'conflux-doc/docs/EVM-Space/evm_space_faucet',
           label: 'Testnet Faucet'
@@ -204,6 +209,16 @@ module.exports = {
       label: 'Bridges',
       collapsed: false,
       items: [
+        { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/account_explain',
+          label: 'Address Explain'
+        }
+        , { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/cross_space_call',
+          label: 'CrossSpaceCall'
+        },
         { 
           type: "link", 
           label: "Space Bridge",
@@ -241,7 +256,7 @@ module.exports = {
   api: [
     {
       type: "category",
-      label: "Fullnode RPC",
+      label: "JSON-RPCs",
       items: [
         { type: "doc", id: "conflux-doc/docs/json_rpc" },    
         { type: "doc", id: "conflux-doc/docs/RPCs/txpool_rpc" },
@@ -269,7 +284,7 @@ module.exports = {
     },
     { type: "doc", id: "conflux-doc/docs/pubsub" },
     { type: "doc", id: "conflux-doc/docs/cli_sub_commands" },
-    { type: "doc", id: "apis/en/node_config_example" },
+    // { type: "doc", id: "apis/en/node_config_example" },
     {
       type: 'category',
       label: 'Internal Contracts API',
