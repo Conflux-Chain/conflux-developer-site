@@ -1,5 +1,5 @@
 ---
-id: upgrade_list
+id: hydra_overview
 title: Overview
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/upgrade-list.md
 keywords:
@@ -29,6 +29,13 @@ Hydra hardfork has intoduced [three new InternalContracts](./internal-contract.m
 * `ConfluxContext` (CIP-64)
 * `PoSRegister` (CIP-43)
 * `CrossSpaceCall` (CIP-90)
+
+### RPC changes
+
+* `trace` RPC methods have some [big changes](/conflux-doc/docs/RPCs/trace_rpc#v20-trace-breaking-change)
+* [`txpool`](/conflux-doc/docs/RPCs/txpool_rpc) namespace added
+* [`pos`](/conflux-doc/docs/RPCs/pos_rpc) namespace added
+* `cfx` namespace has add several new RPC method: cfx_getPoSRewardByEpoch, cfx_openedMethodGroups, cfx_getPoSEconomics. And a new epochNumber tag `latest_finalized` is introduced to indicate latest finalized (by PoS) epoch.
 
 ## CIP list
 

@@ -66,7 +66,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'v2-hardfork/upgrade_list'
+          id: 'v2-hardfork/hydra_overview'
         },
         {
           type: 'doc',
@@ -148,11 +148,6 @@ module.exports = {
       items: [
         {
           type: "doc",
-          id: "sdks-and-tools/en/conflux_rpcs",
-          label: "RPC Endpoints"
-        },
-        {
-          type: "doc",
           id: "sdks-and-tools/en/conflux_sdks",
         },
         {
@@ -203,10 +198,6 @@ module.exports = {
           id: 'guides/en/user_metamask_interact_evmspace',
           label: 'MetaMask'
         }, { 
-          type: "link", 
-          label: "Block Explorer",
-          href: "https://evmtestnet.confluxscan.io/"
-        }, { 
           type: 'doc', 
           id: 'conflux-doc/docs/EVM-Space/evm_space_faucet',
           label: 'Testnet Faucet'
@@ -218,6 +209,16 @@ module.exports = {
       label: 'Bridges',
       collapsed: false,
       items: [
+        { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/account_explain',
+          label: 'Address Explain'
+        }
+        , { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/cross_space_call',
+          label: 'CrossSpaceCall'
+        },
         { 
           type: "link", 
           label: "Space Bridge",
@@ -255,7 +256,7 @@ module.exports = {
   api: [
     {
       type: "category",
-      label: "Fullnode RPC",
+      label: "JSON-RPCs",
       items: [
         { type: "doc", id: "conflux-doc/docs/json_rpc" },    
         { type: "doc", id: "conflux-doc/docs/RPCs/txpool_rpc" },
