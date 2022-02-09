@@ -175,7 +175,7 @@ module.exports = {
         { 
           type: 'doc', 
           id: 'v2-hardfork/evm_space_guide',
-          label: 'EVM Space Guide'
+          label: 'eSpace Guide'
         },
       ]
     },

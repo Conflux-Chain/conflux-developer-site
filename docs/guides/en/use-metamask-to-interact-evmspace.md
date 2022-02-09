@@ -9,17 +9,17 @@ keywords:
 
 ## Introduction
 
-[MetaMask] is a convenient UI for interacting with Ethereum-compatible blockchains (such as Conflux EVM Space).
+[MetaMask] is a convenient UI for interacting with Ethereum-compatible blockchains (such as Conflux eSpace).
 For the purpose of this guide, we will assume you are already familiar with MetaMask and have it installed.
 If you need help getting started with MetaMask itself, [check out their documentation](https://metamask.io/faqs.html).
 
-In this tutorial we will walk through connecting MetaMask to the Conflux EVM Space Testnet , deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
+In this tutorial we will walk through connecting MetaMask to the Conflux eSpace Testnet , deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
 
 :::note
 Screenshots in this tutorial are taken from the MetaMask browser extension version 10.8.1.
 :::
 
-## Connecting MetaMask to Conflux EVM Space
+## Connecting MetaMask to Conflux eSpace
 
 In the top-right corner of the MetaMask interface, click the network selection drop-down and then click `Custom RPC`.
 
@@ -27,8 +27,8 @@ In the top-right corner of the MetaMask interface, click the network selection d
 
 Fill in the form with the following information:
 
-* Network Name: Conflux EVM Testnet
-* New RPC URL: `https://evmtest.confluxrpc.com`
+* Network Name: Conflux eSpace Testnet
+* New RPC URL: `https://evmtestnet.confluxrpc.com`
 * Chain ID: 71
 * Currency Symbol: CFX
 * Block Explorer URL: https://evmtestnet.confluxscan.io/
@@ -36,10 +36,10 @@ Fill in the form with the following information:
 ![MetaMask-create-EVM-Space-rpc](/img/Metamask/metamask_add_network.png)
 
 :::note
-All the Conflux EVM Space RPC endpoint URLs and chain IDs can be found on our Networks page.
+All the Conflux eSpace RPC endpoint URLs and chain IDs can be found on our Networks page.
 :::
 
-Click `Save`, and you should see `Conflux EVM Testnet` is now the network selected in MetaMask.
+Click `Save`, and you should see `Conflux eSpace Testnet` is now the network selected in MetaMask.
 To see MetaMask in action, we will connect it to [Remix] and perform some transactions.
 
 ## Deploying an ERC-20 Token using Remix
@@ -99,7 +99,7 @@ Click the copy button to copy the address of the newly deployed contract.
 
 ![Remix-deploy-contract-confirmed](/img/Metamask/remix_deploy_contract_confirmed-59390e985747c30736f46356a88b4ff1.png)
 
-Now that the contract is deployed on the Conflux EVM Space, we can interact with it via MetaMask.
+Now that the contract is deployed on the Conflux eSpace, we can interact with it via MetaMask.
 
 ## Adding an ERC-20 Token to MetaMask
 
@@ -151,7 +151,7 @@ If you transferred to another MetaMask account you hold then you can follow the 
 ## Summary
 
 In this tutorial we connected MetaMask to the Conflux EVM Testnet, deployed an ERC-20 token contract using Remix, and transferred that token using MetaMask.
-The only difference to doing this on the original Ethereum network was setting the RPC endpoint to be Conflux EVM Space's.
+The only difference to doing this on the original Ethereum network was setting the RPC endpoint to be Conflux eSpace's.
 
 [MetaMask]: https://metamask.io
 [Remix]: https://remix.ethereum.org
