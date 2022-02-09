@@ -8,10 +8,10 @@ keywords:
 
 Public available Conflux network RPC endpoints
 
-| Network | Chain ID | Endpoint |
-| -------- | -------- | -------- |
-| Mainnet | 1029 | https://main.confluxrpc.com <br/> wss://main.confluxrpc.com/ws |
-| Testnet | 1 | https://test.confluxrpc.com <br/> wss://test.confluxrpc.com/ws |
+| Network | Chain ID | Explorer | Endpoint | 
+| -------- | -------- | --------| -------- |
+| Mainnet | 1029 | https://confluxscan.io | https://main.confluxrpc.com <br/> wss://main.confluxrpc.com/ws |
+| Testnet | 1 | https://testnet.confluxscan.io |https://test.confluxrpc.com <br/> wss://test.confluxrpc.com/ws |
 
 ## Notes
 
