@@ -1,6 +1,6 @@
 ---
 id: new_introduced_contracts
-title: v2 Internal Contracts
+title: V2 InternalContracts
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/internal-contract.md
 keywords:
   - internal contracts
