@@ -7,6 +7,7 @@ keywords:
 ---
 
 # How to Quickly Deploy a CRC20 Token
+
 Conflux provides a compatible EVM virtual machine so that the Ethereum contracts can be quickly deployed on the Conflux network. The Conflux's token standard CRC20 and CRC721 are also compatible with Ethereum's, meaning that an ERC20 contract that can be used directly to create a CRC20 Token on the Conflux network.
 This article will demonstrate how to quickly deploy a CRC20 contract on the Conflux testnet using [conflux-truffle](https://www.npmjs.com/package/conflux-truffle).
 
@@ -32,7 +33,7 @@ Web3.js v1.2.9
 ```
 
 ### Account Private Key
-Since we are demonstrating the deployment of Token contracts on the test-net, we need to have an account private key with CFX in it. You can use [Portal Faucet](./how-to-use-cfx-faucet.md) to get the test CFX and export the private key.
+Since we are demonstrating the deployment of Token contracts on the test-net, we need to have an account private key with CFX in it. You can use [Faucet](./how-to-use-cfx-faucet.md) to get the test CFX and export the private key.
 
 
 ## Instruction
@@ -313,6 +314,7 @@ Summary
 ```
 
 The first deployment will deploy the  `Migrations` contract first, which is used to record the deployment progress of the project contract. We will deploy our written CRC20 contract `CDTE` in the second step. The terminal will print out information about the deployment process, including：
+
 * transaction hash: deployed transaction hash
 * contract address: `CFXTEST:TYPE.CONTRACT:ACHYD5GKND31UPUZ2NM6TAZNK1E0DZVMZUK5WBXM5G`
 * account: deployed account
@@ -321,14 +323,13 @@ The first deployment will deploy the  `Migrations` contract first, which is used
 
 The contract address output from the terminal is the contract address of the token.
 
-### Interacting with the Portal
-Interacting with the Portal
+### Interacting with the Wallet
 
-![](/img/portal/portal-add-token.png)
+Interacting with the Fluent Wallet
 
-![](/img/portal/portal-token-add-success.png)
+![](/img/fluent/add-assets-merge.png)
 
-Note: before adding,  you need to switch the network of the Portal to `test network` 
+Note: before adding,  you need to switch the network of the Fluent to `test network`
 
 
 ## Reference
