@@ -128,6 +128,24 @@ module.exports = {
           type: "doc",
           id: "sending-tx/en/transaction_explain",
         },
+        {
+          type: "doc",
+          id: "sending-tx/en/transaction_stage",
+        },
+        {
+          type: "doc",
+          id: "sending-tx/en/why_tx_is_pending",
+        },
+        {
+          type: "doc",
+          label: "Common Errors",
+          id: "sending-tx/en/transaction_send_common_error",
+        },
+        {
+          type: "doc",
+          label: 'FAQs',
+          id: "sending-tx/en/transaction_faqs",
+        },
       ],
     },
     {
