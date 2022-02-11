@@ -34,7 +34,7 @@ const docusaurusConfig = {
           type: "doc",
           docId: "introduction/en/conflux_overview",
           position: "left",
-          label: "Docs",
+          label: "Core",
         },
         {
           type: "doc",
