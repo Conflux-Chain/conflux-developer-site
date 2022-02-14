@@ -22,7 +22,7 @@ Through [CIP-43](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-43.m
 
 The CIP-90 has introduced a new fully EVM-compatible space. The new space is called eSpace, and the current space is called Core Space. The eSpace follows the same rule as EVM and supports eth rpc like eth_getBalance, so the tools (web3.js, ethers.js, hardhat, truffle and so on) from ethereum ecosystem can be used on Conflux directly. Check [eSpace documentation](/conflux-doc/docs/EVM-Space/intro_of_evm_space) for more info.
 
-### Three new InternalContracts
+### Eew Added InternalContracts
 
 Hydra hardfork has intoduced [three new InternalContracts](./internal-contract.md):
 
@@ -32,10 +32,27 @@ Hydra hardfork has intoduced [three new InternalContracts](./internal-contract.m
 
 ### RPC changes
 
+#### cfx namespace RPC change
+
+* New added methods: [`cfx_getPoSRewardByEpoch`](/conflux-doc/docs/json_rpc#cfx_getposrewardbyepoch), [`cfx_openedMethodGroups`](/conflux-doc/docs/json_rpc#cfx_openedmethodgroups), [`cfx_getPoSEconomics`](/conflux-doc/docs/json_rpc#cfx_getposeconomics).
+* New added EpochNumber tag: `latest_finalized` indicating latest finalized (by PoS) epoch.
+* Block header new added field: `posReference` which is the latest pos blockHash when the PoW block is mined.
+* `cfx_getStatus` reponse have two new field: `latestFinalized`, `ethereumSpaceChainId`
+
+**Note: CIP-90 will break some block field's verifiability, For example: hash**
+
+#### trace RPC breaking change
+
 * `trace` RPC methods have some [big changes](/conflux-doc/docs/RPCs/trace_rpc#v20-trace-breaking-change)
-* [`txpool`](/conflux-doc/docs/RPCs/txpool_rpc) namespace added
-* [`pos`](/conflux-doc/docs/RPCs/pos_rpc) namespace added
-* `cfx` namespace has add several new RPC method: cfx_getPoSRewardByEpoch, cfx_openedMethodGroups, cfx_getPoSEconomics. And a new epochNumber tag `latest_finalized` is introduced to indicate latest finalized (by PoS) epoch.
+
+#### New added namespace
+
+* [`txpool`](/conflux-doc/docs/RPCs/txpool_rpc)
+* [`pos`](/conflux-doc/docs/RPCs/pos_rpc)
+
+#### eSpace RPC
+
+The eSpace has introduced the eth namespace RPC, for detail check the [compatibility doc](/conflux-doc/docs/EVM-Space/evm_space_rpc_compatibility)
 
 ## CIP list
 
