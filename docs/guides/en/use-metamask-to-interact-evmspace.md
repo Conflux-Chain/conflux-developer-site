@@ -29,9 +29,9 @@ Fill in the form with the following information:
 
 * Network Name: Conflux eSpace Testnet
 * New RPC URL: `https://evmtestnet.confluxrpc.com`
-* Chain ID: 71
-* Currency Symbol: CFX
-* Block Explorer URL: https://evmtestnet.confluxscan.io/
+* Chain ID: `71`
+* Currency Symbol: `CFX`
+* Block Explorer URL: `https://evmtestnet.confluxscan.io`
 
 ![MetaMask-create-EVM-Space-rpc](/img/Metamask/metamask_add_network.png)
 
