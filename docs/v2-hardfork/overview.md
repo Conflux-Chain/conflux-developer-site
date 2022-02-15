@@ -8,8 +8,6 @@ keywords:
 
 In the Hydra hardfork (v2.0) Conflux will introduce serveral big upgrades through 8 CIPs (Conflux improvement proposal).
 
-## Overview
-
 ### PoS
 
 Through [CIP-43](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-43.md) Hydra has introduced a PoS system to improve the finality of the whole Network. CFX holders can stake their CFX to PoS to protect high-value transactions and also earn CFX rewards of participating the PoS. For detail information about PoS check:
@@ -22,9 +20,9 @@ Through [CIP-43](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-43.m
 
 The CIP-90 has introduced a new fully EVM-compatible space. The new space is called eSpace, and the current space is called Core Space. The eSpace follows the same rule as EVM and supports eth rpc like eth_getBalance, so the tools (web3.js, ethers.js, hardhat, truffle and so on) from ethereum ecosystem can be used on Conflux directly. Check [eSpace documentation](/conflux-doc/docs/EVM-Space/intro_of_evm_space) for more info.
 
-### Eew Added InternalContracts
+### New Added InternalContracts
 
-Hydra hardfork has intoduced [three new InternalContracts](./internal-contract.md):
+Hydra hardfork has intoduced three [new InternalContracts](./internal-contract.md):
 
 * `ConfluxContext` (CIP-64)
 * `PoSRegister` (CIP-43)
@@ -47,7 +45,7 @@ custom: [[1, 2]]
 custom: ["0x12"]
 ```
 
-**Note: CIP-90 will break some block field's verifiability, For example: hash**
+**Note: CIP-90 will break some block field's verifiability for example: hash**
 
 #### trace RPC breaking change
 
@@ -58,11 +56,27 @@ custom: ["0x12"]
 * [`txpool`](/conflux-doc/docs/RPCs/txpool_rpc)
 * [`pos`](/conflux-doc/docs/RPCs/pos_rpc)
 
-#### eSpace RPC
+#### eSpace eth RPC
 
-The eSpace has introduced the eth namespace RPC, for detail check the [compatibility doc](/conflux-doc/docs/EVM-Space/evm_space_rpc_compatibility)
+The eSpace has introduced the `eth` namespace RPC, check the [RPC compatibility doc](/conflux-doc/docs/EVM-Space/evm_space_rpc_compatibility) for details
 
-## CIP list
+## Mainnet Upgrade schedule
+
+1. Conflux client program need to be updated before `Epoch Number reaches 36935000` or `Block Number reaches 92060600` (around 10:00 Feb.23th, 2022(GMT+8))
+2. The PoS registration start at `Block Number 92060600` (around Feb.23th at 12:00)
+3. The PoS registration close at `Block Number 92406200` (around Feb.25th at 12:00)
+4. The deadline for adding pos_config is before `Epoch Number reaches 37230000` (around Feb.28th 12:00). Hardfork upgrade completed at this time.
+
+## Testnet Upgrade schedule
+
+1. Conflux client program need to be updated before `Epoch Number reaches 55095000` or `Block Number reaches 68845000` (around 10:00 Dec.9th, 2021(GMT+8))
+2. The PoS registration start at `Block Number 68845000` (around Dec.9th at 10:00)
+3. The PoS registration close at `Block Number 69245000` (around Dec.11 at 18:00)
+4. The deadline for adding pos_config is before `Epoch Number reaches 55665000` (around Dec.13th 15:00). Hardfork upgrade completed at this time.
+
+For detail infomation check [Conflux v2.0.0-testnet Hardfork Upgrade Announcement](https://forum.conflux.fun/t/conflux-v2-0-0-testnet-hardfork-upgrade-announcement/12556)
+
+## Upgrade CIP list
 
 The following is a brief introduction of these CIPs.
 
@@ -113,19 +127,3 @@ This CIP aims to introduce a new fully EVM-compatible space. The new space is ca
 Detail link: https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-92.md
 
 Enable Blake2F builtin function in [EIP-152](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-152.md).
-
-## Testnet Upgrade schedule
-
-1. Conflux client program need to be updated before `Epoch Number reaches 55095000` or `Block Number reaches 68845000` (around 10:00 Dec.9th, 2021(GMT+8))
-2. The PoS registration start at `Block Number 68845000` (around Dec.9th at 10:00)
-3. The PoS registration close at `Block Number 69245000` (around Dec.11 at 18:00)
-4. The deadline for adding pos_config is before `Epoch Number reaches 55665000` (around Dec.13th 15:00). Hardfork upgrade completed at this time.
-
-For detail infomation check [Conflux v2.0.0-testnet Hardfork Upgrade Announcement](https://forum.conflux.fun/t/conflux-v2-0-0-testnet-hardfork-upgrade-announcement/12556)
-
-## Mainnet Upgrade schedule
-
-1. Conflux client program need to be updated before `Epoch Number reaches 36935000` or `Block Number reaches 92060600` (around 10:00 Feb.23th, 2022(GMT+8))
-2. The PoS registration start at `Block Number 92060600` (around Feb.23th at 12:00)
-3. The PoS registration close at `Block Number 92406200` (around Feb.25th at 12:00)
-4. The deadline for adding pos_config is before `Epoch Number reaches 37230000` (around Feb.28th 12:00). Hardfork upgrade completed at this time.
