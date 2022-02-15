@@ -60,6 +60,15 @@ custom: ["0x12"]
 
 The eSpace has introduced the `eth` namespace RPC, check the [RPC compatibility doc](/conflux-doc/docs/EVM-Space/evm_space_rpc_compatibility) for details
 
+### Conflux-rust config file
+
+The mainnet config file has been renamed from `tethys.toml` to `hydra.toml`, the `bootnodes` has changed and several options are added:
+
+* `jsonrpc_http_eth_port = 8545`
+* `jsonrpc_ws_eth_port = 8546`
+* `public_evm_rpc_apis = "evm"`
+* `evm_chain_id = 1030`
+
 ## Mainnet Upgrade schedule
 
 1. Conflux client program need to be updated before `Epoch Number reaches 36935000` or `Block Number reaches 92060600` (around 10:00 Feb.23th, 2022(GMT+8))

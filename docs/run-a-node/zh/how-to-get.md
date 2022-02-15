@@ -13,14 +13,14 @@ Conflux-rust 的 Github [Release](https://github.com/Conflux-Chain/conflux-rust/
 ├── log.yaml
 ├── start.bat
 ├── start.sh
-├── tethys.toml
+├── tethys.toml (or hydra.toml)
 └── throttling.toml
 
 0 directories, 6 files
 ```
 
 * `conflux` 节点程序
-* `tethys.toml` 主网配置文件（如果下载测试网程序，该配置文件为 testnet.toml)
+* `tethys.toml (or hydra.toml)` 主网配置文件（如果下载测试网程序，该配置文件为 testnet.toml)
 * `log.yaml` 日志配置文件
 * `throttling.toml` 网速限流配置文件(用于开发测试)
 * `start.sh` Linux 系统启动脚本

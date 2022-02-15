@@ -28,7 +28,7 @@ On the Release page, each version will have a version update description and `As
 ```
 
 * `conflux` Node program
-* `tethys.toml` Mainnet configuration file (If you download the testnet program, the configuration file is testnet.toml)
+* `tethys.toml (or hydra.toml)` Mainnet configuration file (If you download the testnet program, the configuration file is testnet.toml)
 * `log.yaml` Log configuration file
 * `throttling.toml` Internet speed flow limit configuration file (used for development and testing) 
 * `start.sh` Linux system startup script
