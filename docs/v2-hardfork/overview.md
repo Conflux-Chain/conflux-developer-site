@@ -36,8 +36,16 @@ Hydra hardfork has intoduced [three new InternalContracts](./internal-contract.m
 
 * New added methods: [`cfx_getPoSRewardByEpoch`](/conflux-doc/docs/json_rpc#cfx_getposrewardbyepoch), [`cfx_openedMethodGroups`](/conflux-doc/docs/json_rpc#cfx_openedmethodgroups), [`cfx_getPoSEconomics`](/conflux-doc/docs/json_rpc#cfx_getposeconomics).
 * New added EpochNumber tag: `latest_finalized` indicating latest finalized (by PoS) epoch.
-* Block header new added field: `posReference` which is the latest pos blockHash when the PoW block is mined.
 * `cfx_getStatus` reponse have two new field: `latestFinalized`, `ethereumSpaceChainId`
+* Block header new added field: `posReference` which is the latest pos blockHash when the PoW block is mined.
+* Block header's `custom` field's type has changed from array of `number array` to array of `hex string`.
+
+```js
+// before
+custom: [[1, 2]]
+// after 
+custom: ["0x12"]
+```
 
 **Note: CIP-90 will break some block field's verifiability, For example: hash**
 
