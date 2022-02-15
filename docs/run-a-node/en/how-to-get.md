@@ -21,11 +21,12 @@ On the Release page, each version will have a version update description and `As
 ├── log.yaml
 ├── start.bat
 ├── start.sh
-├── tethys.toml
+├── tethys.toml (or hydra.toml)
 └── throttling.toml
 
 0 directories, 6 files
 ```
+
 * `conflux` Node program
 * `tethys.toml` Mainnet configuration file (If you download the testnet program, the configuration file is testnet.toml)
 * `log.yaml` Log configuration file
@@ -36,6 +37,7 @@ On the Release page, each version will have a version update description and `As
 **Make sure you only run binaries downloaded from the official Conflux-Chain/conflux-rust GitHub repository.**
 
 ## Docker
+
 Conflux provides an official [Docker image of conflux-rust](https://hub.docker.com/r/confluxchain/conflux-rust). You can use it to quickly start a node. You can start a node within two steps:  Download image and  Run container.
 
 ```sh

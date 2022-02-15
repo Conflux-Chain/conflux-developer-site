@@ -103,6 +103,7 @@ module.exports = {
           id: "conflux-doc/docs/light_node",
         },
         { type: "doc", id: "apis/en/node_config_example" },
+        { type: "doc", id: "run-a-node/en/official_bootnodes" },
         {
           type: 'link',
           label: 'Run a Miner',

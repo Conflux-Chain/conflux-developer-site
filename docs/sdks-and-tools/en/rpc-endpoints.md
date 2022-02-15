@@ -17,3 +17,8 @@ Public available Conflux network RPC endpoints
 
 * The `cfx_getLogs` method's `max epoch gap` is configured to `1000`.
 * To ensure the service availability, we have set http's rate limit to [`rate=100r/s burst=80 nodelay`](https://www.nginx.com/blog/rate-limiting-nginx/). If the request ratio succeed the limit, the service will return `503`. If you have requirement to send a lot transaction, one solution is send transaction in batch.
+
+## Backup RPC Endpoints
+
+* Mainnet: https://main.confluxrpc.org
+* Testnet: https://test.confluxrpc.org
