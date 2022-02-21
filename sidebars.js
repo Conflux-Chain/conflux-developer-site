@@ -243,6 +243,11 @@ module.exports = {
           label: "Space Bridge",
           href: "https://evm.fluentwallet.com/"
         },
+        { 
+          type: 'doc', 
+          id: 'conflux-doc/docs/EVM-Space/crc20_bridge',
+          label: 'CRC20 Bridge'
+        },
       ]
     },
     {
