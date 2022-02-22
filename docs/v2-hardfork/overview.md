@@ -1,7 +1,7 @@
 ---
 id: hydra_overview
 title: Overview
-custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/upgrade-list.md
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/overview.md
 keywords:
   - CIPs
 ---
@@ -73,8 +73,8 @@ The mainnet config file has been renamed from `tethys.toml` to `hydra.toml`, the
 
 1. Conflux client program need to be updated before `Epoch Number reaches 36935000` or `Block Number reaches 92060600` (around 10:00 Feb.23th, 2022(GMT+8))
 2. The PoS registration start at `Block Number 92060600` (around Feb.23th at 12:00)
-3. The PoS registration close at `Block Number 92406200` (around Feb.25th at 12:00)
-4. The deadline for adding pos_config is before `Epoch Number reaches 37230000` (around Feb.28th 12:00). Hardfork upgrade completed at this time.
+3. The PoS registration close at `Block Number 92751800` (around Feb.25th at 12:00)
+4. The deadline for adding pos_config is before `Epoch Number reaches 37400000` (around Feb.28th 12:00). Hardfork upgrade completed at this time.
 
 ## Testnet Upgrade schedule
 
