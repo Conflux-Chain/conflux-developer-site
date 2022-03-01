@@ -21,17 +21,36 @@ Screenshots in this tutorial are taken from the MetaMask browser extension versi
 
 ## Connecting MetaMask to Conflux eSpace
 
-In the top-right corner of the MetaMask interface, click the network selection drop-down and then click `Custom RPC`.
+You can add the Conflux eSpace network to your MetaMask wallet by following these steps:
+
+1. Open your browser and navigate to https://chainlist.org.
+1. Search for "Conflux eSpace".
+1. Click "Connect Wallet" under "Conflux eSpace" to allow this site to send requests to Metamask.
+1. Click "Add to Metamask" under "Conflux eSpace".
+1. When MetaMask prompts "Allow this site to add a network?", click "Approve".
+1. When MetaMask prompts "Allow this site to switch the network?", click "Approve".
+
+Your MetaMask wallet is now connected to Conflux eSpace. You can switch to other networks anytime through the network selection dropdown menu in MetaMask.
+
+Alternatively, you add Conflux eSpace to MetaMask manually by selecting "Add Network" (or "Custom RPC") in the network selection drop-down menu:
 
 ![MetaMask-network-select](/img/Metamask/metamask_choose_network-0d3034f88dcd7bc92f61df7d1be9bb7c.png)
 
-Fill in the form with the following information:
+For the eSpace **mainnet**, please use the following configuration values:
 
-* Network Name: Conflux eSpace Testnet
-* New RPC URL: `https://evmtestnet.confluxrpc.com`
-* Chain ID: `71`
-* Currency Symbol: `CFX`
-* Block Explorer URL: `https://evmtestnet.confluxscan.io`
+- **Network Name**: Conflux eSpace
+- **New RPC URL**: https://evm.confluxrpc.com
+- **Chain ID**: 1030
+- **Currency Symbol**: CFX
+- **Block Explorer URL**: https://evm.confluxscan.net
+
+For the eSpace **testnet**, please use the following configuration values:
+
+- **Network Name**: Conflux eSpace (Testnet)
+- **New RPC URL**: https://evmtestnet.confluxrpc.com
+- **Chain ID**: 71
+- **Currency Symbol**: CFX
+- **Block Explorer URL**: https://evmtestnet.confluxscan.net
 
 ![MetaMask-create-EVM-Space-rpc](/img/Metamask/metamask_add_network.png)
 
@@ -39,8 +58,9 @@ Fill in the form with the following information:
 All the Conflux eSpace RPC endpoint URLs and chain IDs can be found on our Networks page.
 :::
 
-Click `Save`, and you should see `Conflux eSpace Testnet` is now the network selected in MetaMask.
+Click `Save`, and you should see `Conflux eSpace` is now the network selected in MetaMask.
 To see MetaMask in action, we will connect it to [Remix] and perform some transactions.
+The rest of this guide will assume your MetaMask is connected to `Conflux eSpace (Testnet)`.
 
 ## Deploying an ERC-20 Token using Remix
 
