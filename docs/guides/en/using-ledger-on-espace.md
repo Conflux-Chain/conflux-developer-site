@@ -11,8 +11,8 @@ keywords:
 
 ## Introduction
 
-[Conflux eSpace](https://developer.confluxnetwork.org/conflux-doc/docs/EVM-Space/intro_of_evm_space) is the new EVM-compatible subsystem of [Conflux](https://confluxnetwork.org).
-Conflux eSpace supports the Conflux native token [CFX](http://localhost:3000/introduction/en/conflux_basics), and numerous other crypto assets including [ERC20](https://evm.confluxscan.io/tokens) and [NFT](https://evm.confluxscan.io/tokens-nft) tokens.
+[Conflux eSpace](/conflux-doc/docs/EVM-Space/intro_of_evm_space) is the new EVM-compatible subsystem of [Conflux](https://confluxnetwork.org).
+Conflux eSpace supports the Conflux native token [CFX](/introduction/en/conflux_basics), and numerous other crypto assets including [ERC20](https://evm.confluxscan.io/tokens) and [NFT](https://evm.confluxscan.io/tokens-nft) tokens.
 You can now use your **Ledger Nano S** or **Ledger Nano X** hardware wallet to securely store your assets on eSpace.
 In this guide, we will show you how to install the Conflux eSpace app on your Ledger device, how to import your accounts into MetaMask, and how to transfer assets on eSpace.
 

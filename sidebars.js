@@ -173,6 +173,11 @@ module.exports = {
           type: "doc",
           id: "sdks-and-tools/en/conflux_tools",
         },
+        {
+          type: "doc",
+          id: "sdks-and-tools/en/using_ledger_on_core",
+          label: 'Ledger Wallet'
+        },
       ],
     },
     {
