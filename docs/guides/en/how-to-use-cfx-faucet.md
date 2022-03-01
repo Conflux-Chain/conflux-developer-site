@@ -1,6 +1,6 @@
 ---
 id: how_to_use_cfx_faucet
-title: How to Use CFX Faucet
+title: How to Get Testnet CFX
 custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/guides/en/how-to-use-cfx-faucet.md
 keywords:
   - faucet
@@ -8,15 +8,19 @@ keywords:
 
 Are you a new user of Conflux blockchain? Or are you a developer planning to develop a Dapp on Conflux? Then you may need some CFX to interact with the Conflux network. We provide the testnet CFX faucet service, which allows users to apply for the testnet CFX and experience it in the Conflux testnet environment.
 
-## Dapp faucet
+## Faucet Dapp
 
 We have developed a [Faucet Dapp](http://faucet.confluxnetwork.org/), which not only can be used to claim `CFX` but also tokens, currently includes `FC`, `cUSDT`.
 
 ![image.png](/img/portal/Dapp-faucet.png)
 
+To use the Faucet Dapp, simply connect to the dapp using Fluent or Portal, and click "Claim".
+
 ## Portal faucet
 
-**Note: Conflux Portal will not maintained in the future, Recommend to use [FluentWallet](https://fluentwallet.com/)**
+:::note
+**Conflux Portal will not be maintained in the future, please switch to [Fluent](https://fluentwallet.com/).**
+:::
 
 ### Use [ConfluxPortal](https://portal.conflux-chain.org/) to create an account
 To apply for the testnet CFX, you first need a Conflux account. Usually accounts are created and managed through the ConfluxPortal wallet. ConfluxPortal is a browser plug-in wallet, similar to Ethereum's MetaMask wallet. It is currently supported by Chrome and Firefox. Users can directly search for `Conflux Portal` in the browser plug-in market, select and install it. Or find it in [Portal official website](https://portal.conflux-chain.org/)
