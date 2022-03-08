@@ -113,7 +113,8 @@ module.exports = {
           type: 'link',
           label: 'Archivenode snapshot',
           href: 'https://github.com/conflux-fans/archive-tool'
-        }
+        },
+        { type: 'doc', id: 'run-a-node/en/pos_staking' }
       ],
     },
     {
