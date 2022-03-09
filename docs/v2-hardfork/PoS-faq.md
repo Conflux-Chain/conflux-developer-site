@@ -9,7 +9,7 @@ keywords:
 
 ### What is the new Proof-of-Stake chain for Conflux?
 
-The PoS chain is an overlay chain that works alongside the PoW chain. The PoS chain will bring 	added security to the PoW chain and provide finality to trasactions. 
+The PoS chain is an overlay chain that works alongside the PoW chain. The PoS chain will bring 	added security to the PoW chain and provide finality to transactions. 
 
 ### How is PoS in Conflux different from other PoS-based chains?
 
