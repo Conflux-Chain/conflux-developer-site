@@ -51,7 +51,7 @@ You can install the **Conflux eSpace app** on your Ledger device by following th
 
 You can add the Conflux eSpace network to your MetaMask wallet by following these steps:
 
-1. Open your browser and navigate to https://chainlist.org.
+1. Open your browser and navigate to https://evmchainlist.org.
 1. Search for "Conflux eSpace".
 1. Click "Connect Wallet" to allow this site to send requests to MetaMask.
 1. Click "Add to MetaMask" under "Conflux eSpace".
