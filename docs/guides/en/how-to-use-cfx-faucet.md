@@ -34,7 +34,7 @@ After the Fluent wallet is installed, the first step is to set the password:
 
 The next step is to create or import an account seed phrase. The account seed phrase can be used to generate or restore an account, so it is very important and needs to be kept properly.
 
-![create-or-import-account.png](/img/fluent/createImportAccount.png)
+![CreateImportAccount.png](/img/fluent/CreateImportAccount.png)
 
 After the seed phrase is created, Fluent will automatically create an account through it and you can see the name, address, balance and other information of the account. You can also see the CFX `Send` and `Deposit` buttons, click to send or receive CFX.
 
