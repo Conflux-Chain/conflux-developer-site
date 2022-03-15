@@ -94,7 +94,7 @@ For Conflux network, a "smart contract" is a simple program that runs on the Con
 
 Solidity is the programming language that makes those awesome NFTs and DeFi protocols and applications possible. We call those applications DApps because they are “Decentralized Applications”. Solidity makes these applications possible by giving developers an easy, and understandable programming language that is the way to make complex distributed applications. 
 
-### [NFTs Minting and Contract Interaction](https://docs.google.com/document/d/1ijsf5QfnxPq7DHOFCPIJKlcD7VomqUFDbUEWyuwKmxM/edit)
+### [NFTs Minting and Contract Interaction](https://docs.google.com/document/d/1ijsf5QfnxPq7DHOFCPIJKlcD7VomqUFDbUEWyuwKmxM)
 
 This document is a general guide for contracts development and testing, it has the following sections:
 * **Conflux Development Environment Configuration.** This section shows all the tools and frameworks needed to test the Contracts and DApps.
@@ -132,7 +132,7 @@ data on the blockchain. In this section we provide a list of resources to help m
 
 Here we walk through how to quickly setup conflux full node to join the conflux network and how to use Conflux wallet to manage your account, transfer Conflux token, and deploy smart contract.
 
-### [How to Start a Fullnode Tutorial（Conflux v2.0.0-fix](https://forum.conflux.fun/t/how-to-start-a-fullnode-tutorial-conflux-v2-0-0-fix/13471)
+### [How to Start a Fullnode Tutorial（Conflux v2.0.0-fix)](https://forum.conflux.fun/t/how-to-start-a-fullnode-tutorial-conflux-v2-0-0-fix/13471)
 
 Use this guide to configure your own full node and participate in the PoS validation protocol or in the PoW mining.
 
@@ -150,8 +150,9 @@ In this tutorial we present a guide for how to deploy, configure and manage a PO
 
 ## Using ecosystem tools
 
-### [ShuttleFlow Docs](https://conflux-dev.github.io/conflux-dex-docs/shuttleflow/)
+### [ShuttleFlow](https://forum.conflux.fun/t/shuttleflow-v1-4-0-tutorial-token-captain-removed/9214)
 
+ShuttleFlow utilizes Conflux Network as a cross-chain hub to enable seamless flow of different assets across multiple blockchain networks.
 
 
 
