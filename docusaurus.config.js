@@ -26,7 +26,7 @@ const docusaurusConfig = {
       items: [
         {
           type: "doc",
-          docId: "guides/en/how_to_use_cfx_faucet",
+          docId: "guides/en/guides_list",
           position: "left",
           label: "Guides",
         },
