@@ -21,14 +21,14 @@ On the Release page, each version will have a version update description and `As
 ├── log.yaml
 ├── start.bat
 ├── start.sh
-├── tethys.toml (or hydra.toml)
+├── hydra.toml
 └── throttling.toml
 
 0 directories, 6 files
 ```
 
 * `conflux` Node program
-* `tethys.toml (or hydra.toml)` Mainnet configuration file (If you download the testnet program, the configuration file is testnet.toml)
+* `hydra.toml` Mainnet configuration file (If you download the testnet program, the configuration file is called `testnet.toml`)
 * `log.yaml` Log configuration file
 * `throttling.toml` Internet speed flow limit configuration file (used for development and testing) 
 * `start.sh` Linux system startup script
