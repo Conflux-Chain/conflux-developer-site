@@ -365,10 +365,11 @@ module.exports = {
           type: 'doc',
           id: 'guides/en/using_ledger_on_espace',
           label: 'Ledger Hardware Wallet'
-        }, {
-          type: 'doc', 
-          id: 'conflux-doc/docs/EVM-Space/evm_space_faucet',
-          label: 'Testnet Faucet'
+        },
+        { 
+          type: "link", 
+          label: "eSpace Faucet",
+          href: "http://efaucet.confluxnetwork.org"
         }
       ]
     },
@@ -389,7 +390,7 @@ module.exports = {
         },
         { 
           type: "link", 
-          label: "Space Bridge",
+          label: "Mainnet Space Bridge",
           href: "https://evm.fluentwallet.com/"
         },
       ]
