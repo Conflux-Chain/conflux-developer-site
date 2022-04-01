@@ -14,11 +14,12 @@ Truffle is a world class development environment, testing framework and asset pi
 To find out how to use it, you can read [Truffle's documentation](https://www.trufflesuite.com/docs/truffle/overview).
 And `conflux-truffle`'s [setup guide](https://github.com/Conflux-Chain/conflux-truffle/blob/conflux/ultimate-guide.md)
 
-## [Conflux ChainIDE](https://chainide.com/s/conflux)
+## [Conflux ChainIDE](https://chainide.com/s/createTempProject/conflux)
 
-A Cloud-Based Multi-Chain IDE, provides debugging, testing and deployment one-stop services, developers don’t need to install extra tools while working on smart contracts, supports multi-chain development environments which includes Ethereum, CocosBCX, IOST and also supports consortium blockchains such as Diem and Fisco
+ChainIDE is a Cloud-Based Multi-Chain IDE. Developers don’t need to install extra tools while working on smart contracts. ChainIDE supports multi-chain development environments that include Conflux(core), Conflux(eSpace), Ethereum, BNB Chain, Polygon, Dfinity, Nervos, Flow, and it also supports consortium blockchains such as Chain33 and FiscoBcos.
+For more information about how to use ChainIDE, please check [this page](https://chainide.gitbook.io/chainide-english-1/ethereum-ide-1/4.-conflux-ide). 
 
-![](https://chainide.com/static/82f8984167e870141583480b3829a40e/5ea33/screenshot%402x.webp)
+![](/img/chainide.png)
 
 ## [Conflux studio](https://github.com/ObsidianLabs/ConfluxStudio/blob/master/README-EN.md)
 

@@ -76,7 +76,7 @@ const docusaurusConfig = {
             },
             {
               label: "Testnet Faucet",
-              to: "http://faucet.confluxnetwork.org/",
+              to: "https://faucet.confluxnetwork.org/",
             },
             {
               label: "Space Bridge",
