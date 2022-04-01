@@ -194,7 +194,7 @@ module.exports = {
         {
           type: 'link',
           label: 'Testnet Faucet',
-          href: 'http://faucet.confluxnetwork.org/'
+          href: 'https://faucet.confluxnetwork.org/'
         }
       ],
     },
@@ -369,7 +369,7 @@ module.exports = {
         { 
           type: "link", 
           label: "eSpace Faucet",
-          href: "http://efaucet.confluxnetwork.org"
+          href: "https://efaucet.confluxnetwork.org"
         }
       ]
     },
