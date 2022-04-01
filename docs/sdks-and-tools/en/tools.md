@@ -5,6 +5,8 @@ custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/ma
 keywords:
   - Tool
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Conflux has tools that can help developers quickly build a dapp.
 
 ## [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
