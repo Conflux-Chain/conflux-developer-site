@@ -48,7 +48,7 @@ This is the contract code of PoS pool, which are developed by Solidity. Featured
 * Provide `PoolManager` to manage serveral PoS pool
 
 Note: To operation a PoS pool, a stable Conflux PoS node is required. **Especially do not let your PoS node forceRetired**
-If your Pool PoS Node is force retired you need manually [do some operation](./PoolForceRetired.md) to correct the Pool's vote state.
+If your Pool PoS Node is force retired you need manually [do some operation](https://github.com/conflux-fans/pos-pool/blob/main/contract/PoolForceRetired.md) to correct the Pool's vote state.
 
 ## Main contracts
 
