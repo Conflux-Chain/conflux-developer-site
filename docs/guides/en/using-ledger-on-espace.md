@@ -85,7 +85,9 @@ You can import accounts from your Ledger device into your MetaMask wallet by fol
 1. Your account is now visible in MetaMask as "Ledger 1".
 
 
-## Using Ledger: Sending Crypto Assets
+## Using Ledger
+
+### Sending Crypto Assets
 
 Assuming your account on the Ledger device has some CFX tokens, the steps below show how to make a CFX transfer on Conflux eSpace.
 
@@ -103,6 +105,28 @@ Assuming your account on the Ledger device has some CFX tokens, the steps below 
 1. If everything looks correct, press both buttons at the "Accept and send" screen to approve the transaction. Otherwise, press both buttons at the "Reject" screen to reject the transaction.
 1. After the transaction has been approved, it is now signed and sent to the Conflux Network. You can see the transaction status in MetaMask. If you click on the transaction and click "View on block explorer", you can see more details on [Conflux Scan](https://evm.confluxscan.io).
 
+### Receiving Crypto Assets
+
+In order to receive CFX and ERC20 tokens to your Ledger wallet account, simply copy your address from MetaMask and share it with the sender. You only need to sign transactions using your Ledger device when sending funds, not when receiving them. MetaMask can also provide you with an easy-to-use QR code under "Account details".
+
+### Obtaining CFX
+
+There are multiple ways of obtaining CFX and other tokens on Conflux eSpace.
+
+- You can obtain CFX and withdraw it to Conflux eSpace through a variety of centralized exchanges (e.g., [KuCoin](https://www.kucoin.com)).
+- You can also use a decentralized exchange like [Swappi](https://app.swappi.io/#/swap).
+- Finally, you can also transfer crypto assets from other chains to Conflux eSpace through cross-chain apps like [Multichain](https://app.multichain.org/#/router), [meson.fi](https://meson.fi/), [cBridge](https://cbridge.celer.network/#/transfer), or the [Conflux eSpace Bridge](https://confluxhub.io/espace-bridge).
+
+
+### Checking Your Balance
+
+The easiest way to check your CFX and ERC20 token balances held by your Ledger account is to simply view them in MetaMask.
+
+![conflux-app-in-ledger-live](/img/ledger/metamask-view-balance.png)
+
+Alternatively, you can click on "View Account in Explorer", or navigate to https://evm.confluxscan.net and manually search for your address to see your token balances and transaction history.
+
+![conflux-app-in-ledger-live](/img/ledger/scan-view-balance.png)
 
 ## Next Steps
 
