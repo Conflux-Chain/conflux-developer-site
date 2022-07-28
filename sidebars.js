@@ -189,7 +189,7 @@ module.exports = {
         {
           type: "doc",
           id: "sdks-and-tools/en/conflux_rpcs",
-          label: "Network Endpoints"
+          label: "Public RPC Endpoints"
         },
         {
           type: 'link',
