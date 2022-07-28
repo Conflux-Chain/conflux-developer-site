@@ -67,7 +67,7 @@ Conflux is based on a novel Tree-Graph consensus mechanism that optimizes for se
 
 ### [Conflux Network: Engineering An Economic Design](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf)
 
-Distributed ledgers or blockchains, in particular those based on Proof-of-Work (PoW) protocols, rely as much on economic mechanisms as on technology. [In this paper]((https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf)), we describe how we  approach the design of the economic mechanisms that underline Conflux, a high throughput/performance PoW blockchain, by providing a detailed analysis of its economic viability. Conflux  offers several innovations relative to well-understood blockchain networks such as Bitcoin and Ethereum, both in terms of technology design but also in terms of the economics that  underpin the technology.
+Distributed ledgers or blockchains, in particular those based on Proof-of-Work (PoW) protocols, rely as much on economic mechanisms as on technology. [In this paper](https://confluxnetwork.org/files/Conflux_Economic_Paper_20201230.pdf), we describe how we  approach the design of the economic mechanisms that underline Conflux, a high throughput/performance PoW blockchain, by providing a detailed analysis of its economic viability. Conflux  offers several innovations relative to well-understood blockchain networks such as Bitcoin and Ethereum, both in terms of technology design but also in terms of the economics that  underpin the technology.
 
 ## Developing using CONFLUX
 
