@@ -1,0 +1,65 @@
+---
+id: hardfork_v2.1.0_overview
+title: Overview
+custom_edit_url: https://github.com/Conflux-Chain/conflux-developer-site/edit/master/docs/v2-hardfork/overview.md
+keywords:
+  - CIPs
+  - HardFork
+---
+
+Conflux-Rust v2.1.0 is a small hardfork upgrade. In this upgrade 4 new CIPs will be activate, and also some improvement about storage and RPC.
+
+## New CIPs
+
+* [CIP-94](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-94.md): proposes to use on-chain DAO voting to decide and update reward parameters without hardfork.
+* [CIP-97](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-97.md): proposes to remove account's staking lists.
+* [CIP-98](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-98.md): Fix a bug in BLOCKHASH opcode in eSpace.
+* [CIP-99](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-99.md): Allow more not-voting terms before we force-retire a node, and make the unlock period of a retiring node shorter to allow the node to rejoin the PoS voting faster.
+
+## Improvements
+
+### Storage
+
+Allow snapshots to be removed during recovery. This reduces the disk space requirement for full node sync or recovery.
+
+In v2.1.0 Conflux-Rust also brought support for `fullstate query`, which means we can query state at any blockchain height. For example we can query an address `cfx:aaketjh9tkj5g2k4zx3kfvb9vkku8nr956n0en4fhe`'s balance at height `100000` with method `cfx_getBalance` by specifying the second parameter.
+
+```shell
+curl --location --request POST 'https://main.confluxrpc.com' \
+--header 'Content-Type: application/json' \
+--data-raw ' {
+    "jsonrpc": "2.0",
+    "id": "15922956697249514502",
+    "method": "cfx_getBalance",
+    "params": [
+        "cfx:aaketjh9tkj5g2k4zx3kfvb9vkku8nr956n0en4fhe",
+        "0x186a0"
+    ]
+  }'
+```
+
+To support conflux fullstate query, a archive node with configuration `enable_single_mpt_storage` enabled is required. And the node need sync data from genesis to construct all the history states. Besides nodes can also set `single_mpt_space = "evm"` to only store eSpace states.
+
+### RPC
+
+* Support `eth_subscribe` and `eth_unsubscribe` in eSpace RPCs.
+* Add a RPC method `cfx_getParamsFromVote` to return the currently used value of the voted parameters.
+* Return null for getting skipped transactions and receipts. Whether they will be returned was nondeterministic before, but now they are ensured to be null.
+
+## Update schedule
+
+### Mainnet
+
+TD
+
+### Testnet
+
+* v2.1.0 hardfork `epochNumber` has been set to `88100000` (around 22:00 Aug.17th, 2022(GMT+8))
+* CIP-94 activate `blockNumber` is `112400000`
+* CIP-99 activate `PoS blockNumber` is `342000`
+
+## Additional links
+
+* [Testnet update announcement](https://forum.conflux.fun/t/conflux-v2-1-0-testnet-testnet-upgrade-announcement/16075)
+* [Testnet governance dApp](https://test.confluxhub.io/governance/dashboard)
+* [Conflux-rust v2.1.0 testnet release](https://github.com/Conflux-Chain/conflux-rust/releases/tag/v2.1.0-testnet)

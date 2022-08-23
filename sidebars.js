@@ -200,7 +200,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Hydra(v2.0) Hardfork",
+      label: "Hardfork Hydra(v2.0)",
       collapsed: false,
       items: [
         {
@@ -222,6 +222,17 @@ module.exports = {
         {
           type: 'doc',
           id: 'v2-hardfork/new_introduced_contracts'
+        }
+      ]
+    },
+    {
+      type: "category",
+      label: "Hardfork v2.1",
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'v2.1-hardfork/hardfork_v2.1.0_overview'
         }
       ]
     },
