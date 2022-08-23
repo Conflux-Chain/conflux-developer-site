@@ -4,8 +4,8 @@
   <ShortName>Conflux</ShortName>
   <Description>Search Conflux</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://developer.conflux-chain.org/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://developer.conflux-chain.org/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://developer.conflux-chain.org/opensearch.xml" />
-  <moz:SearchForm>https://developer.conflux-chain.org/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://developer.confluxnetwork.org/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://developer.confluxnetwork.org//search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://developer.confluxnetwork.org//opensearch.xml" />
+  <moz:SearchForm>https://developer.confluxnetwork.org//</moz:SearchForm>
 </OpenSearchDescription>
