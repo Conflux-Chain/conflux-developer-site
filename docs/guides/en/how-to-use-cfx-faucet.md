@@ -16,12 +16,6 @@ We have developed a [Faucet Dapp](http://faucet.confluxnetwork.org/), which not 
 
 To use the Faucet Dapp, simply connect to the dapp using Fluent or Portal, and click "Claim".
 
-## Portal faucet
-
-:::note
-** [Conflux Portal](https://portal.conflux-chain.org/) will not be maintained in the future, please switch to [Fluent](https://fluentwallet.com/).**
-:::
-
 ### Use [Fluent Wallet](https://fluentwallet.com/) to create an account
 
 To apply for the testnet CFX, you first need a Conflux account. Usually accounts are created and managed through the Fluent wallet. Fluent is a browser plug-in wallet, similar to Ethereum's MetaMask wallet. It is currently supported by Chrome, Firefox and Edge. Users can directly search for `Fluent Wallet` in the browser plug-in market, select and install it. Or find it in [Fluent official website](https://fluentwallet.com/)

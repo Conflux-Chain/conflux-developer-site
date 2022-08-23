@@ -324,5 +324,5 @@ Conflux有更友好的智能开发工具供开发者使用，提高开发效率
 - [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
 
 其它
-- [Conflux基本概念介绍](https://developer.conflux-chain.org/introduction/en/conflux_basics)
+- [Conflux基本概念介绍](https://developer.confluxnetwork.org/introduction/en/conflux_basics)
 - [Ethereum对智能合约的介绍](https://ethereum.org/zh/developers/docs/smart-contracts/)

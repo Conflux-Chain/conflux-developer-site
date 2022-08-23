@@ -16,6 +16,51 @@ Conflux-Rust v2.1.0 is a small hardfork upgrade. In this upgrade 4 new CIPs will
 * [CIP-98](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-98.md): Fix a bug in BLOCKHASH opcode in eSpace.
 * [CIP-99](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-99.md): Allow more not-voting terms before we force-retire a node, and make the unlock period of a retiring node shorter to allow the node to rejoin the PoS voting faster.
 
+## New InternalContract
+
+CIP-94 also has introduce a new InternalContract `ParamControl` at hex address `0x0888000000000000000000000000000000000007`. This contract can be used to retrive parameter info and participate in DAO vote.
+
+```js
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.0;
+
+interface ParamsControl {
+    struct Vote {
+        uint16 topic_index;
+        uint256[3] votes;
+    }
+
+    /*** Query Functions ***/
+    /**
+     * @dev cast vote for parameters
+     * @param vote_round The round to vote for
+     * @param vote_data The list of votes to cast
+     */
+    function castVote(uint64 vote_round, Vote[] calldata vote_data) external;
+
+    /**
+     * @dev read the vote data of an account
+     * @param addr The address of the account to read
+     */
+    function readVote(address addr) external view returns (Vote[] memory);
+
+    /**
+     * @dev Current vote round
+     */
+    function currentRound() external view returns (uint64);
+
+    /**
+     * @dev read the total votes of given round
+     * @param vote_round The vote number
+     */
+    function totalVotes(uint64 vote_round) external view returns (Vote[] memory);
+
+    event CastVote(uint64 indexed vote_round, address indexed addr, uint16 indexed topic_index, uint256[3] votes);
+    event RevokeVote(uint64 indexed vote_round, address indexed addr, uint16 indexed topic_index, uint256[3] votes);
+}
+```
+
 ## Improvements
 
 ### Storage

@@ -8,7 +8,7 @@ keywords:
 
 ### How to send a transaction?
 
-The easiest way to send a transaction is to use a wallet such as Conflux Portal, and click “send” to directly set the amount. If you are a developer, you can use the Conflux SDK (JS, Java, Go) to construct the transaction yourself, and then send it to the chain via the node RPC.
+The easiest way to send a transaction is to use a wallet such as Conflux Fluent, and click “send” to directly set the amount. If you are a developer, you can use the Conflux SDK (JS, Java, Go) to construct the transaction yourself, and then send it to the chain via the node RPC.
 
 ### What are the gas and storage fees when sending a transaction?
 

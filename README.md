@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern
 static website generator. It supports retrieving docs from any repository and
-deploys to developer.conflux-chain.org.
+deploys to [developer.confluxnetwork.org](https://developer.confluxnetwork.org)
 
 To submit a repository, please read the doc [here](./docs/submit-a-repo.md).
 

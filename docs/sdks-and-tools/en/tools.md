@@ -9,6 +9,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Conflux has tools that can help developers quickly build a dapp.
 
+## [hardhat-conflux](https://github.com/conflux-chain/hardhat-conflux)
+
+Hardhat is the morden Solidity developer toolkit, which can also used to develop contracts on ConfluxNetwork with the [hardhat-conflux](https://github.com/conflux-chain/hardhat-conflux) plugin. This plugin brings to Hardhat the `js-conflux-sdk`, which allows you to interact with the Conflux blockchain in a simple way.
+
 ## [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
 
 Truffle is a world class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier. We have ported it to Conflux-Truffle, which will work with the Conflux network and will have the same features and usage experience.
@@ -37,4 +41,4 @@ You can find its documentation in [readme](https://github.com/ObsidianLabs/Confl
 
 ## [Conflux Studio Web](https://conflux.ide.black/)
 
-The Web version of Conflux studio, that enable user develop smart contract in browser with portal.
+The Web version of Conflux studio, that enable user develop smart contract in browser with FluentWallet.

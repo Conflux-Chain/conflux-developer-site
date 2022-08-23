@@ -17,12 +17,12 @@ If you are familiar with JavaScript or Node.js, or if you want to build a web si
 const {Conflux} = require('js-conflux-sdk');
 
 async function main() {
-  let cfx = new Conflux({
+  let conflux = new Conflux({
     url: "https://test.confluxrpc.com",
     networkId: 1,
   });
 
-  let balance = await cfx.getBalance("cfxtest:aakkfzezns4h8ymx1cgmcnd4x3aev6e2he38nnu8sv");
+  let balance = await conflux.cfx.getBalance("cfxtest:aakkfzezns4h8ymx1cgmcnd4x3aev6e2he38nnu8sv");
   console.log("balance: ", balance);
 }
 

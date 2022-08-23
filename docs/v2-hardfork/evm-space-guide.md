@@ -12,7 +12,7 @@ This guide covers basic usage of Fluent and MetaMask to transfer funds between C
 
 In this section, we'll guide you through the process of installing and configuring the wallets to connect to the Conflux Core Space eSpace spaces. 
 
-To connect to Conflux Core Space, you'll need a Conflux-compatible wallet, such as Portal and Fluent. To connect to Conflux eSpace, you'll need an Ethereum-compatible wallet, such as MetaMask.
+To connect to Conflux Core Space, you'll need a Conflux-compatible wallet, such as Fluent. To connect to Conflux eSpace, you'll need an Ethereum-compatible wallet, such as MetaMask.
 
 ### Installing & Setting Up Fluent
 

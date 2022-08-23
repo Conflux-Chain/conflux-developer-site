@@ -12,7 +12,7 @@ keywords:
 
 The [release](https://github.com/Conflux-Chain/conflux-rust/releases) page on the conflux-rust GitHub repository providers pre-built binaries that you can download and run directly. There are two versions for the mainnet and the testnet: the mainnet version is Conflux `vx.x.x`, while the version for testnet is `Conflux vx.x.x-testnet` (which has a suffix of `testnet`). Each program will be provided for Linux, Windows10, and macOS.
 
-On the Release page, each version will have a version update description and `Assets` that you can download. After selecting the corresponding platform, you can click the link to download the zip package. For example, when unzipping the `conflux_linux_v1.1.2.zip` file, a `run` folder that contains node programs, configuration files, and startup scripts will appear. The specific documents include:
+On the Release page, each version will have a version update description and `Assets` that you can download. After selecting the corresponding platform, you can click the link to download the zip package. For example, when unzipping the `conflux_linux_v2.0.3.zip` file, a `run` folder that contains node programs, configuration files, and startup scripts will appear. The specific documents include:
 
 ```bash
 ➜  run tree
@@ -42,7 +42,7 @@ Conflux provides an official [Docker image of conflux-rust](https://hub.docker.c
 
 ```sh
 $ docker pull confluxchain/conflux-rust
-$ docker run -p 12537:12537 --name cfx-node confluxchain/conflux-rust
+$ docker run -p 12537:12537 --rm --name cfx-node confluxchain/conflux-rust
 ```
 
 So far, there are three tag lines in the officially released image:

@@ -349,5 +349,5 @@ Conflux also has more friendly and efficient smart development tools for develop
 - [Conflux-Truffle](https://github.com/Conflux-Chain/conflux-truffle)
 
 Others
-- [Introduction of Conflux basic concepts](https://developer.conflux-chain.org/introduction/en/conflux_basics)
+- [Introduction of Conflux basic concepts](https://developer.confluxnetwork.org/introduction/en/conflux_basics)
 - [Ethereum's introduction of smart contract](https://ethereum.org/zh/developers/docs/smart-contracts/)
