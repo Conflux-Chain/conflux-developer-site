@@ -9,7 +9,7 @@ const algolia = {
 const docusaurusConfig = {
   title: "Conflux",
   tagline: "Where Valuable Bits are Exchanged and Validated",
-  url: "https://developer.conflux-chain.org",
+  url: "https://developer.confluxnetwork.org/",
   baseUrl: "/",
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",

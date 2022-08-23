@@ -8,8 +8,8 @@ keywords:
 # 如何使用 CFX 水龙头
 你是第一次接触 Conflux 区块链的用户？或者你是一名开发者，打算开发一款 Conflux 上的 Dapp？那么你可能需要一些 CFX 来跟 Conflux 网络交互。我们提供了测试网 CFX 水龙头服务，可以让用户申领测试网的 CFX，在 Conflux 测试网环境下体验。
 
-## 使用 [ConfluxPortal](https://portal.conflux-chain.org/) 创建账户
-申领测试网 CFX，首先需要一个 Conflux 账户。通常账户都是通过钱包创建和管理，ConfluxPortal 是一个浏览器插件钱包，跟以太坊的 MetaMask 钱包类似，目前支持 Chrome， Firefox 两款主流浏览器。用户可以直接在浏览器插件市场搜索 `Conflux Portal`，选择并安装即可。或者直接在 [Portal 官网](https://portal.conflux-chain.org/)查找[下载地址](https://chrome.google.com/webstore/detail/confluxportal/opafkgfpaamecojfkaialabagfofilmg)
+## 使用 [ConfluxPortal](https://portal.confluxnetwork.org/) 创建账户
+申领测试网 CFX，首先需要一个 Conflux 账户。通常账户都是通过钱包创建和管理，ConfluxPortal 是一个浏览器插件钱包，跟以太坊的 MetaMask 钱包类似，目前支持 Chrome， Firefox 两款主流浏览器。用户可以直接在浏览器插件市场搜索 `Conflux Portal`，选择并安装即可。或者直接在 [Portal 官网](https://portal.confluxnetwork.org/)查找[下载地址](https://chrome.google.com/webstore/detail/confluxportal/opafkgfpaamecojfkaialabagfofilmg)
 
 ![](https://lh3.googleusercontent.com/kcl-S_yUEKx7OROMiaFuxl6Stx6weQarlhBqh0z_sqRkPW00gEX2hI5Tph6hSf0c_vCQsadRPIiME-xZE8RNyA5pJA=w640-h400-e365-rj-sc0x00ffffff)
 
