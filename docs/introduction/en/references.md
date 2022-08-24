@@ -64,7 +64,7 @@ keywords:
 * CIP37 mainnet: cfx:aceju902vhx1rtf8f6h3wp1p9m8r9xj2eau7fdwk48
 * CIP37 testnet: cfxtest:aceju902vhx1rtf8f6h3wp1p9m8r9xj2ea400xyd8y
 
-## create2 address
+## Create2Factory address
 
 * hex: 0x8a3a92281df6497105513b18543fd3b60c778e40
 * CIP37 mainnet: cfx:acfdzevjd15ew6jfme7vuzb94s5a276sjaxhcr9602 
@@ -88,4 +88,4 @@ keywords:
 | Anti-cone penalty factor (γ) | 100                |
 | Deferred execution           | 5 epochs           |
 | Mining reward freezing time  | 12 epochs          |
-| Snapshot period              | 100000 epochs      |
+| Snapshot period              | 2000 epochs      |
