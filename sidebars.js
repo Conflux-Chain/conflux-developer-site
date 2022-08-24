@@ -471,17 +471,37 @@ module.exports = {
         {
           type: 'link',
           label: 'AdminControl',
-          href: 'https://github.com/conflux-fans/internal-contracts/blob/main/docs/AdminControl.md'
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/AdminControl.sol'
         },
         {
           type: 'link',
           label: 'SponsorWhitelistControl',
-          href: 'https://github.com/conflux-fans/internal-contracts/blob/main/docs/SponsorWhitelistControl.md'
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/SponsorWhitelistControl.sol'
         },
         {
           type: 'link',
           label: 'Staking',
-          href: 'https://github.com/conflux-fans/internal-contracts/blob/main/docs/Staking.md'
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/Staking.sol'
+        },
+        {
+          type: 'link',
+          label: 'ConfluxContext',
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/ConfluxContext.sol'
+        },
+        {
+          type: 'link',
+          label: 'PoSRegister',
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/PoSRegister.sol'
+        },
+        {
+          type: 'link',
+          label: 'CrossSpaceCall',
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/CrossSpaceCall.sol'
+        },
+        {
+          type: 'link',
+          label: 'ParamsControl',
+          href: 'https://github.com/Conflux-Chain/conflux-rust/blob/master/internal_contract/contracts/ParamsControl.sol'
         },
       ]
     },
