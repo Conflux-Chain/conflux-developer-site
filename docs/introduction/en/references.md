@@ -88,4 +88,4 @@ keywords:
 | Anti-cone penalty factor (γ) | 100                |
 | Deferred execution           | 5 epochs           |
 | Mining reward freezing time  | 12 epochs          |
-| Snapshot period              | 100000 epochs      |
+| Snapshot period              | 2000 epochs      |
