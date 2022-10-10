@@ -7,7 +7,7 @@ keywords:
   - HardFork
 ---
 
-Conflux-Rust v2.1.0 is a small hardfork upgrade. In this upgrade 4 new CIPs will be activate, and also some improvement about storage and RPC.
+Conflux-Rust v2.1.0 is a small hardfork upgrade. In this upgrade 5 new CIPs will be activate, and also some improvement about storage and RPC.
 
 ## New CIPs
 
@@ -15,6 +15,7 @@ Conflux-Rust v2.1.0 is a small hardfork upgrade. In this upgrade 4 new CIPs will
 * [CIP-97](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-97.md): proposes to remove account's staking lists.
 * [CIP-98](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-98.md): Fix a bug in BLOCKHASH opcode in eSpace.
 * [CIP-99](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-99.md): Allow more not-voting terms before we force-retire a node, and make the unlock period of a retiring node shorter to allow the node to rejoin the PoS voting faster.
+* [CIP-105](https://github.com/Conflux-Chain/CIPs/blob/master/CIPs/cip-105.md) PoS staking based minimal DAO vote count.
 
 ## New InternalContract
 
@@ -56,6 +57,11 @@ interface ParamsControl {
      */
     function totalVotes(uint64 vote_round) external view returns (Vote[] memory);
 
+    /**
+     * @dev read the PoS stake for the round.
+     */
+    function posStakeForVotes(uint64) external view returns (uint256);
+
     event CastVote(uint64 indexed vote_round, address indexed addr, uint16 indexed topic_index, uint256[3] votes);
     event RevokeVote(uint64 indexed vote_round, address indexed addr, uint16 indexed topic_index, uint256[3] votes);
 }
@@ -95,7 +101,9 @@ To support conflux fullstate query, a archive node with configuration `enable_si
 
 ### Mainnet
 
-TD
+* v2.1.0 hardfork `epochNumber` has been set to `56800000` (estimated on Oct. 18th, 2022 (GMT+8))
+* CIP-94 activate `blockNumber` is `133800000` (estimated on Oct. 25th, 2022 (GMT+8))
+* CIP-99 activate `PoS blockNumber` is `330000` (estimated on Oct. 25th, 2022 (GMT+8))
 
 ### Testnet
 
@@ -105,6 +113,8 @@ TD
 
 ## Additional links
 
+* [Mainnet update announcement](https://forum.conflux.fun/t/conflux-v2-1-0-network-hardfork-upgrade-announcement/16571)
+* [Conflux-rust v2.1.0 release](https://github.com/Conflux-Chain/conflux-rust/releases/tag/v2.1.0)
 * [Testnet update announcement](https://forum.conflux.fun/t/conflux-v2-1-0-testnet-testnet-upgrade-announcement/16075)
 * [Testnet governance dApp](https://test.confluxhub.io/governance/dashboard)
 * [Conflux-rust v2.1.0 testnet release](https://github.com/Conflux-Chain/conflux-rust/releases/tag/v2.1.0-testnet)
