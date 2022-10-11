@@ -66,3 +66,10 @@ Unifra provides:
 - Dashboard with Request Explorer
 
 To use Unifra's service, developer need to register an account first and find the RPC endpoint in [Unifra console](https://console.unifra.io/). For detail infomation check [Unifra's documentation](https://docs.unifra.io/)
+
+### Public Endpoint
+
+| Network | Chain ID | Explorer | Endpoint | 
+| -------- | -------- | --------| -------- |
+| Mainnet | 1029 | https://confluxscan.net | https://conflux-core-public.unifra.io |
+
