@@ -7,17 +7,17 @@
 <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Conflux Blog RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Conflux Blog Atom Feed">
 <link rel="search" type="application/opensearchdescription+xml" title="Conflux" href="/opensearch.xml"><title data-react-helmet="true">Block Synchronization Process | Conflux</title><meta data-react-helmet="true" property="og:url" content="https://developer.confluxnetwork.org//conflux-doc/docs/sync"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Block Synchronization Process | Conflux"><meta data-react-helmet="true" name="description" content="Synchronization Graph"><meta data-react-helmet="true" property="og:description" content="Synchronization Graph"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://developer.confluxnetwork.org//conflux-doc/docs/sync"><link data-react-helmet="true" rel="alternate" href="https://developer.confluxnetwork.org//conflux-doc/docs/sync" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://developer.confluxnetwork.org//conflux-doc/docs/sync" hreflang="x-default"><link data-react-helmet="true" rel="preconnect" href="https://S86OJPVVGF-dsn.algolia.net" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.260e99e2.css">
-<link rel="preload" href="/assets/js/styles.f82c40b1.js" as="script">
-<link rel="preload" href="/assets/js/runtime~main.8776d911.js" as="script">
-<link rel="preload" href="/assets/js/main.0a78aaa7.js" as="script">
-<link rel="preload" href="/assets/js/1.efa8afd7.js" as="script">
-<link rel="preload" href="/assets/js/2.e15eb4a4.js" as="script">
-<link rel="preload" href="/assets/js/3.118e68a9.js" as="script">
-<link rel="preload" href="/assets/js/1be78505.7f322979.js" as="script">
-<link rel="preload" href="/assets/js/123.be6ed420.js" as="script">
+<link rel="preload" href="/assets/js/styles.77d041ba.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.2e214110.js" as="script">
+<link rel="preload" href="/assets/js/main.65b77ed7.js" as="script">
+<link rel="preload" href="/assets/js/1.a43e9ae6.js" as="script">
+<link rel="preload" href="/assets/js/2.f6e86b50.js" as="script">
+<link rel="preload" href="/assets/js/3.eabc6fd1.js" as="script">
+<link rel="preload" href="/assets/js/1be78505.c1d29a4b.js" as="script">
+<link rel="preload" href="/assets/js/122.1ab1d8dd.js" as="script">
 <link rel="preload" href="/assets/js/935f2afb.2055ded2.js" as="script">
-<link rel="preload" href="/assets/js/17896441.9f619ecd.js" as="script">
-<link rel="preload" href="/assets/js/9296fd2d.6a6bb69f.js" as="script">
+<link rel="preload" href="/assets/js/17896441.f45a3739.js" as="script">
+<link rel="preload" href="/assets/js/9296fd2d.a2a1ce84.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -65,16 +65,16 @@ In order to get the timing information, each graph node has a field <code>last_u
 It checks whether the height of the block is far less than the height of the local best epoch block.
 If so, it is highly probable that the ancestors of this block exist in local database, so it deserves the effort of trying to get these blocks from local database first.
 It is also an effective way to avoid unnecessary backward tree-graph traversing merely according to the peer information, which we also cover a bit more detail in <a href="/conflux-doc/docs/recovery">Recovery Process</a> section.</p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/conflux-doc/docs/sync.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_2_ui" aria-label="Edit page"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Docs pages navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#graph-structure-maintenance" class="table-of-contents__link">Graph Structure Maintenance</a></li><li><a href="#garbage-collect-dangling-blocks" class="table-of-contents__link">Garbage Collect Dangling Blocks</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/">Overview</a></li><li class="footer__item"><a href="https://fluentwallet.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Fluent Wallet</a></li><li class="footer__item"><a href="https://confluxscan.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Conflux Scan</a></li><li class="footer__item"><a href="https://faucet.confluxnetwork.org/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Testnet Faucet</a></li><li class="footer__item"><a href="https://evm.fluentwallet.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Space Bridge</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Tools</h4><ul class="footer__items"><li class="footer__item"><a href="https://www.obsidians.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Conflux studio</a></li><li class="footer__item"><a href="https://chainide.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ChainIDE</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://bountyv2.confluxnetwork.org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Bounty</a></li><li class="footer__item"><a href="https://forum.conflux.fun/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Forum</a></li><li class="footer__item"><a href="https://discord.com/invite/aCZkf2C" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/Conflux-Chain" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li><li class="footer__item"><a href="https://twitter.com/Conflux_Network" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter</a></li><li class="footer__item"><a href="https://medium.com/@ConfluxNetwork" target="_blank" rel="noopener noreferrer" class="footer__link-item">Medium</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">© 2022 Conflux. All Rights Reserved.</div></div></div></footer></div>
-<script src="/assets/js/styles.f82c40b1.js"></script>
-<script src="/assets/js/runtime~main.8776d911.js"></script>
-<script src="/assets/js/main.0a78aaa7.js"></script>
-<script src="/assets/js/1.efa8afd7.js"></script>
-<script src="/assets/js/2.e15eb4a4.js"></script>
-<script src="/assets/js/3.118e68a9.js"></script>
-<script src="/assets/js/1be78505.7f322979.js"></script>
-<script src="/assets/js/123.be6ed420.js"></script>
+<script src="/assets/js/styles.77d041ba.js"></script>
+<script src="/assets/js/runtime~main.2e214110.js"></script>
+<script src="/assets/js/main.65b77ed7.js"></script>
+<script src="/assets/js/1.a43e9ae6.js"></script>
+<script src="/assets/js/2.f6e86b50.js"></script>
+<script src="/assets/js/3.eabc6fd1.js"></script>
+<script src="/assets/js/1be78505.c1d29a4b.js"></script>
+<script src="/assets/js/122.1ab1d8dd.js"></script>
 <script src="/assets/js/935f2afb.2055ded2.js"></script>
-<script src="/assets/js/17896441.9f619ecd.js"></script>
-<script src="/assets/js/9296fd2d.6a6bb69f.js"></script>
+<script src="/assets/js/17896441.f45a3739.js"></script>
+<script src="/assets/js/9296fd2d.a2a1ce84.js"></script>
 </body>
 </html>
