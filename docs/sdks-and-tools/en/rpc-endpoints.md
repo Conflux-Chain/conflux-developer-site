@@ -42,7 +42,7 @@ To ensure the service availability, we've added several rate limiters (implement
 | cfx_sendRawTransaction | 50 | 500 | limits the number of `cfx_sendRawTransaction` requests per second |
 | cfx_getNextNonce | 50 | 500 | limits the number of `cfx_getNextNonce` requests per second |
 
-If you are in the demand for higher QPS need, please visit [Conflux Hub](https://test.confluxhub.io/payment/consumer/apps) to buy our VIP subscription (testnet supported only for the moment):
+If you are in the demand for higher QPS need, please visit [Conflux Hub](https://test.confluxhub.io/payment/consumer/app/subscription/0x4805C5B2741088B8458ed781083eA8940186E477) to purchase our VIP subscription plan (testnet supported only for the moment) with the following new QPS standards.
 
 | Method | QPS | Burst | Comment |
 | -------- | -------- | --------| -------- |
