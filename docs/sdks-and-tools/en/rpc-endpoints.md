@@ -42,6 +42,16 @@ To ensure the service availability, we've added several rate limiters (implement
 | cfx_sendRawTransaction | 50 | 500 | limits the number of `cfx_sendRawTransaction` requests per second |
 | cfx_getNextNonce | 50 | 500 | limits the number of `cfx_getNextNonce` requests per second |
 
+If you are in the demand for higher QPS need, please visit [Conflux Hub](https://test.confluxhub.io/payment/consumer/app/subscription/0x4805C5B2741088B8458ed781083eA8940186E477) to purchase our VIP subscription plan (testnet supported only for the moment) with the following new QPS standards.
+
+| Method | QPS | Burst | Comment |
+| -------- | -------- | --------| -------- |
+| all | 200 | 1000 |  limits the number of all requests per second |
+| cfx_getLogs | 40 | 40 | limits the number of `cfx_getLogs` requests per second |
+| cfx_call | 20 | 200 | limits the number of `cfx_call` requests per second |
+| cfx_sendRawTransaction | 50 | 500 | limits the number of `cfx_sendRawTransaction` requests per second |
+| cfx_getNextNonce | 100 | 500 | limits the number of `cfx_getNextNonce` requests per second |
+
 #### Common causes and mitigations
 
 Rate limiting can occur under a variety of conditions, but it’s most common in these scenarios:
