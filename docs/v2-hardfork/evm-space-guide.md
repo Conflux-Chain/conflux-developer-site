@@ -6,6 +6,13 @@ keywords:
   - evm
 ---
 
+:::danger
+
+This site is deprecated and this page is outdated. Please visit our [new document site](https://docs.confluxnetwork.org) for the latest version of eSpace guide.
+
+:::
+
+
 This guide covers basic usage of Fluent and MetaMask to transfer funds between Conflux Core Space and Conflux eSpace.
 
 ## Installation and Setup

@@ -16,7 +16,27 @@ const docusaurusConfig = {
   favicon: "img/favicon.ico",
   organizationName: "Conflux-Chain", // Usually your GitHub org/user name.
   projectName: "conflux-developer-site", // Usually your repo name.
+  // presets: {
+  //   docs: {
+  //     lastVersion: 'current',
+  //     versions: {
+  //       current: {
+  //         label: '1.0.0',
+  //         banner: "unmaintained"
+  //       },
+  //     },
+  //   }
+  // },
+    
   themeConfig: {
+    announcementBar: {
+      id: 'support_ukraine',
+      content:
+        'This document site is deprecated. Visit our latest site at <a href="https://docs.confluxnetwork.org">https://docs.confluxnetwork.org</a>',
+      backgroundColor: '#20232a',
+      textColor: '#fff',
+      isCloseable: false,
+    },
     navbar: {
       title: "Conflux Developer",
       logo: {
