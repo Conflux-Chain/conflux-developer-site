@@ -32,7 +32,7 @@ const docusaurusConfig = {
     announcementBar: {
       id: 'support_ukraine',
       content:
-        'This document site is deprecated. Visit our latest site at <a href="https://docs.confluxnetwork.org">https://docs.confluxnetwork.org</a>',
+        'This document site is deprecated. Visit our latest site at <a href="https://doc.confluxnetwork.org">https://doc.confluxnetwork.org</a>',
       backgroundColor: '#20232a',
       textColor: '#fff',
       isCloseable: false,
