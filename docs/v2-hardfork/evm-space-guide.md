@@ -8,7 +8,7 @@ keywords:
 
 :::danger
 
-This site is deprecated and this page is outdated. Please visit our [new document site](https://docs.confluxnetwork.org) for the latest version of eSpace guide.
+This site is deprecated and this page is outdated. Please visit our [new document site](https://doc.confluxnetwork.org) for the latest version of eSpace guide.
 
 :::
 
